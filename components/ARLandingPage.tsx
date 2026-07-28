@@ -429,7 +429,7 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
               {/* @ts-ignore */}
               <model-viewer
                 ref={modelViewerRef}
-                src="https://muebles-gacela-nvp.vercel.app/modelos_3d/linea-clasica/A008395/A008395_v6.glb?v=5"
+                src={typeof window !== 'undefined' ? `${window.location.origin}/modelos_3d/linea-clasica/A008395/A008395_v6.glb?v=5` : ''}
                 ar
                 ar-modes="scene-viewer quick-look"
                 ar-placement="floor"

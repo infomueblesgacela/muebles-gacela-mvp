@@ -1,0 +1,76 @@
+{
+  "producto": {
+    "id": "734222",
+    "nombre": "Escritorio Gamer con doble tapa y costado derecho en diagonal"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 60,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos allen 5 cm", "cantidad": 16 },
+    { "item": "Pernos mini fix con caja", "cantidad": 6 },
+    { "item": "Tarugos 6x30", "cantidad": 13 },
+    { "item": "Bases plásticas con clavos", "cantidad": 6 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "98 x 58" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "51 x 30" },
+      { "letra": "D", "item": "Separador abajo", "cantidad": 1, "medidas": "75,5 x 55" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "75,5 x 55" },
+      { "letra": "I", "item": "Costado derecho", "cantidad": 1, "medidas": "90 x 55" },
+      { "letra": "-", "item": "Zócalo", "cantidad": 2, "medidas": "30 x 6" },
+      { "letra": "F", "item": "Frente", "cantidad": 1, "medidas": "89 x 29" },
+      { "letra": "E", "item": "Estante", "cantidad": 1, "medidas": "32 x 30" },
+      { "letra": "G", "item": "Separador arriba", "cantidad": 1, "medidas": "40 x 11" },
+      { "letra": "-", "item": "Refuerzo tapa", "cantidad": 1, "medidas": "89 x 8" },
+      { "letra": "H", "item": "Tapa arriba", "cantidad": 1, "medidas": "125 x 25" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el separador D y el costado izquierdo C colocando a presión 2 cajas para mini fix[cite: 13].",
+      "piezas": ["Separador abajo D", "Costado izquierdo C"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En la tapa A atornille 4 pernos mini fix en las perforaciones que muestra la figura[cite: 13]. En la tapa arriba H atornille 2 pernos[cite: 13].",
+      "piezas": ["Tapa A", "Tapa arriba H"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En el refuerzo de tapa coloque a presión 1 tarugo de 3 cm en el canto largo y 2 en cada canto corto[cite: 13]. En los zócalos frente coloque a presión 4 tarugos[cite: 13].",
+      "piezas": ["- Refuerzo tapa", "- Zócalo"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Una el costado izquierdo C y el separador abajo D al frente F por medio de los tornillos Allen de 5 cm, previamente haciendo coincidir los tarugos del refuerzo de tapa en las perforaciones del costado y el separador, dejando el tarugo del canto largo hacia arriba[cite: 13].",
+      "piezas": ["Costado izquierdo C", "Separador abajo D", "Frente F", "- Refuerzo tapa"],
+      "herrajes_usados": ["Tornillos allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Haga coincidir las cajas para mini fix del costado izquierdo C y del separador D, con los pernos de la tapa A y gire media vuelta en sentido horario las cajas, para ajustar dichas piezas, previamente haciendo coincidir el tarugo del refuerzo de tapa con la perforación de la tapa[cite: 13]. Una el separador arriba G y la tapa desde abajo con dos tornillos Allen de 5 cm[cite: 13]. Luego desde arriba haga coincidir las cajas para mini fix del separador arriba, con los pernos de la tapa arriba H y ajustar las piezas como previamente se indico[cite: 13].",
+      "piezas": ["Costado izquierdo C", "Separador abajo D", "Tapa A", "- Refuerzo tapa", "Separador arriba G", "Tapa arriba H"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Una el costado derecho I y el separador abajo D al estante E y al piso B por medio de los tornillos Allen de 5 cm, previamente haciendo coincidir los tarugos de los zócalos en las perforaciones del costado y el separador[cite: 13]. Luego una el costado derecho a la tapa arriba H por medio de los tornillos Allen de 5 cm[cite: 13]. Clave desde abajo 6 bases plásticas: 2 en el costado derecho, 2 en el costado izquierdo y 2 en el separador[cite: 13].",
+      "piezas": ["Costado derecho I", "Separador abajo D", "Estante E", "Piso B", "- Zócalo", "Tapa arriba H", "Costado izquierdo C"],
+      "herrajes_usados": ["Tornillos allen 5 cm", "Tarugos 6x30", "Bases plásticas con clavos"]
+    }
+  ]
+}

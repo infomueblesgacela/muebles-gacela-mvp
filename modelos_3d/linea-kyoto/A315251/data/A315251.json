@@ -1,0 +1,147 @@
+{
+  "producto": {
+    "id": "315251",
+    "nombre": "Centro de entretenimiento línea Wall con puerta corrediza y estante flotante"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 135,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave allen",
+      "Cinta metrica",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos allen 5 cm", "cantidad": 20 },
+    { "item": "Soporte de estantes", "cantidad": 8 },
+    { "item": "Bases plásticas", "cantidad": 6 },
+    { "item": "Tarugos 6x30", "cantidad": 22 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Pernos mini fix con caja", "cantidad": 24 },
+    { "item": "Escuadras plásticas", "cantidad": 2 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 28 },
+    { "item": "guía inferior", "cantidad": 1 },
+    { "item": "guía superiores", "cantidad": 1 },
+    { "item": "Carros inferiores", "cantidad": 2 },
+    { "item": "Trabas", "cantidad": 2 },
+    { "item": "Clips", "cantidad": 2 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "150 x 40" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "150 x 40" },
+      { "letra": "E", "item": "Sobre tapa", "cantidad": 1, "medidas": "136 x 29" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "47 x 40" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "47 x 40" },
+      { "letra": "F", "item": "Estante", "cantidad": 1, "medidas": "136 x 14" },
+      { "letra": "G", "item": "Separador arriba", "cantidad": 2, "medidas": "12 x 24" },
+      { "letra": "H", "item": "Separador abajo", "cantidad": 1, "medidas": "47 x 36" },
+      { "letra": "N", "item": "Puerta", "cantidad": 1, "medidas": "46 x 74" },
+      { "letra": "M", "item": "Estante móvil", "cantidad": 2, "medidas": "72,7 x 35" },
+      { "letra": "-", "item": "Zócalo frente", "cantidad": 2, "medidas": "136,5 x 8" },
+      { "letra": "O", "item": "Zócalo lateral", "cantidad": 2, "medidas": "33,6 x 8" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "149,5 x 49,5" },
+      { "letra": "-", "item": "Parantes fondo", "cantidad": 4, "medidas": "122 x 6" },
+      { "letra": "K", "item": "Frente izquierdo", "cantidad": 1, "medidas": "61 x 75" },
+      { "letra": "L", "item": "Frente derecho", "cantidad": 1, "medidas": "61 x 75" },
+      { "letra": "I", "item": "Frente ripiado izquierdo", "cantidad": 1, "medidas": "61 x 75" },
+      { "letra": "J", "item": "Frente ripiado derecho", "cantidad": 1, "medidas": "61 x 75" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando a presión dos cajas para mini fix como lo indica la figura y 2 soporte de estantes. Realice el mismo procedimiento para el costado izquierdo C, tenga en cuenta que es simétrico, y para el separador abajo H tenga en cuenta de colocar soporte de estantes en las dos caras.",
+      "piezas": ["Costado derecho D", "Costado izquierdo C", "Separador abajo H"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Soporte de estantes"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En los separadores arriba G coloque a presión una cajas para mini fix y 4 tarugos guías de 3 cm.",
+      "piezas": ["Separador arriba x 2 G"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En los frentes I - J - K - L atornillar en las perforaciones no pasantes 4 pernos mini fix.",
+      "piezas": ["Frente izquierdo K", "Frente derecho L", "Frente ripiado izquierdo I", "Frente ripiado derecho J"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: En los zócalos laterales O, colocar a presión 1 tarugo en el canto superior, además clavar en el canto inferior dos bases plásticas posicionándola a 2 cm de los bordes.",
+      "piezas": ["Zócalo lateral x 2 O"],
+      "herrajes_usados": ["Tarugos 6x30", "Bases plásticas"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: En los zócalos frentes, colocar a presión 4 tarugos en los cantos cortos y 2 en el canto superior, además clavar en el canto inferior una base plástica posicionándola en forma centrada y por último por medio de 3 tornillos de 1,5 cm coloque 3 escuadra plástica en las posiciones que muestra la figura.",
+      "piezas": ["- Zócalo frente x 2"],
+      "herrajes_usados": ["Tarugos 6x30", "Bases plásticas", "Tornillos de 1.5 cm", "Escuadras plásticas"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: En la sobre tapa E atornillamos 2 pernos mini fix en las perforaciones que muestra la figura.",
+      "piezas": ["Sobre tapa E"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: En la puerta N introduzca el perno del carro inferior en la perforación grande y luego atorníllelo mediante 2 tornillos 1,5 cm, el carro debe quedar horizontal, haga lo mismo para el carro restante. Luego coloque los clips en las marcas superiores con 4 tornillos 1,5.",
+      "piezas": ["Puerta N"],
+      "herrajes_usados": ["Carros inferiores", "Tornillos de 1.5 cm", "Clips"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: A la tapa A cerca del canto melaminico, colocamos un riel superior (a las medidas que muestra la figura) mediante 3 tornillos de 1,5 cm en las perforaciones que tienen estos, centrándolos en el ancho, dejando aproximadamente 2 cm por lado y desde abajo atornillamos 4 pernos mini fix.",
+      "piezas": ["Tapa A"],
+      "herrajes_usados": ["guía superiores", "Tornillos de 1.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 9: Al piso B en la cara que contiene solo las perforaciones pasante colocamos un riel inferior (a las medidas que muestra la figura) mediante 3 tornillos de 1,5 cm en las perforaciones que tienen estos, centrándolos en el ancho, dejando aproximadamente 2 cm por lado.",
+      "piezas": ["Piso B"],
+      "herrajes_usados": ["guía inferior", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: En los parantes fondos colocar 4 cajas para mini fix. Una el frente izquierdo K, el frente ripiado derecho J, el frente ripiado izquierdo I y el frente derecho L con los parantes fondo haciendo coincidir los pernos mini fix de los primeros con las perforaciones con las cajas mini fix de los segundos; ajuste las piezas haciendo girar las cajas mini fix media vuelta en sentido horario. Por último una el estante F a los frentes I - L por medio de los tornillos Allen de 5 cm.",
+      "piezas": ["- Parantes fondo x 4", "Frente izquierdo K", "Frente ripiado derecho J", "Frente ripiado izquierdo I", "Frente derecho L", "Estante F"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos allen 5 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Una el frente izquierdo K y el frente ripiado derecho J, con la sobre tapa E por medio de los tornillos Allen de 5 cm. Luego los separadores arriba G por medio del sistema mini fix unir a la sobre tapa E usando como guía los tarugos de los separadores. Desde abajo unir la tapa A con los separadores arriba por medio de los tornillos Allen de 5 cm usando como guía los tarugos de estos. Y finalmente unir la tapa a los parantes fondos por medio de tornillos Allen de 5 cm.",
+      "piezas": ["Frente izquierdo K", "Frente ripiado derecho J", "Sobre tapa E", "Separador arriba x 2 G", "Tapa A", "- Parantes fondo x 4"],
+      "herrajes_usados": ["Tornillos allen 5 cm", "Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Una el separador abajo H con el piso B por medio de los tornillos Allen de 5 cm. Arme un cajón haciendo coincidir los tarugos de los zócalos frente con las perforaciones de los zócalos laterales O y luego uniendo las piezas con los tornillos de 1,5 cm a través de las escuadras plásticas. Una vez armado el cajón hacer coincidir los tarugos de los zócalos frente y de los zócalos laterales con las perforaciones del piso y unir el cajón al piso mediante 2 tornillos de 1,5 cm a través de las escuadras plásticas.",
+      "piezas": ["Separador abajo H", "Piso B", "- Zócalo frente x 2", "Zócalo lateral x 2 O"],
+      "herrajes_usados": ["Tornillos allen 5 cm", "Tarugos 6x30", "Tornillos de 1.5 cm", "Escuadras plásticas"]
+    },
+    {
+      "nro": 13,
+      "instruccion_amigable": "Paso 13: Una los costados C y D a la tapa A, haciendo coincidir los pernos mini fix de la tapa con las perforaciones con las cajas mini fix de los costados; ajuste las piezas haciendo girar las cajas mini fix media vuelta en sentido horario. Luego una el separador abajo H con la tapa A de igual manera y finalmente desde abajo una el piso B a los costados por medio de los tornillos Allen de 5 cm. Clave el fondo de mueble, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. 1 vértice C-A, 2 vértice D-A, 3 vértice C-B, 4 vértice D-B. Finalmente introduzca los estantes móviles M sobre los soportes de estantes.",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Tapa A", "Separador abajo H", "Piso B", "- Fondo mueble", "Estante móvil x 2 M"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos allen 5 cm", "Set de Clavos", "Soporte de estantes"]
+    },
+    {
+      "nro": 14,
+      "instruccion_amigable": "Paso 14: SOLO CUANDO SE COLOQUE LA PUERTA coloque la traba deslizando sobre el clip como muestra la figura hasta que la media esfera entre en el circulo de la traba.",
+      "piezas": [],
+      "herrajes_usados": ["Trabas", "Clips"]
+    },
+    {
+      "nro": 15,
+      "instruccion_amigable": "Paso 15: Finalmente coloque la traba en los clips fijos quedando la guía superior completa corriendo en el riel superior.",
+      "piezas": ["Puerta N"],
+      "herrajes_usados": ["Trabas", "Clips", "guía superiores"]
+    }
+  ]
+}

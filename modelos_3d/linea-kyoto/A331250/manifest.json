@@ -1,0 +1,24 @@
+{
+  "files_3d": [
+    "A331250-Pata.glb",
+    "A331250-a-tapa.glb",
+    "A331250-b-estante.glb",
+    "A331250-base_de_patas.glb"
+  ],
+  "files_pasos": [
+    "A331250-unboxing.png",
+    "paso_01.png",
+    "paso_02.png"
+  ],
+  "files_herrajes": [
+    "clavos-de-caucho.webp",
+    "tarugo-madera.webp",
+    "tornillo-2.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "producto": {
+    "id": "SET 116 / 116-1 / 116-2",
+    "nombre": "Mesas de arrime redondas"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 15,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos allen 7x50", "cantidad": 12 },
+    { "item": "Bases redondas para clavar", "cantidad": 6 },
+    { "item": "Tornillos de 3,5x20", "cantidad": 8 },
+    { "item": "Tarugos 6x30", "cantidad": 2 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa chica y grande", "cantidad": 2, "medidas": "especificación no provista" },
+      { "letra": "-", "item": "Pata bases chica y grande", "cantidad": 2, "medidas": "especificación no provista" },
+      { "letra": "-", "item": "Patas largas y cortas", "cantidad": 6, "medidas": "especificación no provista" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Armaremos el artículo 238-1 (tapa grande, base grande y patas cortas). Coloque el tarugo guía de 6x30 en el centro de la base de patas grande, luego atornille las 3 patas cortas hacia la base con los tornillos phillips 7x50. Para el artículo 238 (tapa chica, base chica y patas largas) realizar el mismo procedimiento.",
+      "piezas": ["Pata bases chica y grande", "Patas largas y cortas"],
+      "herrajes_usados": ["Tarugos 6x30", "Tornillos allen 7x50"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Usando como guía el tarugo de 6x30, presente la base de patas grande a la tapa grande A luego atornille la base con la tapa con los tornillos Phillips 3.5x20. Los tarugos solo sirven de guía y sobresalen hacia abajo (no golpear). Finalmente clave las bases en las patas.",
+      "piezas": ["Pata bases chica y grande", "Tapa chica y grande"],
+      "herrajes_usados": ["Tarugos 6x30", "Tornillos de 3,5x20", "Bases redondas para clavar"]
+    }
+  ]
+}

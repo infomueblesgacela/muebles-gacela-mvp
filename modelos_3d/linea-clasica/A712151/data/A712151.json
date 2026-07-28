@@ -1,0 +1,132 @@
+{
+  "producto": {
+    "id": "712151",
+    "nombre": "Cama box de una plaza con 2 cajones y estantes"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 105,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen N°4"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 60 },
+    { "item": "Pernos mini fix con caja", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 52 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 16 },
+    { "item": "Pares de guías metálicas de 35 cm", "cantidad": 2 },
+    { "item": "Bases plásticas", "cantidad": 24 },
+    { "item": "Tornillos varianta", "cantidad": 8 },
+    { "item": "Tornillos de 2 cm", "cantidad": 8 },
+    { "item": "Tornillos de 4 cm", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Soportes de estantes", "cantidad": 8 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa cabecera", "cantidad": 1, "medidas": "90 x 42" },
+      { "letra": "B", "item": "Piso cabecera", "cantidad": 1, "medidas": "90 x 42" },
+      { "letra": "C", "item": "Tapa piecera", "cantidad": 1, "medidas": "90 x 29" },
+      { "letra": "D", "item": "Piso piecera", "cantidad": 1, "medidas": "90 x 29" },
+      { "letra": "E", "item": "Costado cabecera", "cantidad": 2, "medidas": "42 x 29" },
+      { "letra": "O", "item": "Costado izquierdo cajonera", "cantidad": 1, "medidas": "42 x 29" },
+      { "letra": "P", "item": "Costado derecho cajonera", "cantidad": 1, "medidas": "42 x 29" },
+      { "letra": "Q", "item": "Costado izquierdo módulo ciego", "cantidad": 1, "medidas": "42 x 29" },
+      { "letra": "R", "item": "Costado derecho módulo ciego", "cantidad": 1, "medidas": "42 x 29" },
+      { "letra": "H", "item": "Separador piecera", "cantidad": 1, "medidas": "29 x 26" },
+      { "letra": "G", "item": "Costado piecera", "cantidad": 2, "medidas": "29 x 29" },
+      { "letra": "J", "item": "Fondo piecera", "cantidad": 1, "medidas": "29 x 29" },
+      { "letra": "L", "item": "Tapa cajonera", "cantidad": 2, "medidas": "120 x 29" },
+      { "letra": "N", "item": "Separador cajonera", "cantidad": 1, "medidas": "40,5 x 29" },
+      { "letra": "F", "item": "Faja parrilla", "cantidad": 1, "medidas": "108 x 20" },
+      { "letra": "M", "item": "Piso adelante cajonera", "cantidad": 2, "medidas": "120 x 10" },
+      { "letra": "-", "item": "Piso atrás cajonera", "cantidad": 2, "medidas": "120 x 10" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "paso 1: Prepare el separador cajonera Ñ atornillando una guía metálica fija derecha en la cara izquierda y una guía metálica izquierda en la cara derecha mediante los tornillos varianta. En el costado cajonera derecho P, atornille una guía metálica derecha y en el costado cajonera izquierdo O una guía metálica izquierda mediante los tornillos varianta[cite: 17].",
+      "piezas": ["Separador cajonera N", "Costado derecho cajonera P", "Costado izquierdo cajonera O"],
+      "herrajes_usados": ["Pares de guías metálicas de 35 cm", "Tornillos varianta"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "paso 2: Tanto en las fajas refuerzo adelante como en las fajas refuerzo atrás como en frente modulo ciego coloque a presión 4 tarugos en las perforaciones que muestra la figura[cite: 17].",
+      "piezas": [],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "paso 3: Desde atrás y mediante dos tornillos Allen de 5 cm, una el separador cajonera Ñ con el fondo cajonera, seguidamente a este mismo unirle el costado izquierdo cajonera O y el costado derecho cajonera P. Previamente haga coincidir los tarugos guías de las fajas refuerzo adelanta y atrás, con las perforaciones de los costados y el separador. Verifique que los cantos melaminicos de las fajas refuerzo atrás queden hacia el frente[cite: 17].",
+      "piezas": ["Separador cajonera N", "Costado izquierdo cajonera O", "Costado derecho cajonera P"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4: esde arriba y mediante seis tornillos Allen 5 cm, una la tapa cajonera L con el separador cajonera Ñ, el costado izquierdo cajonera O y el costado derecho cajonera P. Desde abajo y por medio de seis tornillos Allen de 5 cm una el piso cajonera adelante M y el piso cajonera atrás a los costados y al separador. Finalmente coloque a presión las 6 bases plásticas en las perforaciones libres de los pisos[cite: 17].",
+      "piezas": ["Tapa cajonera L", "Separador cajonera N", "Costado izquierdo cajonera O", "Costado derecho cajonera P", "Piso adelante cajonera M", "Piso atrás cajonera"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "paso 5: Desde arriba y mediante 6 tornillos Allen de 5cm, una la tapa piecera C con el separador piecera H y los costados piecera G (verificando que los cantos melaminicos queden hacia adelante). Colocar a presión en el fondo piecera J 4 tarugos guías en las perforaciones que indica la figura. Desde abajo y mediante 6 tornillos Allen de 5 cm, una el piso piecera D con el separador piecera y los costados piecera (verificando que los cantos melaminicos queden hacia adelante). Previamente haciendo coincidir los tarugos guías del fondo con las perforaciones de la tapa y el piso.. Finalmente coloque a presión los soporte de estantes uno fijo al frente y el trasero puede tener 2 posiciones abajo quedando el estante inclinado hacia abajo y al medio quedando el estante horizontal[cite: 17].",
+      "piezas": ["Tapa piecera C", "Separador piecera H", "Costado piecera G", "Fondo piecera J", "Piso piecera D"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30", "Soportes de estantes"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "paso 6: Coloque los estantes K sobre los soporte de estantes clocados en los costados piecera G y en el separador piecera H. Finalmente coloque a presión las 6 bases plásticas en las perforaciones libres de los pisos. Repetir los pasos 4-5 para la cabecera teniendo en cuenta que no lleva estantes ni soporte de estantes[cite: 17].",
+      "piezas": ["Costado piecera G", "Separador piecera H", "Tapa cabecera A", "Piso cabecera B", "Costado cabecera E"],
+      "herrajes_usados": ["Bases plásticas"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "paso 7: Arme el modulo ciego, usando los pasos 2 y 3 de cajonera pero utilizando el costado modulo ciego izquierdo Q, el costado modulo ciego derecho R, el separador ciego S y los frentes ciegos. Realizar el mismo procedimiento pero tener en cuenta que no lleva guías metálicas y los frentes ciegos cubren todos el cubo[cite: 17].",
+      "piezas": ["Costado izquierdo módulo ciego Q", "Costado derecho módulo ciego R"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "paso 8 armado de cajones: Coloque 2 tarugos 6x30 en el fondo de cajón V, 2 mas en cada uno de los costados de cajón U a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 17].",
+      "piezas": [],
+      "herrajes_usados": ["Tarugos 6x30", "Cajas mini fix", "Envase de cola"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "paso 9 armado de cajones: Atornille 2 minifix en el frente de cajón T[cite: 17].",
+      "piezas": [],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "paso 10 armado de cajones: Una vez armada la estructura tipo \"U\" entre UV-U, ingrese el frente de cajón T ajuste los pernos mini fix girando 180 grados las cajas mini fix.Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4x40[cite: 17].",
+      "piezas": [],
+      "herrajes_usados": ["Pernos mini fix con caja", "Cajas mini fix", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "paso 11 armado de cajones: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón T, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos 3,5x20[cite: 17].",
+      "piezas": [],
+      "herrajes_usados": ["Set de Clavos", "Pares de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Una la cajonera a la cabecera y a la piecera por medio de 6 tornillos de 2,5 cm a través de los costados de las cajonera y ajustando a los fondos de cabecera y piecera. Ajuste el modulo ciego al resto de componentes uniendo la faja parrilla F a las fajas refuerzo atrás por medio de 4 tornillos de 2,5 cm. Finalmente coloque los cajones en las cajoneras como se explica en la guía de \"colocación de cajones\"[cite: 17].",
+      "piezas": ["Tapa cabecera A", "Piso cabecera B", "Tapa piecera C", "Piso piecera D", "Costado cabecera E", "Costado izquierdo cajonera O", "Costado derecho cajonera P", "Costado izquierdo módulo ciego Q", "Costado derecho módulo ciego R", "Separador piecera H", "Costado piecera G", "Fondo piecera J", "Tapa cajonera L", "Separador cajonera N", "Faja parrilla F"],
+      "herrajes_usados": ["Tornillos de 2.5 cm"]
+    },
+    {
+      "nro": 13,
+      "instruccion_amigable": "Paso 13: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 17].",
+      "piezas": [],
+      "herrajes_usados": ["Pares de guías metálicas de 35 cm"],
+      "consejo_pro": "Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 17]."
+    }
+  ]
+}

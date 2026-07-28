@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Prueba PoC - Muebles Gacela</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Three.js & GLTFLoader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --panel-bg: rgba(20, 24, 30, 0.75);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-color: #ff8c00;
+            --accent-glow: rgba(255, 140, 0, 0.3);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* UI Overlay */
+        .ui-panel {
+            position: absolute;
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Header Panel */
+        .header-panel {
+            top: 24px;
+            left: 24px;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, #a5a5a5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+
+        /* Control Panel */
+        .control-panel {
+            bottom: 24px;
+            left: 24px;
+            width: 400px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Drag & Drop Target */
+        #drop-zone {
+            border: 2px dashed rgba(255, 140, 0, 0.4);
+            background: rgba(255, 140, 0, 0.03);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 20px;
+        }
+
+        #drop-zone.dragover {
+            border-color: var(--accent-color);
+            background: rgba(255, 140, 0, 0.1);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        #drop-zone p {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        #drop-zone span {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Texture Swatches */
+        .texture-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .swatch {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            background-color: #333;
+            transition: all 0.2s ease;
+        }
+
+        .swatch.active {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 8px var(--accent-glow);
+            transform: scale(1.05);
+        }
+
+        .swatch-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+            font-size: 10px;
+            text-align: center;
+            padding: 2px 0;
+            font-weight: 600;
+        }
+
+        /* Stats Panel */
+        .stats-panel {
+            top: 24px;
+            right: 24px;
+            width: 320px;
+            max-height: calc(100vh - 48px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stats-list {
+            list-style: none;
+            font-size: 13px;
+            overflow-y: auto;
+            max-height: 250px;
+            margin-bottom: 16px;
+        }
+
+        .stats-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .stats-item:last-child {
+            border-bottom: none;
+        }
+
+        .stats-item .part-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+        }
+
+        .stats-item .part-tris {
+            color: var(--text-secondary);
+        }
+
+        .stats-summary {
+            font-size: 13px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .summary-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Floating action buttons */
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 10px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        button.btn-accent {
+            background: var(--accent-color);
+            border-color: transparent;
+            color: #000;
+        }
+
+        button.btn-accent:hover {
+            background: #ffa533;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        /* Loading Spinner */
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 140, 0, 0.1);
+            border-top: 4px solid var(--accent-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 12px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <!-- Header Panel -->
+    <div class="ui-panel header-panel">
+        <h1>Visor PoC Interactivo</h1>
+        <p class="subtitle">Prueba de concepto de despiece 3D. Cargá los archivos GLB crudos y aplicales texturas en tiempo de ejecución (Web 4.0).</p>
+        <div class="actions">
+            <button id="btn-clear">Limpiar Escena</button>
+            <button id="btn-explode" class="btn-accent">Explotar Despiece</button>
+        </div>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="ui-panel control-panel">
+        <div class="section-title">Carga de Componentes</div>
+        
+        <!-- Drag and Drop Zone -->
+        <div id="drop-zone">
+            <p>Arrastrá tus archivos .glb aquí</p>
+            <span>Podés seleccionar múltiples piezas juntas</span>
+        </div>
+
+        <div class="section-title">Envoltura de Textura Dinámica</div>
+        <div class="texture-grid">
+            <!-- Gris Mate -->
+            <div class="swatch active" data-type="color" data-value="#888888">
+                <div style="width:100%; height:100%; background:#888;"></div>
+                <div class="swatch-label">Gris (Base)</div>
+            </div>
+            <!-- Roble Natural (Simulado con color beige/madera claro) -->
+            <div class="swatch" data-type="wood" data-value="#dfba9b" data-roughness="0.4" data-metalness="0.1">
+                <div style="width:100%; height:100%; background:#dfba9b; background-image: radial-gradient(circle, #ecd0b9 20%, #dfba9b 80%);"></div>
+                <div class="swatch-label">Roble</div>
+            </div>
+            <!-- Wengue (Madera muy oscura) -->
+            <div class="swatch" data-type="wood" data-value="#281e18" data-roughness="0.3" data-metalness="0.05">
+                <div style="width:100%; height:100%; background:#281e18; background-image: radial-gradient(circle, #3d2f26 20%, #281e18 80%);"></div>
+                <div class="swatch-label">Wengue</div>
+            </div>
+            <!-- Blanco Laca -->
+            <div class="swatch" data-type="glossy" data-value="#f9fafb" data-roughness="0.15" data-metalness="0.0">
+                <div style="width:100%; height:100%; background:#f9fafb; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);"></div>
+                <div class="swatch-label">Blanco Laca</div>
+            </div>
+        </div>
+        
+        <p style="font-size:11px; color:var(--text-secondary); text-align:center;">
+            Nota: Las texturas se "enuelven" en Three.js leyendo parámetros y asignándolos al material del mesh.
+        </p>
+    </div>
+
+    <!-- Stats Panel -->
+    <div class="ui-panel stats-panel">
+        <div class="section-title">Piezas Cargadas (<span id="parts-count">0</span>)</div>
+        <ul class="stats-list" id="parts-list">
+            <!-- Se llena dinámicamente -->
+        </ul>
+        
+        <div class="section-title">Estadísticas Totales</div>
+        <div class="stats-summary">
+            <div class="summary-row">
+                <span>Vértices:</span>
+                <span id="total-vertices" class="highlight">0</span>
+            </div>
+            <div class="summary-row">
+                <span>Triángulos:</span>
+                <span id="total-triangles" class="highlight">0</span>
+            </div>
+            <div class="summary-row">
+                <span>Tamaño en Memoria:</span>
+                <span id="total-size" class="highlight">0 KB</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <div style="font-size:14px; font-weight:600;">Cargando modelo...</div>
+    </div>
+
+    <script>
+        // Setup Three.js Scene
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x0a0c0e);
+        
+        // Camera
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
+        camera.position.set(1200, 800, 1200);
+
+        // Renderer
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.0;
+        container.appendChild(renderer.domElement);
+
+        // Controls
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.maxPolarAngle = Math.PI / 2 - 0.01; // No traspasar el piso
+        controls.minDistance = 100;
+        controls.maxDistance = 5000;
+
+        // Lights
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+        scene.add(ambientLight);
+
+        const dirLight1 = new THREE.DirectionalLight(0xffffff, 0.8);
+        dirLight1.position.set(1000, 1500, 500);
+        dirLight1.castShadow = true;
+        dirLight1.shadow.mapSize.width = 2048;
+        dirLight1.shadow.mapSize.height = 2048;
+        dirLight1.shadow.camera.near = 0.5;
+        dirLight1.shadow.camera.far = 5000;
+        const d = 1000;
+        dirLight1.shadow.camera.left = -d;
+        dirLight1.shadow.camera.right = d;
+        dirLight1.shadow.camera.top = d;
+        dirLight1.shadow.camera.bottom = -d;
+        scene.add(dirLight1);
+
+        const dirLight2 = new THREE.DirectionalLight(0xffffff, 0.3);
+        dirLight2.position.set(-1000, 800, -500);
+        scene.add(dirLight2);
+
+        // Floor Grid
+        const gridHelper = new THREE.GridHelper(3000, 60, 0x30363d, 0x161b22);
+        gridHelper.position.y = -50;
+        scene.add(gridHelper);
+
+        // Shadow Plane on Floor
+        const shadowGeo = new THREE.PlaneGeometry(3000, 3000);
+        const shadowMat = new THREE.ShadowMaterial({ opacity: 0.2 });
+        const shadowMesh = new THREE.Mesh(shadowGeo, shadowMat);
+        shadowMesh.rotation.x = -Math.PI / 2;
+        shadowMesh.position.y = -49.5;
+        shadowMesh.receiveShadow = true;
+        scene.add(shadowMesh);
+
+        // Global group for loaded pieces
+        const modelGroup = new THREE.Group();
+        scene.add(modelGroup);
+
+        // Animation Loop
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Responsive window
+        window.addEventListener('resize', onWindowResize, false);
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        // --- Drag & Drop logic and Loading ---
+        const dropZone = document.getElementById('drop-zone');
+        const loaderEl = document.getElementById('loader');
+        const partsList = document.getElementById('parts-list');
+        const partsCount = document.getElementById('parts-count');
+        const totalVerticesEl = document.getElementById('total-vertices');
+        const totalTrianglesEl = document.getElementById('total-triangles');
+        const totalSizeEl = document.getElementById('total-size');
+
+        let loadedParts = []; // array of { mesh, name, originalPosition, sizeBytes, tris, verts }
+        let currentMaterialConfig = {
+            type: 'color',
+            value: '#888888',
+            roughness: 0.5,
+            metalness: 0.0
+        };
+        let isExploded = false;
+
+        // Prevent default drag behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            window.addEventListener(eventName, preventDefaults, false);
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        // Highlight drop zone
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => dropZone.classList.add('dragover'), false);
+        });
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => dropZone.classList.remove('dragover'), false);
+        });
+
+        // Handle drop
+        dropZone.addEventListener('drop', handleDrop, false);
+        dropZone.addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.multiple = true;
+            input.accept = '.glb';
+            input.onchange = (e) => loadFiles(e.target.files);
+            input.click();
+        });
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            loadFiles(files);
+        }
+
+        function loadFiles(files) {
+            const glbFiles = Array.from(files).filter(f => f.name.toLowerCase().endswith('.glb') || f.name.toLowerCase().endsWith('.glb'));
+            if (glbFiles.length === 0) return;
+
+            loaderEl.style.display = 'flex';
+            let loadedCount = 0;
+
+            glbFiles.forEach(file => {
+                const reader = new FileReader();
+                reader.readAsArrayBuffer(file);
+                reader.onload = function (e) {
+                    const contents = e.target.result;
+                    const gltfLoader = new THREE.GLTFLoader();
+                    
+                    gltfLoader.parse(contents, '', (gltf) => {
+                        // Apply shadows and custom materials to the loaded model
+                        gltf.scene.traverse((child) => {
+                            if (child.isMesh) {
+                                child.castShadow = true;
+                                child.receiveShadow = true;
+                                applyMaterialToMesh(child, currentMaterialConfig);
+                                
+                                // Calculate statistics
+                                const geo = child.geometry;
+                                const pos = geo.attributes.position;
+                                const index = geo.index;
+                                const tris = index ? index.count / 3 : pos.count / 3;
+                                const verts = pos.count;
+                                
+                                // Save original position for explode view
+                                // Calculate bounding box center
+                                geo.computeBoundingBox();
+                                const center = new THREE.Vector3();
+                                geo.boundingBox.getCenter(center);
+                                
+                                // Save metadata
+                                loadedParts.push({
+                                    mesh: child,
+                                    name: file.name.replace('.glb', ''),
+                                    originalPosition: child.position.clone(),
+                                    center: center,
+                                    sizeBytes: file.size,
+                                    tris: tris,
+                                    verts: verts
+                                });
+                                
+                                modelGroup.add(child);
+                            }
+                        });
+
+                        loadedCount++;
+                        if (loadedCount === glbFiles.length) {
+                            loaderEl.style.display = 'none';
+                            updateUI();
+                            adjustCamera();
+                        }
+                    }, (err) => {
+                        console.error("Error cargando GLTF:", err);
+                        loadedCount++;
+                        if (loadedCount === glbFiles.length) {
+                            loaderEl.style.display = 'none';
+                        }
+                    });
+                };
+            });
+        }
+
+        // Apply material configurations to mesh
+        function applyMaterialToMesh(mesh, config) {
+            let mat;
+            if (config.type === 'color') {
+                mat = new THREE.MeshStandardMaterial({
+                    color: new THREE.Color(config.value),
+                    roughness: 0.5,
+                    metalness: 0.0
+                });
+            } else {
+                // Simulating textures with procedural colors and PBR values
+                mat = new THREE.MeshStandardMaterial({
+                    color: new THREE.Color(config.value),
+                    roughness: parseFloat(config.roughness),
+                    metalness: parseFloat(config.metalness)
+                });
+            }
+            mesh.material = mat;
+        }
+
+        // Update stats and lists
+        function updateUI() {
+            // Clear parts list
+            partsList.innerHTML = '';
+            partsCount.innerText = loadedParts.length;
+
+            let totalVerts = 0;
+            let totalTris = 0;
+            let totalSizeBytes = 0;
+
+            loadedParts.forEach((part, index) => {
+                totalVerts += part.verts;
+                totalTris += part.tris;
+                totalSizeBytes += part.sizeBytes;
+
+                const li = document.createElement('li');
+                li.className = 'stats-item';
+                li.innerHTML = `
+                    <span class="part-name" title="${part.name}">${part.name}</span>
+                    <span class="part-tris">${Math.round(part.tris)} tris</span>
+                `;
+                partsList.appendChild(li);
+            });
+
+            totalVerticesEl.innerText = totalVerts.toLocaleString();
+            totalTrianglesEl.innerText = totalTris.toLocaleString();
+            totalSizeEl.innerText = (totalSizeBytes / 1024).toFixed(1) + ' KB';
+        }
+
+        // Auto-center camera to fit assembly bounding box
+        function adjustCamera() {
+            if (loadedParts.length === 0) return;
+
+            const box = new THREE.Box3();
+            loadedParts.forEach(part => {
+                box.expandByObject(part.mesh);
+            });
+
+            const center = new THREE.Vector3();
+            box.getCenter(center);
+            const size = new THREE.Vector3();
+            box.getSize(size);
+
+            // Shift grid and floor shadow under the furniture
+            gridHelper.position.x = center.x;
+            gridHelper.position.z = center.z;
+            gridHelper.position.y = box.min.y - 1;
+            shadowMesh.position.x = center.x;
+            shadowMesh.position.z = center.z;
+            shadowMesh.position.y = box.min.y - 0.8;
+
+            // Shift controls target
+            controls.target.copy(center);
+
+            // Adjust camera position to fit box
+            const maxDim = Math.max(size.x, size.y, size.z);
+            const fov = camera.fov * (Math.PI / 180);
+            let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
+            cameraZ *= 2.0; // zoom out a bit for aesthetics
+
+            camera.position.set(center.x + cameraZ, center.y + cameraZ * 0.7, center.z + cameraZ);
+            controls.update();
+        }
+
+        // Apply Texture/Color picker selection
+        document.querySelectorAll('.swatch').forEach(swatch => {
+            swatch.addEventListener('click', (e) => {
+                document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
+                const currentTarget = e.currentTarget;
+                currentTarget.classList.add('active');
+
+                currentMaterialConfig = {
+                    type: currentTarget.getAttribute('data-type'),
+                    value: currentTarget.getAttribute('data-value'),
+                    roughness: currentTarget.getAttribute('data-roughness') || 0.5,
+                    metalness: currentTarget.getAttribute('data-metalness') || 0.0
+                };
+
+                // Apply to all loaded meshes
+                loadedParts.forEach(part => {
+                    applyMaterialToMesh(part.mesh, currentMaterialConfig);
+                });
+            });
+        });
+
+        // Explode / Explode-assemble toggle animation
+        const btnExplode = document.getElementById('btn-explode');
+        btnExplode.addEventListener('click', () => {
+            if (loadedParts.length === 0) return;
+
+            isExploded = !isExploded;
+            btnExplode.innerText = isExploded ? "Ensamblar Mueble" : "Explotar Despiece";
+            btnExplode.classList.toggle('btn-accent', !isExploded);
+
+            // Find global center of the assembly
+            const assemblyBox = new THREE.Box3();
+            loadedParts.forEach(part => assemblyBox.expandByObject(part.mesh));
+            const globalCenter = new THREE.Vector3();
+            assemblyBox.getCenter(globalCenter);
+
+            loadedParts.forEach(part => {
+                // Calculate direction vector from global center to the piece center
+                const dir = new THREE.Vector3().copy(part.center).sub(globalCenter);
+                
+                // Explode factor: make sure it is split nicely based on coordinate direction
+                // If the piece is in the center, shift it slightly anyway to explode
+                if (dir.length() < 10) {
+                    dir.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize().multiplyScalar(50);
+                } else {
+                    dir.normalize().multiplyScalar(200); // 200 units explosion distance
+                }
+
+                // If exploded, move outward. If assembled, return to original local position (which is 0,0,0 relative to parent group)
+                const targetPos = isExploded 
+                    ? new THREE.Vector3().copy(part.originalPosition).add(dir)
+                    : part.originalPosition.clone();
+
+                // Simple tween animation
+                let t = 0;
+                const animatePiece = () => {
+                    t += 0.05;
+                    part.mesh.position.lerpVectors(part.mesh.position, targetPos, 0.15);
+                    if (t < 1) {
+                        requestAnimationFrame(animatePiece);
+                    } else {
+                        part.mesh.position.copy(targetPos); // force snap to final target
+                    }
+                };
+                animatePiece();
+            });
+        });
+
+        // Clear Scene
+        document.getElementById('btn-clear').addEventListener('click', () => {
+            // Remove meshes from scene group
+            loadedParts.forEach(part => {
+                modelGroup.remove(part.mesh);
+                part.mesh.geometry.dispose();
+                if (Array.isArray(part.mesh.material)) {
+                    part.mesh.material.forEach(m => m.dispose());
+                } else {
+                    part.mesh.material.dispose();
+                }
+            });
+            loadedParts = [];
+            isExploded = false;
+            btnExplode.innerText = "Explotar Despiece";
+            btnExplode.classList.add('btn-accent');
+            
+            // Reset grid position
+            gridHelper.position.set(0, -50, 0);
+            shadowMesh.position.set(0, -49.5, 0);
+            controls.target.set(0, 0, 0);
+            camera.position.set(1200, 800, 1200);
+            controls.update();
+
+            updateUI();
+        });
+    </script>
+</body>
+</html>

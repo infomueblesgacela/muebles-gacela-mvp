@@ -1,0 +1,65 @@
+{
+  "producto": {
+    "id": "753153",
+    "nombre": "Torre con dos puertas sublimadas y cuatro niveles"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 15 cazoleta 26", "cantidad": 4 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 8 },
+    { "item": "Pernos mini fix con caja", "cantidad": 4 },
+    { "item": "Soporte de estantes", "cantidad": 8 },
+    { "item": "Bases plásticas", "cantidad": 4 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 16 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "75 x 36" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "120 x 36" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "120 x 36" },
+      { "letra": "B", "item": "Piso-Estante", "cantidad": 2, "medidas": "72 x 36" },
+      { "letra": "E", "item": "Estante móvil", "cantidad": 2, "medidas": "72 x 36" },
+      { "letra": "I", "item": "Puerta izquierdo", "cantidad": 1, "medidas": "35,5 x 58,5" },
+      { "letra": "J", "item": "Puerta derecha", "cantidad": 1, "medidas": "35,5 x 58,5" },
+      { "letra": "-", "item": "Fondo de mueble", "cantidad": 2, "medidas": "120 x 37,3" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando a presión 4 soporte de estantes y 2 cajas para mini fix, además atornillando 2 bases de bisagra mediante los tornillos de 1,5 cm y clavando en el filo inferior dos bases plásticas[cite: 13]. De igual manera prepare el costado izquierdo C, teniendo en cuenta que es simétrico[cite: 13].",
+      "piezas": ["Costado derecho D", "Costado izquierdo C"],
+      "herrajes_usados": ["Soporte de estantes", "Pernos mini fix con caja", "Tornillos de 1.5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En las puertas I - J coloque 2 bisagra mediante los tornillos de 1,5 cm[cite: 13]. En las tapas A, atornille las 4 pernos mini fix[cite: 13].",
+      "piezas": ["Puerta izquierdo I", "Puerta derecha J", "Tapa A"],
+      "herrajes_usados": ["Bisagras codo 15 cazoleta 26", "Tornillos de 1.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Una los costados C-D con los estantes fijos F mediante los tornillos Allen de 5 cm[cite: 13]. Luego desde arriba introduzca los pernos mini fix de la tapa A en las perforaciones de los costados y luego gire las cajas mini fix 180° para ajustar las piezas[cite: 13].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Piso-Estante B", "Tapa A"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Clave el fondo de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble[cite: 13]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble[cite: 13]. (1 vértice C - A, 2 vértice A medio, 3 vértice C - F, 4 vértice F medio)[cite: 13]. Realizar la misma operación con el fondo restante, previamente colocando el plástico H de unión[cite: 13]. Deslice los estantes móviles E sobre los soportes previamente colocados en los costados haciéndolo llegar hasta el fondo[cite: 13]. Coloque las puertas I - J en las bases de bisagras colocadas en los costados C-D utilizando como guía el contenido de 'Regulación y colocación de bisagra'[cite: 13].",
+      "piezas": ["- Fondo de mueble", "Tapa A", "Costado izquierdo C", "Piso-Estante B", "Estante móvil  E", "Puerta izquierdo I", "Puerta derecha J", "Costado derecho D"],
+      "herrajes_usados": ["Set de Clavos", "Soporte de estantes", "Bisagras codo 15 cazoleta 26"],
+      "consejo_pro": "Colocación y regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido[cite: 13]. Luego ingrese la bisagra en la base de bisagra haciendo coincidir el tornillo de regulación lateral con la ranura en U de la base, y finalmente ajuste el tornillo de regulación de profundidad[cite: 13]."
+    }
+  ]
+}

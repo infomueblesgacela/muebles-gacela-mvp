@@ -1,0 +1,88 @@
+{
+  "producto": {
+    "id": "322250",
+    "nombre": "Estantería con una puerta fondos ripiados línea wall"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 15 cazoleta 26", "cantidad": 3 },
+    { "item": "Soporte de estantes", "cantidad": 8 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 12 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 28 },
+    { "item": "Tarugos 6x30", "cantidad": 48 },
+    { "item": "Bases plásticas", "cantidad": 6 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "90 x 31,5" },
+      { "letra": "-", "item": "Fondo de mueble", "cantidad": 1, "medidas": "159,5 x 30" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "157,3 x 31,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "157,3 x 31,5" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "90 x 31,5" },
+      { "letra": "E", "item": "Separador", "cantidad": 1, "medidas": "157,3 x 29,5" },
+      { "letra": "F", "item": "Puerta", "cantidad": 1, "medidas": "156,7 x 290" },
+      { "letra": "G", "item": "Estante fijo chico", "cantidad": 1, "medidas": "27,4 x 29,5" },
+      { "letra": "H", "item": "Estante móvil", "cantidad": 2, "medidas": "27,4 x 29,5" },
+      { "letra": "I", "item": "Estante fijo arriba abajo", "cantidad": 2, "medidas": "58 x 29,5" },
+      { "letra": "J", "item": "Estante fijo centro", "cantidad": 1, "medidas": "58 x 29,5" },
+      { "letra": "K", "item": "Separador chico", "cantidad": 4, "medidas": "38,2 x 29,5" },
+      { "letra": "L", "item": "Fondo ripiado", "cantidad": 4, "medidas": "38,2 x 14" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado izquierdo C, colocando a presión 4 soporte de estantes y atornillando 3 bases de bisagra mediante los tornillos de 1,5 cm. En el separador E solo coloque los 4 soporte de estantes.",
+      "piezas": ["Costado izquierdo C", "Separador E"],
+      "herrajes_usados": ["Soporte de estantes", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En la puerta F coloque 3 bisagras mediante los tornillos de 1,5 cm.",
+      "piezas": ["Puerta F"],
+      "herrajes_usados": ["Bisagras codo 15 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Prepare los estantes fijos arriba y abajo I, colocando a presión 4 tarugos en los cantos y en las perforaciones extremas. De igual manera prepare el estante fijo centro J, el estante fijo chico G y los separadores chicos K. En los fondos ripiados L coloque a presión 4 tarugos en las perforaciones de los cantos.",
+      "piezas": ["Estante fijo arriba abajo I", "Estante fijo centro J", "Estante fijo chico G", "Separador chico x 4 K", "Fondo ripiado x 4 L"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Mediante los tornillos Allen de 5 cm, una el estante fijo centro J con los separadores chicos K usando los tarugos como guía. Repita el proceso con los estantes fijos arriba abajo I, previamente haciendo coincidir los tarugos guías en las perforaciones de los fondos ripiados L.",
+      "piezas": ["Estante fijo centro J", "Separador chico x 4 K", "Estante fijo arriba abajo I", "Fondo ripiado x 4 L"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Mediante los tornillos Allen de 5 cm, una el estante fijo centro J y los estantes fijos arriba abajo I con el separador E y el costado derecho D usando los tarugos como guía (dejar el sobresaliente del costado hacia adelante). Repita el proceso con el estante fijo chico G, el costado izquierdo C y el separador E (dejar el sobresaliente del costado hacia adelante).",
+      "piezas": ["Estante fijo centro J", "Estante fijo arriba abajo I", "Separador E", "Costado derecho D", "Estante fijo chico G", "Costado izquierdo C"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Desde arriba y por medio de los tornillos Allen de 5 cm, una la tapa A al costado izquierdo C, al costado derecho D, al separador E y al separador chico K previamente haciendo coincidir los tarugos guías de estos y de los fondos L en las perforaciones de la tapa. Repita el proceso pero desde abajo y con el piso B. Clave el fondo de mueble, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. (1 vértice C - A, 2 vértice E - A, 3 vértice C - B, 4 vértice E - B). Por último introduzca los estantes móviles H apoyándolos en los soportes de estantes colocados en el costado izquierdo y el separador.",
+      "piezas": ["Tapa A", "Costado izquierdo C", "Costado derecho D", "Separador E", "Separador chico x 4 K", "Fondo ripiado x 4 L", "Piso B", "- Fondo de mueble", "Estante móvil x 2 H"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30", "Set de Clavos", "Soporte de estantes"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Desde abajo y en las perforaciones grandes del piso B incrustar las bases plásticas. Finalmente coloque la puerta F en las bases de bisagras colocadas en el costado izquierdo C utilizando como guía el contenido de 'Regulación y colocación de bisagra'.",
+      "piezas": ["Piso B", "Puerta F", "Costado izquierdo C"],
+      "herrajes_usados": ["Bases plásticas", "Bisagras codo 15 cazoleta 26"],
+      "consejo_pro": "Colocación y regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido. Luego ingrese la bisagra en la base haciendo coincidir el tornillo de regulación lateral con la ranura en U y finalmente ajuste el tornillo de profundidad."
+    }
+  ]
+}

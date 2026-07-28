@@ -1,0 +1,130 @@
+{
+  "producto": {
+    "id": "315250",
+    "nombre": "Centro de entretenimiento línea Wall con puertas y estantes flotantes"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 75,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen de 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 0 cazoleta 26", "cantidad": 4 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 39 },
+    { "item": "Pernos mini fix con caja", "cantidad": 16 },
+    { "item": "Soporte de estantes", "cantidad": 2 },
+    { "item": "Tiradores botón con tornillos", "cantidad": 2 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 36 },
+    { "item": "Tornillos de 2,5 cm", "cantidad": 8 },
+    { "item": "Escuadras", "cantidad": 10 },
+    { "item": "Tornillos de 3 cm", "cantidad": 2 },
+    { "item": "Bases plásticas", "cantidad": 8 },
+    { "item": "Tarugos de 6x30", "cantidad": 18 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "180 x 40" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "180 x 40" },
+      { "letra": "C", "item": "Entre tapa", "cantidad": 1, "medidas": "180 x 40" },
+      { "letra": "D", "item": "Costado izquierdo", "cantidad": 1, "medidas": "42 x 38" },
+      { "letra": "E", "item": "Costado derecho", "cantidad": 1, "medidas": "42 x 38" },
+      { "letra": "F", "item": "Separador abajo", "cantidad": 2, "medidas": "38 x 13" },
+      { "letra": "G", "item": "Separador arriba izquierdo", "cantidad": 1, "medidas": "112,5 x 8" },
+      { "letra": "H", "item": "Separador arriba derecho", "cantidad": 1, "medidas": "112,5 x 8" },
+      { "letra": "I", "item": "Frente arriba", "cantidad": 1, "medidas": "130 x 37,5" },
+      { "letra": "J", "item": "Frente medio", "cantidad": 1, "medidas": "130 x 37,5" },
+      { "letra": "K", "item": "Frente abajo", "cantidad": 1, "medidas": "130 x 37,5" },
+      { "letra": "L", "item": "Fondo izquierdo", "cantidad": 1, "medidas": "180 x 27" },
+      { "letra": "M", "item": "Fondo derecho", "cantidad": 1, "medidas": "180 x 27" },
+      { "letra": "N", "item": "Estante", "cantidad": 4, "medidas": "23 x 18" },
+      { "letra": "O", "item": "Puerta", "cantidad": 2, "medidas": "47,8 x 41,2" },
+      { "letra": "P", "item": "Zócalo frente", "cantidad": 1, "medidas": "178 x 8" },
+      { "letra": "-", "item": "Faja unión", "cantidad": 2, "medidas": "57,5 x 5" },
+      { "letra": "-", "item": "Fondo de mueble", "cantidad": 1, "medidas": "95,6 x 44,6" },
+      { "letra": "-", "item": "Zócalo lateral", "cantidad": 2, "medidas": "37,5 x 8" },
+      { "letra": "-", "item": "Zócalo atrás", "cantidad": 1, "medidas": "175 x 8" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado Izquierdo D, colocando a presión 2 cajas para mini fix, además atornillando 2 bases de bisagra mediante los tornillos de 1,5 cm[cite: 14]. De igual manera prepare el costado derecho E, teniendo en cuenta que es simétrico[cite: 14]. En los separadores abajo F, coloque a presión 2 cajas para mini fix[cite: 14].",
+      "piezas": ["Costado izquierdo D", "Costado derecho E", "Separador abajo x 2 F"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Prepare los zócalos laterales colocando a presión 2 tarugos, además atornille una escuadra (colocándola a borde) mediante un tornillo de 1,5 cm y clavando en el filo inferior dos bases plásticas, quedando de esta manera un zócalo lateral izquierdo[cite: 14]. Al zócalo lateral restante realice la misma operación pero clave las dos bases plásticas en el filo superior, quedando el zócalo lateral derecho[cite: 14].",
+      "piezas": ["- Zócalo lateral"],
+      "herrajes_usados": ["Tarugos de 6x30", "Escuadras", "Tornillos de 1.5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En el zócalo atrás coloque a presión 2 tarugos en cada canto corto y 3 en el canto superior, además atornille 2 escuadras, colocándolas a borde con los cantos cortos y 3 colocándolas a borde con el canto superior, mediante los tornillos de 1,5 cm finalmente clave en el filo inferior dos bases plásticas[cite: 14]. En el zócalo frente P solo coloque a presión 3 tarugos en el canto superior y atornille 3 escuadras a borde con el canto superior, mediante los tornillos de 1,5 cm finalmente clave en el filo inferior dos bases plásticas[cite: 14].",
+      "piezas": ["- Zócalo atrás", "Zócalo frente P"],
+      "herrajes_usados": ["Tarugos de 6x30", "Escuadras", "Tornillos de 1.5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: En la entre tapa C, atornille 4 pernos mini fix en las perforaciones no pasantes[cite: 14].",
+      "piezas": ["Entre tapa C"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Una los zócalos laterales (izquierdo y derecho) con el zócalo atrás haciendo coincidir los tarugos de este con las perforaciones de los primeros y luego fijar las piezas a través de las escuadras por medio de los tornillos de 1,5 cm[cite: 14]. De la misma manera una los zócalos laterales con el zócalo frente P[cite: 14]. Seguidamente haga coincidir los tarugos de los zócalos frente y atrás con las perforaciones del piso B y ajuste con los tornillos de 1,5 cm a través de las escuadras[cite: 14]. Por último coloque a presión los soporte de estantes en el piso que luego servirán como tope de puerta[cite: 14].",
+      "piezas": ["- Zócalo lateral", "- Zócalo atrás", "Zócalo frente P", "Piso B"],
+      "herrajes_usados": ["Tarugos de 6x30", "Escuadras", "Tornillos de 1.5 cm", "Soporte de estantes"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Primero, una los separadores abajo F con la entre tapa C, desde abajo mediante los tornillos Allen de 5 cm[cite: 14]. Segundo, desde arriba introduzca los pernos mini fix de la entre tapa en las perforaciones de los costados D-E y luego gire las cajas mini fix 180° para ajustar las piezas[cite: 14]. Tercero, desde abajo una el piso B (ya armado con los zócalos) a los costados por medio de los tornillos Allen de 5 cm[cite: 14]. Finalmente clave el fondo de 3 mm, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble[cite: 14]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble[cite: 14]. (1 vértice B - D, 2 vértice B - E, 3 vértice C - D, 4 vértice C - E)[cite: 14].",
+      "piezas": ["Separador abajo x 2 F", "Entre tapa C", "Costado izquierdo D", "Costado derecho E", "Piso B", "- Fondo de mueble"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Pernos mini fix con caja", "Set de Clavos"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Prepare los estantes N, colocando a presión un tarugo en la perforación que indica la imagen[cite: 14].",
+      "piezas": ["Estante x 4 N"],
+      "herrajes_usados": ["Tarugos de 6x30"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: En los separadores arriba izquierdo y derecho, coloque a presión 4 cajas para mini fix a cada uno[cite: 14]. En las puertas O coloque 2 bisagras mediante los tornillos de 1,5 cm, y en la cara contraria el tirador botón, ajustando desde atrás por medio de los tornillos[cite: 14]. Como muestra la figura nos queda una puerta derecha, la restante para que nos quede izquierda colocar en la otra perforación el tirador botón[cite: 14].",
+      "piezas": ["Separador arriba izquierdo G", "Separador arriba derecho H", "Puerta x 2 O"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm", "Tiradores botón con tornillos"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: En el frente arriba I atornille 4 pernos mini fix[cite: 14]. En el frente abajo K 2 pernos mini fix[cite: 14]. Y en el frente medio J coloque 2 pernos mini fix[cite: 14]. En la tapa A, atornille 4 pernos mini fix en las perforaciones no pasantes[cite: 14].",
+      "piezas": ["Frente arriba I", "Frente abajo K", "Frente medio J", "Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Coloque el frente arriba I, el frente medio J y el frente abajo K en orden y boca abajo, quedando los pernos mini fix hacia arriba, seguidamente introduzca los pernos mini fix de los frentes en las perforaciones de los separadores arriba G-H y luego gire las cajas mini fix 180° para ajustar las piezas[cite: 14]. Luego ajuste las piezas a través de las fajas de unión y por medio de 8 tornillos de 2,5 cm usando como referencia para su ubicación las marcas de los frentes arriba y abajo, centrando las fajas[cite: 14].",
+      "piezas": ["Frente arriba I", "Frente medio J", "Frente abajo K", "Separador arriba izquierdo G", "Separador arriba derecho H", "- Faja unión"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 2,5 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Coloque el panel en forma vertical e invertido[cite: 14]. Primero, una los fondos L-M a los separadores arriba G-H, mediante los tornillos Allen de 5 cm[cite: 14]. Segundo, desde arriba con los mismos tornillos una la tapa A (en forma invertida con los pernos hacia arriba) a el frente abajo K, y seguidamente a los fondos[cite: 14]. Tercero, por medio de los tornillos Allen de 5 cm y usando como guía el tarugo colocado en los estantes N vincule estos a los fondos y a los separadores[cite: 14].",
+      "piezas": ["Fondo izquierdo L", "Fondo derecho M", "Separador arriba izquierdo G", "Separador arriba derecho H", "Tapa A", "Frente abajo K", "Estante x 4 N"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos de 6x30"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Gire el panel ya armado e introduzca los pernos mini fix de la tapa A en las perforaciones de los separadores abajo F, y luego gire las cajas mini fix 180° para ajustar las piezas[cite: 14]. Luego desde atrás y por medio de los tornillos Allen de 5 cm vincule los fondos L-M al piso B y a la entre tapa C[cite: 14]. Finalmente coloque las puertas O ya hechas izquierda y derecha en las bases de bisagras colocadas en los costados D-E utilizando como guía el contenido de 'Regulación y colocación de bisagra'[cite: 14].",
+      "piezas": ["Tapa A", "Separador abajo x 2 F", "Fondo izquierdo L", "Fondo derecho M", "Piso B", "Entre tapa C", "Puerta x 2 O", "Costado izquierdo D", "Costado derecho E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos Allen 5 cm", "Bisagras codo 0 cazoleta 26"],
+      "consejo_pro": "Colocación y regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido[cite: 14]. Luego ingrese la bisagra en la base haciendo coincidir el tornillo de regulación lateral con la ranura en U y finalmente ajuste el tornillo de profundidad[cite: 14]."
+    }
+  ]
+}

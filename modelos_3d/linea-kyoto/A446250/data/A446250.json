@@ -1,0 +1,89 @@
+{
+  "producto": {
+    "id": "446250",
+    "nombre": "Rack línea Wall de un estante dos puertas ripiadas y patas de palo"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 0 cazoleta 26", "cantidad": 4 },
+    { "item": "Llave Allen", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 13 },
+    { "item": "Pernos mini fix con caja", "cantidad": 8 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 6 },
+    { "item": "Tiradores Bruno con tornillos de 2.5 cm", "cantidad": 2 },
+    { "item": "Tarugos 6x30", "cantidad": 2 },
+    { "item": "Soportes de estantes", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 16 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "120 x 40" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "120 x 40" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "38 x 38" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "38 x 38" },
+      { "letra": "E", "item": "Separador izquierdo", "cantidad": 1, "medidas": "38 x 38" },
+      { "letra": "F", "item": "Separador derecho", "cantidad": 1, "medidas": "38 x 38" },
+      { "letra": "G", "item": "Estante móvil", "cantidad": 1, "medidas": "38 x 38" },
+      { "letra": "H", "item": "Puerta", "cantidad": 2, "medidas": "37,4 x 41" },
+      { "letra": "E", "item": "Base patas", "cantidad": 1, "medidas": "110 x 35" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 2, "medidas": "40,5 x 40,5" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 5, "medidas": "12 x 3" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado izquierdo C, colocando a presión 2 caja para mini fix y 2 bases de bisagra mediante 4 tornillos de 1,5 cm[cite: 17]. Prepare de igual modo el costado derecho D, tener en cuenta que son simétricos[cite: 17].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En el separador izquierdo E, coloque a presión 2 caja para mini fix y 2 soporte de estantes[cite: 17]. Prepare de igual modo el Separador derecho F[cite: 17].",
+      "piezas": ["Separador izquierdo E", "Separador derecho F"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Soportes de estantes"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En las puertas H coloque 2 bisagra mediante los tornillos de 1,5 cm, además un tirador por medio de un tornillo de 2,5 cm[cite: 17]. En la Tapa A, atornille 8 Pernos mini fix cubriendo todas las perforaciones[cite: 17].",
+      "piezas": ["Puerta x 2 H", "Tapa A"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm", "Tiradores Bruno con tornillos de 2.5 cm", "Tornillos de 2.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Acoplar los costados C-D y los separadores E-F a la Tapa A introduciendo los pernos minifix de esta en las perforaciones con caja minifix de los primeros mencionados luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix[cite: 17]. Por ultimo desde abajo ajuste por medio de 8 tornillos Allen de 5 cm el piso B a los costados, los separadores[cite: 17].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Separador izquierdo E", "Separador derecho F", "Tapa A", "Piso B"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos Allen 5 cm"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Una las patas de palo con la base de patas M, por medio de los tornillos Allen de 5 cm[cite: 17]. A su vez coloque a presión dos tarugos guías 6x30[cite: 17].",
+      "piezas": ["- Patas macizas", "Base patas E"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Clave los fondos de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble[cite: 17]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. 1 vértice A-C, 2 vértice A-E, 3 vértice C-B, 4 vértice B-E. Repetir para el otro fondo[cite: 17]. Una vez armado la base de patas M con las patas macizas, ajuste este hacia el piso B, a través de los 6 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30, los cuales solo cumplen la función de guía (no golpear)[cite: 17].",
+      "piezas": ["- Fondo mueble x 2", "Tapa A", "Costado izquierdo C", "Piso B", "Separador izquierdo E", "Base patas E", "- Patas macizas"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos de 2.5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Coloque las Puertas H en las bases de bisagras colocadas en los Costados C-D, Utilizando como guía las indicaciones de 'Colocación de bisagra' y 'Regulación de bisagra'[cite: 17]. Finalmente deslice el estante móvil G sobre los soportes previamente colocados en los Separadores E-F haciéndolo llegar hasta el fondo[cite: 17].",
+      "piezas": ["Puerta x 2 H", "Costado izquierdo C", "Costado derecho D", "Estante móvil G", "Separador izquierdo E", "Separador derecho F"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Soportes de estantes"],
+      "consejo_pro": "Colocación y regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido[cite: 17]. Luego ingrese la bisagra en la base de bisagra haciendo coincidir el tornillo de regulación lateral con la ranura en U de la base, y finalmente ajuste el tornillo de regulación de profundidad[cite: 17]."
+    }
+  ]
+}

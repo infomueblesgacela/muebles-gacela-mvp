@@ -1,0 +1,52 @@
+# Node dependencies & builds
+node_modules
+dist
+dist-ssr
+.vercel
+
+# Editor & System files
+.vscode
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Agent & AI config
+.agent
+.claude
+.gemini
+
+# Heavy Assets / Backups / Offline Docs
+Backup
+Comprimidas
+/Modelos 3d
+/modelos_3d
+/articulos-gacela-muebles-2026
+documents
+gacela-muebles---furniture-store.zip
+*.zip
+*.csv
+*.xlsx
+file_list.txt
+
+# Python & JS helper scripts
+*.py
+*.cjs
+seo_writer.py
+process_excel.py
+fix_names.cjs
+super_repair.cjs
+heal_assets.cjs
+rename_png_to_webp_in_public.cjs
+repair_json_paths.cjs
+convert_to_webp_refs.cjs
+fill_relacionados.py
+export_to_json.py
+explore_excel.py
+diagnostic.cjs
+audit_productos.cjs
+fix_json.cjs
+rename_images_folder.cjs

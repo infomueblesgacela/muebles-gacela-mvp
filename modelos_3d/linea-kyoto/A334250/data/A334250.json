@@ -1,0 +1,122 @@
+{
+  "producto": {
+    "id": "334250",
+    "nombre": "Escritorio línea Wall de un cajón con frente ripiado y patas escandinavas"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 60,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 14 },
+    { "item": "Par de guías metálicas de 35 cm", "cantidad": 1 },
+    { "item": "Tornillos de 4 cm", "cantidad": 2 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Tornillos de 2,5 cm", "cantidad": 8 },
+    { "item": "Tarugos 6x30", "cantidad": 22 },
+    { "item": "Pernos mini fix con caja", "cantidad": 12 },
+    { "item": "Tornillos de 2 cm", "cantidad": 4 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "100 x 44,5" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "100 x 44,5" },
+      { "letra": "K", "item": "Base de patas", "cantidad": 2, "medidas": "39 x 18" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "44,5 x 12,6" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "44,5 x 12,6" },
+      { "letra": "E", "item": "Separador", "cantidad": 1, "medidas": "40,5 x 12,6" },
+      { "letra": "H", "item": "Frente cajón", "cantidad": 1, "medidas": "35 x 12" },
+      { "letra": "G", "item": "Costado cajón", "cantidad": 2, "medidas": "35 x 8" },
+      { "letra": "I", "item": "Fondo cajón", "cantidad": 1, "medidas": "28 x 8" },
+      { "letra": "M", "item": "Fondo", "cantidad": 1, "medidas": "33,6 x 12,6" },
+      { "letra": "L", "item": "Refuerzo de patas", "cantidad": 2, "medidas": "29,8 x 10" },
+      { "letra": "N", "item": "Pata izquierda", "cantidad": 2, "medidas": "59 x 7,5" },
+      { "letra": "O", "item": "Pata derecha", "cantidad": 2, "medidas": "59 x 7,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 1, "medidas": "32,8 x 31" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando a presión 2 caja mini fix y atornille mediante 2 tornillos varianta la guía metálica derecha[cite: 16]. Realice esta misma operación para el separador E, pero con la guía metálica izquierda[cite: 16]. En el costado izquierdo C, solo coloque a presión 2 caja mini fix[cite: 16].",
+      "piezas": ["Costado derecho D", "Separador E", "Costado izquierdo C"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos varianta", "Par de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En el fondo M, coloque a presión 4 tarugos 6x30[cite: 16]. En la tapa A atornille 6 mini fix[cite: 16].",
+      "piezas": ["Fondo M", "Tapa A"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Haga coincidir las cajas para minifix de los costados C-D y del separador E con los pernos mini fix de la tapa A, luego gire media vuelta en sentido horario las cajas, para ajustar dichas piezas, previamente haga coincidir los tarugos del fondo M con las perforación libres del costado derecho y del separador[cite: 16]. Luego desde abajo ajuste el piso B por medio de 6 tornillos Allen de 5 cm a las piezas nombradas[cite: 16].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Separador E", "Tapa A", "Fondo M", "Piso B"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Tornillos Allen de 5 cm"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4 Armado de cajon: Coloque 2 tarugos 6x30 en el fondo de cajón I, 2 mas en cada uno de los costados de cajón G a su vez encastrar las cajas mini fix[cite: 16]. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 16].",
+      "piezas": ["Fondo cajón I", "Costado cajón x 2 G"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5 armado de cajon: En el frente de cajón atornille dos pernos mini fix en las perforación que indica la figura para que sea derecho[cite: 16]. Si lo requiere izquierdo atornille los pernos en la perforación adyacente[cite: 16].",
+      "piezas": ["Frente cajón H"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Una vez armada la estructura tipo \"U\" entre G-I-G, agregue adhesivo en los tarugos y haga coincidir las cajas para minifix de los costados con los pernos mini fix del frente de cajón H, ajuste las piezas girando media vuelta en sentido horario las cajas mini fix y el fondo con los costados mediante 2 tornillos de 4 cm[cite: 16].",
+      "piezas": ["Costado cajón x 2 G", "Fondo cajón I", "Frente cajón H"],
+      "herrajes_usados": ["Envase de cola", "Pernos mini fix con caja", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Finalmente ingrese el piso de cajón en el canal del frente de cajón y clávelo desde abajo a los costados y el fondo[cite: 16]. Atornille las guías metálicas sobre los cantos inferiores de los costados de cajón G, mediante 4 tornillos de 2 cm[cite: 16].",
+      "piezas": ["- Piso cajón", "Frente cajón H", "Costado cajón x 2 G", "Fondo cajón I"],
+      "herrajes_usados": ["Set de Clavos", "Par de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: Prepare los Refuerzos de patas L, colocando a presión 4 tarugos guías 6x30 y dos cajas minifix, como así también las patas N-O atornillando un minifix por cada una[cite: 16]. Una las tres piezas introduciendo los pernos minifix de las patas en las perforaciones con caja minifix de los refuerzos de patas utilizando los tarugos como guía, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix[cite: 16].",
+      "piezas": ["Refuerzo de patas x 2 L", "Pata izquierda x 2 N", "Pata derecha x 2 O"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: Encastre las patas macizas NO, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas K[cite: 16]. A su vez coloque a presión dos tarugos guías 6x30[cite: 16]. Repetir el proceso para el otro juego de patas y base de patas[cite: 16].",
+      "piezas": ["Pata izquierda x 2 N", "Pata derecha x 2 O", "Base de patas x 2 K"],
+      "herrajes_usados": ["Tornillos Allen de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Una vez armado las bases de patas K con las patas macizas, ajuste estas hacia el piso B, a través de los 8 tornillos de 2,5 cm y utilizando como guía las perforaciones del piso donde van los tarugos 6x30 colocados en las bases (los cuales solo sirven de guía no golpear!)[cite: 16].",
+      "piezas": ["Base de patas x 2 K", "Pata izquierda x 2 N", "Pata derecha x 2 O", "Piso B"],
+      "herrajes_usados": ["Tornillos de 2,5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Finalmente ingrese los cajones haciendo coincidir las guías que se encuentran en el costado derecho D y el separador E con las de los cajones, como muestra la figura[cite: 16].",
+      "piezas": ["Frente cajón H", "Costado derecho D", "Separador E"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 16].",
+      "piezas": ["Frente cajón H"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm"],
+      "consejo_pro": "Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 16]."
+    }
+  ]
+}

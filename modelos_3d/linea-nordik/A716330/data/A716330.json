@@ -1,0 +1,127 @@
+{
+  "producto": {
+    "id": "716330",
+    "nombre": "Cómoda EIRA línea Nordik de seis cajones"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen o phillips de 5 cm", "cantidad": 20 },
+    { "item": "Tornillos de 2,5 cm", "cantidad": 6 },
+    { "item": "Corner", "cantidad": 4 },
+    { "item": "Pares de guías metálicas de 35 cm", "cantidad": 6 },
+    { "item": "Tornillos varianta", "cantidad": 24 },
+    { "item": "Tornillos de 1,5 cm", "cantidad": 8 },
+    { "item": "Tornillos de 4 cm", "cantidad": 21 },
+    { "item": "Pernos mini fix con caja", "cantidad": 14 },
+    { "item": "Tarugos 6x30", "cantidad": 50 },
+    { "item": "Tornillos de 2 cm", "cantidad": 20 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "117 x 43" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "120 x 44,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "44,5 x 66,3" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "44,5 x 66,3" },
+      { "letra": "E", "item": "Faja fondo", "cantidad": 1, "medidas": "117 x 6" },
+      { "letra": "F", "item": "Base de patas", "cantidad": 1, "medidas": "110 x 39,5" },
+      { "letra": "-", "item": "Zócalo frente", "cantidad": 2, "medidas": "95,5 x 8" },
+      { "letra": "-", "item": "Zócalo lateral", "cantidad": 2, "medidas": "32 x 8" },
+      { "letra": "-", "item": "Faja unión", "cantidad": 2, "medidas": "57,7 x 6" },
+      { "letra": "O", "item": "Frente cajón izquierdo", "cantidad": 3, "medidas": "59,8 x 21,9" },
+      { "letra": "P", "item": "Frente cajón derecho", "cantidad": 3, "medidas": "59,8 x 21,9" },
+      { "letra": "-", "item": "Fondo de mueble", "cantidad": 2, "medidas": "119,5 x 32,5" },
+      { "letra": "-", "item": "Patas", "cantidad": 5, "medidas": "19 x 7,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 6, "medidas": "55 x 37,8" },
+      { "letra": "G", "item": "Separador", "cantidad": 1, "medidas": "63,3 x 44,5" },
+      { "letra": "M", "item": "Costado cajón", "cantidad": 12, "medidas": "40 x 14" },
+      { "letra": "N", "item": "Fondo cajón", "cantidad": 6, "medidas": "52 x 14" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando 3 guías metálica fijas derechas mediante los tornillos varianta[cite: 18]. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico[cite: 18]. En el separador G, coloque a presión dos cajas mini fix; en la cara izquierda atornille 3 guías metálicas fijas derechas mediante los tornillos varianta y en la cara derecha las guías metálicas fijas izquierdas, verificando que los tornillos variantas no ingresen en la misma perforación[cite: 18]. En la tapa A atornille 2 pernos mini fix[cite: 18].",
+      "piezas": ["Costado derecho D", "Costado izquierdo C", "Separador G", "Tapa A"],
+      "herrajes_usados": ["Pares de guías metálicas de 35 cm", "Tornillos varianta", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En las fajas unión coloque a presión 4 tarugos guías de 6x30, y por medio de los tornillos de 1,5 cm fije 2 escuadras metálicas (corner), quedando estas en línea con el borde[cite: 18]. En la faja fondo E coloque 4 tarugos guías de 6x30[cite: 18].",
+      "piezas": ["- Faja unión", "Faja fondo E"],
+      "herrajes_usados": ["Tarugos 6x30", "Tornillos de 1,5 cm", "Corner"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas F[cite: 18]. A su vez coloque a presión dos tarugos guías 6x30[cite: 18].",
+      "piezas": ["- Patas", "Base de patas F"],
+      "herrajes_usados": ["Tornillos Allen o phillips de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Luego y mediante los tornillos de 4 cm, vincule las fajas laterales (zócalos laterales) hacia las fajas frentes (zócalos frente), para finalmente unir estas hacia las patas Macizas, tal como lo indica la figura[cite: 18].",
+      "piezas": ["- Zócalo lateral", "- Zócalo frente", "- Patas"],
+      "herrajes_usados": ["Tornillos de 4 cm"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Desde arriba una la tapa A al separador G haciendo coincidir los pernos mini fix del primero con las perforaciones de las cajas mini fix del segundo usando como guía los tarugos del separador, luego ajuste las piezas girando las cajas mini fix 180° en sentido horario[cite: 18]. Luego haga coincidir los tarugos de las fajas unión y fíjelas al separador por medio de 2 tornillos de 1,5 cm a través de las escuadras[cite: 18]. Seguidamente una la tapa A a los costados C - D, por medio de 4 tornillos Allen de 5, previamente haga coincidir los tarugos de la faja fondo E y de las fajas unión con las perforaciones de los costados, y fije estas últimas por medio de 2 tornillos de 1,5 cm a través de las escuadras[cite: 18].",
+      "piezas": ["Tapa A", "Separador G", "- Faja unión", "Costado izquierdo C", "Costado derecho D", "Faja fondo E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Tornillos de 1,5 cm", "Tornillos Allen o phillips de 5 cm"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Una el piso B con los costados C - D y el separador G mediante 6 tornillos Allen de 5 cm, verificando que el canto melamínico quede hacia el frente y las perforaciones del piso que sirven como guía queden hacia abajo[cite: 18]. Desde atrás y por medio de un tornillo de 4 cm una la faja fondo E con la tapa A[cite: 18]. Clave los fondos de mueble, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble[cite: 18]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble (1 Vértice B - C, 2 Vértice B - D, 3 Mitad de C, 4 Mitad de D) y repita el procedimiento con el fondo restante[cite: 18].",
+      "piezas": ["Piso B", "Costado izquierdo C", "Costado derecho D", "Separador G", "Faja fondo E", "Tapa A", "- Fondo de mueble"],
+      "herrajes_usados": ["Tornillos Allen o phillips de 5 cm", "Tornillos de 4 cm", "Set de Clavos"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 armado de cajones: Los 6 cajones se arman de igual manera, en este ejemplo armamos el cajón con frente derecho[cite: 18]. Coloque 2 tarugos 6 x 30 en el fondo de cajón N, 2 más en cada uno de los costados de cajón M a su vez encastrar las cajas mini fix[cite: 18]. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 18].",
+      "piezas": ["Fondo cajón N", "Costado cajón M"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8 armado de cajones: En el frente de cajón derecho P (u O para el izquierdo) atornillar dos pernos mini fix[cite: 18].",
+      "piezas": ["Frente cajón derecho P", "Frente cajón izquierdo O"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9 armado de cajones: Una vez armada la estructura tipo 'U' entre M-N-M, ingrese el frente de cajón derecho P (u O) y ajuste los pernos mini fix girando 180 grados las cajas mini fix, habiendo agregado el adhesivo anteriormente[cite: 18]. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm[cite: 18].",
+      "piezas": ["Costado cajón M", "Fondo cajón N", "Frente cajón derecho P", "Frente cajón izquierdo O"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10 armado de cajones: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo[cite: 18]. Atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm[cite: 18].",
+      "piezas": ["- Piso cajón", "Frente cajón derecho P", "Frente cajón izquierdo O", "Costado cajón M", "Fondo cajón N"],
+      "herrajes_usados": ["Set de Clavos", "Pares de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Una vez armada la base de patas F ajuste esta hacia el piso B, a través de los 6 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30. LOS TARUGOS SOLO SIRVEN DE GUÍA NO GOLPEARLOS[cite: 18]. Finalmente coloque los cajones ya armados sobre las guías fijas ya colocadas en los costados C - D y el separador G según la posición que indica el frente[cite: 18].",
+      "piezas": ["Base de patas F", "Piso B", "Costado izquierdo C", "Costado derecho D", "Separador G", "Frente cajón izquierdo O", "Frente cajón derecho P"],
+      "herrajes_usados": ["Tornillos de 2,5 cm", "Tarugos 6x30", "Pares de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12 Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 18].",
+      "piezas": ["Frente cajón izquierdo O", "Frente cajón derecho P"],
+      "herrajes_usados": ["Pares de guías metálicas de 35 cm"],
+      "consejo_pro": "Desplazamiento inicial: Al insertar los cajones por primera vez, verifique que las ruedas de la guía móvil calcen correctamente sobre la pista de la guía fija en el mueble para evitar atascos[cite: 18]."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+=== STDOUT ===
+
+=== STDERR ===
+fatal: unable to read 2ad03250e773fc32bfdbf7fa4a2e910a6f712da6
+fatal: the remote end hung up unexpectedly
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/infomueblesgacela/muebles-gacela-mvp.git'
+
+=== EXIT CODE ===
+1

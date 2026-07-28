@@ -1,0 +1,100 @@
+{
+  "producto": {
+    "id": "A008285",
+    "nombre": "Mesa de Luz con cajón y faja inclinada"
+  },
+  "metadata": {
+    "dificultad": "Baja",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Pernos mini fix con cajas", "cantidad": 6 },
+    { "item": "Guías metálicas de 30 cm", "cantidad": 1 },
+    { "item": "Bases plásticas", "cantidad": 4 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 14 },
+    { "item": "Tornillos Phillips 5 cm", "cantidad": 4 },
+    { "item": "Tornillos de 4 cm", "cantidad": 2 },
+    { "item": "Tornillos de 2 cm", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      {"letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "40 x 35"},
+      {"letra": "B", "item": "Piso", "cantidad": 1, "medidas": "36,8 x 33,2"},
+      {"letra": "D", "item": "Costado izquierdo", "cantidad": 1, "medidas": "60 x 35"},
+      {"letra": "E", "item": "Costado derecho", "cantidad": 1, "medidas": "60 x 35"},
+      {"letra": "J", "item": "Frente cajón", "cantidad": 1, "medidas": "36,4 x 16"},
+      {"letra": "L", "item": "Costados de cajón", "cantidad": 2, "medidas": "30 x 10"},
+      {"letra": "M", "item": "Fondo cajón", "cantidad": 1, "medidas": "31 x 30"},
+      {"letra": "S/L", "item": "Faja", "cantidad": 1, "medidas": "36,8 x 6"},
+      {"letra": "S/L", "item": "Zócalo", "cantidad": 1, "medidas": "36,8 x 6"},
+      {"letra": "S/L", "item": "Fondo de mueble", "cantidad": 1, "medidas": "59,5 x 39,5"}
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Prepará los costados (D y E). Colocá a presión 2 cajas mini fix en cada uno. Fijá las guías metálicas con tornillos varianta y clavá 2 bases plásticas en la base de cada costado. En tapa (A), atornillá 4 pernos mini fix. En faja y zócalo, insertá 4 tarugos 6x30 en los extremos.",
+      "piezas": ["Costado D", "Costado E", "Tapa A", "Faja", "Zócalo"],
+      "herrajes_usados": ["Cajas mini fix", "Guías metálicas", "Tornillos varianta", "Bases plásticas", "Pernos mini fix", "Tarugos 6x30"],
+      "consejo_pro": "La simetría es clave aquí, recordá que D y E son imágenes especulares."
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Uní el piso (B) con los costados (D y E) usando 4 tornillos Phillips de 5 cm. Hacé coincidir los tarugos de faja y zócalo con las perforaciones de los costados.",
+      "piezas": ["Piso B", "Costado D", "Costado E"],
+      "herrajes_usados": ["Tornillos Phillips 5 cm"],
+      "consejo_pro": "Verificá la escuadra antes de apretar."
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Encajá la tapa (A) en los costados haciendo coincidir los pernos mini fix con las cajas. Ajustá girando 180° en sentido horario.",
+      "piezas": ["Tapa A", "Costado D", "Costado E"],
+      "herrajes_usados": ["Pernos mini fix", "Cajas mini fix"],
+      "consejo_pro": "Asegurate de que las flechas de las cajas apunten hacia el perno antes de insertar."
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Armado de cajón: Poné 2 tarugos 6x30 en fondo (M) y 2 en cada costado (L). Aplicá cola en las perforaciones. Colocá 2 mini fix en frente (J).",
+      "piezas": ["Fondo cajón M", "Costado cajón L", "Frente cajón J"],
+      "herrajes_usados": ["Tarugos 6x30", "Envase de cola", "Pernos mini fix"],
+      "consejo_pro": "Limpiá el excedente de cola inmediatamente para evitar manchas."
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Armá la estructura en 'U' entre L-M-L e ingresá el frente (J). Ajustá los pernos mini fix (180°). Fijá fondo y costados con 2 tornillos de 4 cm.",
+      "piezas": ["Costado cajón L", "Fondo cajón M", "Frente cajón J"],
+      "herrajes_usados": ["Pernos mini fix", "Cajas mini fix", "Tornillos 4 cm"],
+      "consejo_pro": "El adhesivo aplicado en el paso anterior debe estar fraguando, asegurate de que la estructura esté a escuadra."
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Clavá el piso de cajón en el frente (J). Atornillá las guías metálicas al cajón con 4 tornillos de 2 cm.",
+      "piezas": ["Piso cajón", "Frente cajón J"],
+      "herrajes_usados": ["Set de clavos", "Guías metálicas", "Tornillos 2 cm"],
+      "consejo_pro": "Asegurate que las guías queden al ras del filo inferior."
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Clavá el fondo del mueble, respetando el orden de vértices (A-E, A-D, B-E, B-D) para asegurar la escuadra. Distribuí los clavos cada 15 cm.",
+      "piezas": ["Fondo mueble"],
+      "herrajes_usados": ["Set de clavos"],
+      "consejo_pro": "La distancia de 15 cm entre clavos es vital para que el mueble no se 'desescuadre' con el tiempo."
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Finalmente, ingresá el cajón en las guías metálicas del mueble.",
+      "piezas": ["Cajón armado", "Mueble"],
+      "herrajes_usados": [],
+      "consejo_pro": "Si el cajón traba, revisá que las guías fijas no tengan restos de viruta."
+    }
+  ]
+}

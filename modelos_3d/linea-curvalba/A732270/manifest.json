@@ -1,0 +1,46 @@
+{
+  "files_3d": [
+    "A732270-Faja_frente.glb",
+    "A732270-Fondo_mueble.glb",
+    "A732270-Piso_cajon.glb",
+    "A732270-Zocalo.glb",
+    "A732270-a-tapa.glb",
+    "A732270-b-piso.glb",
+    "A732270-c-costado_izquierdo.glb",
+    "A732270-d-costado_derecho.glb",
+    "A732270-g-frente_cajon.glb",
+    "A732270-j-costado_cajon.glb",
+    "A732270-k-fondo_cajon.glb"
+  ],
+  "files_pasos": [
+    "A732270-unboxing.png",
+    "guia-derecha.webp",
+    "guia-izquierda.webp",
+    "instructivo-caja-minifix.webp",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png",
+    "paso_07.png",
+    "paso_8.webp"
+  ],
+  "files_herrajes": [
+    "base-plastica.webp",
+    "clavos.webp",
+    "cola.webp",
+    "guias-metalicas.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-6-30.webp",
+    "tornillo-2.webp",
+    "tornillo-40.webp",
+    "tornillo-varianta.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

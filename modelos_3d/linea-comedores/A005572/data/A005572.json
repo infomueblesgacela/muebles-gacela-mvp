@@ -1,0 +1,66 @@
+{
+  "producto": {
+    "id": "557-2",
+    "nombre": "Mesa de comedor con patas macizas 160 x 80 cm - LINEA TOKIO"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4 mm"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos Allen de 7 x 50", "cantidad": 16 },
+    { "item": "Tarugos 6x30", "cantidad": 36 },
+    { "item": "Tornillos de 3.5x30", "cantidad": 10 },
+    { "item": "Tornillos de 4x40", "cantidad": 19 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "160 x 80" },
+      { "letra": "B", "item": "Base de patas", "cantidad": 1, "medidas": "S/M" },
+      { "letra": "C", "item": "Faja grande", "cantidad": 2, "medidas": "S/M" },
+      { "letra": "D", "item": "Faja chica", "cantidad": 2, "medidas": "S/M" },
+      { "letra": "-", "item": "Refuerzo largo", "cantidad": 3, "medidas": "S/M" },
+      { "letra": "-", "item": "Refuerzos", "cantidad": 4, "medidas": "S/M" },
+      { "letra": "-", "item": "Patas", "cantidad": 4, "medidas": "S/M" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare las fajas largas C, y las fajas cortas D, colocando a presión en el filo superior 4 tarugos 6x30 en las primeras y 4 mas en las segundas. En los 3 refuerzos largos coloque a presión 6 tarugos 6x30.",
+      "piezas": ["Faja grande C", "Faja chica D", "Refuerzo largo"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen 7x70 hacia la base de las patas B. Seguidamente encastre los tarugos de los refuerzos en las fajas cortas C y luego los tarugos de las fajas C-D y del refuerzo largo en la base de patas.",
+      "piezas": ["Patas", "Base de patas B", "Refuerzos", "Faja grande C", "Faja chica D", "Refuerzo largo"],
+      "herrajes_usados": ["Tornillos Allen", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Unir las fajas C-D a los refuerzos por medio de los tornillos Allen 7x50. Teniendo en cuenta que tienen un pequeño desfasaje entre las perforaciones de las primeras con las del refuerzo, introduzca primero los 2 tornillos por refuerzo y luego ajuste, este desfasaje es para un mejor aferre de pata.",
+      "piezas": ["Faja grande C", "Faja chica D", "Refuerzos"],
+      "herrajes_usados": ["Tornillos Allen de 7 x 50"],
+      "consejo_pro": "Teniendo en cuenta que tienen un pequeño desfasaje entre las perforaciones de las primeras con las del refuerzo, introduzca primero los 2 tornillos por refuerzo y luego ajuste, este desfasaje es para un mejor aferre de pata."
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4: Ajustar las fajas C-D y los refuerzos largos a la base de patas B por medio de 19 tornillos 4x40. Luego introducir 2 tarugos guías en la base de patas en las perforaciones que muestra la figura.",
+      "piezas": ["Faja grande C", "Faja chica D", "Refuerzo largo", "Base de patas B"],
+      "herrajes_usados": ["Tornillos de 4x40", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Luego una la base de patas B con la tapa A, a través de 10 tornillos Philips de 3,5x30 y utilizando como guía los dos tarugos 6 x 30.",
+      "piezas": ["Base de patas B", "Tapa A"],
+      "herrajes_usados": ["Tornillos de 3.5x30", "Tarugos 6x30"]
+    }
+  ]
+}

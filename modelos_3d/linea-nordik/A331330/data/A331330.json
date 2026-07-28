@@ -1,0 +1,116 @@
+{
+  "producto": {
+    "id": "331330",
+    "nombre": "Mesa de centro LYS línea Nordik de un cajón"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos de 2,5 cm", "cantidad": 4 },
+    { "item": "Tornillos Allen o phillips de 5 cm", "cantidad": 16 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Par de guías metálicas de 35 cm", "cantidad": 1 },
+    { "item": "Pernos mini fix con caja", "cantidad": 3 },
+    { "item": "Tornillos de 4 cm", "cantidad": 13 },
+    { "item": "Tarugos 6x30", "cantidad": 17 },
+    { "item": "Tornillos de 2 cm", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "87 x 43" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "90 x 44,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "44,5 x 24" },
+      { "letra": "O", "item": "Frente cajón", "cantidad": 1, "medidas": "90 x 24" },
+      { "letra": "M", "item": "Costado cajón", "cantidad": 2, "medidas": "40 x 10" },
+      { "letra": "N", "item": "Fondo cajón", "cantidad": 1, "medidas": "81,4 x 10" },
+      { "letra": "-", "item": "Refuerzo cajón", "cantidad": 1, "medidas": "37,4 x 6" },
+      { "letra": "-", "item": "Patas", "cantidad": 4, "medidas": "19 x 7,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 1, "medidas": "84,2 x 37,8" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "44,5 x 24" },
+      { "letra": "E", "item": "Fondo", "cantidad": 1, "medidas": "87 x 24" },
+      { "letra": "F", "item": "Base de patas", "cantidad": 1, "medidas": "80 x 39,5" },
+      { "letra": "-", "item": "Zócalo frente", "cantidad": 2, "medidas": "65,5 x 8" },
+      { "letra": "-", "item": "Zócalo lateral", "cantidad": 2, "medidas": "32 x 8" },
+      { "letra": "-", "item": "Faja refuerzo", "cantidad": 1, "medidas": "87 x 6" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando la guía metálica fija derecha mediante los tornillos varianta. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico. En el fondo E coloque 4 tarugos guías de 6x30 y en la faja refuerzo 5, ocupando todas las perforaciones en cantos.",
+      "piezas": ["Costado derecho D", "Costado izquierdo C", "Fondo E", "- Faja refuerzo"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm", "Tornillos varianta", "Tarugos 6x30"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Una la tapa A a los costados C - D, por medio de 4 tornillos Allen de 5, previamente haga coincidir los tarugos del fondo E y de la faja refuerzo, con las perforaciones de los costados y de la tapa. Una el piso B desde abajo ajustando con 4 tornillos Allen de 5 cm a los costados.",
+      "piezas": ["Tapa A", "Costado izquierdo C", "Costado derecho D", "Fondo E", "- Faja refuerzo", "Piso B"],
+      "herrajes_usados": ["Tornillos Allen o phillips de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: armado de cajón: Coloque 2 tarugos 6x30 en el fondo de cajón N, 2 mas en cada uno de los costados de cajón M a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo.",
+      "piezas": ["Fondo cajón N", "Costado cajón x 2 M"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4 armado de cajón: En el frente de cajón O atornillar tres pernos mini fix.",
+      "piezas": ["Frente cajón O"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5 armado de cajón: Una vez armada la estructura tipo \"U\" entre M-N-M, ingrese el frente de cajón O ajuste los pernos mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm.",
+      "piezas": ["Costado cajón x 2 M", "Fondo cajón N", "Frente cajón O"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6 armado de cajón: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón O, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados and del fondo. Atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm.",
+      "piezas": ["- Piso cajón", "Frente cajón O", "Costado cajón x 2 M", "Fondo cajón N"],
+      "herrajes_usados": ["Set de Clavos", "Par de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 armado de cajón: Haga coincidir la perforación lateral del refuerzo de cajón con el perno mini fix colocado en el frente de cajón E, ajuste las piezas girando la caja mini fix media vuelta en sentido horario. Finalmente ajuste el refuerzo al fondo de cajón G mediante un tornillo de 4 cm.",
+      "piezas": ["- Refuerzo cajón", "Frente cajón O", "Fondo cajón N"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas F. A su vez coloque a presión dos tarugos guías 6x30.",
+      "piezas": ["- Patas", "Base de patas F"],
+      "herrajes_usados": ["Tornillos Allen o phillips de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: Luego y mediante los tornillos de 4 cm, vincule las fajas laterales hacia las fajas frentes, para finalmente unir estas hacia las patas Macizas, tal como lo indica la figura.",
+      "piezas": ["- Zócalo lateral", "- Zócalo frente", "- Patas"],
+      "herrajes_usados": ["Tornillos de 4 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: A través de los 2 tornillos de 4 cm, una el fondo E con el piso B y con la tapa A. Una vez armado la base de patas F ajuste este hacia el piso B, a través de los 4 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30. LOS TARUGOS SOLO SIRVEN DE GUIA NO GOLPEARLOS. Finalmente coloque el cajón ya armado sobre las guías fijas ya colocadas en los costados.",
+      "piezas": ["Fondo E", "Piso B", "Tapa A", "Base de patas F", "Frente cajón O"],
+      "herrajes_usados": ["Tornillos de 4 cm", "Tornillos de 2,5 cm", "Tarugos 6x30", "Par de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen.",
+      "piezas": ["Frente cajón O"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm"]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Producto: art-320-13-placard-specula | Color: Carvalho -> Falta: Manual PDF
+Producto: art-708-15-placard-serena | Color: Carvalho -> Falta: Manual PDF
+Producto: art-710150-botinero-arca | Color: Unico/Default -> Falta: Foto Principal (Escena sin Abierto)
+Producto: art-320-13-placard-specula | Color: Unico/Default -> Falta: Foto Principal (Escena sin Abierto), Foto de Medidas
+Producto: art-427330-mesa-bris-120x80 | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-427331-mesa-runar-160x80 | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-428330-mesa-solvik-80x80 | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-331250-mesa-de-centro-nara | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-334250-escritorio-nikko | Color: Unico/Default -> Falta: Foto Principal (Escena sin Abierto)
+Producto: art-446250-rack-fukuoka | Color: Unico/Default -> Falta: Foto Principal (Escena sin Abierto)
+Producto: art-331300-mesa-de-centro-lumi | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-405300-bahiut-fusake | Color: Carvalho -> Falta: Manual PDF
+Producto: art-716300-comoda-arna | Color: Carvalho -> Falta: Manual PDF
+Producto: art-732300-mesa-de-luz-foss | Color: Unico/Default -> Falta: Manual PDF
+Producto: art446300-rack-dram | Color: Carvalho -> Falta: Manual PDF
+Producto: art-234094-escritorio-hamar | Color: Unico/Default -> Falta: Foto Principal (Escena sin Abierto)
+Producto: art-331330-mesa-de-centro-lys | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-334330-escritorio-tra | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-353330-repisa-linje | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-372020-set-de-mesas-oval-lund | Color: Unico/Default -> Falta: Foto Principal (Escena sin Abierto)
+Producto: art-446330-rack-norden | Color: Natural -> Falta: Manual PDF
+Producto: art-716330-comoda-eira | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-742334-placard-klar | Color: Unico/Default -> Falta: Manual PDF
+Producto: art-742336-placard-strand | Color: Unico/Default -> Falta: Manual PDF

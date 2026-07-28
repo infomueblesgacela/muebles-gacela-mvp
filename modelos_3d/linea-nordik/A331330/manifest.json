@@ -1,0 +1,54 @@
+{
+  "files_3d": [
+    "A331330-COSTADOSCA001.glb",
+    "A331330-Faja_refuerzo.glb",
+    "A331330-Pata.glb",
+    "A331330-Piso_cajon.glb",
+    "A331330-Refuerzo_cajon.glb",
+    "A331330-Zocalo_frente.glb",
+    "A331330-Zocalo_lateral.glb",
+    "A331330-a-tapa.glb",
+    "A331330-b-piso.glb",
+    "A331330-c-costado_izquierdo.glb",
+    "A331330-d-costado_derecho.glb",
+    "A331330-e-fondo.glb",
+    "A331330-f-base_de_patas.glb",
+    "A331330-m-costado_cajon.glb",
+    "A331330-n-fondo_cajon.glb",
+    "A331330-o-frente_cajon.glb"
+  ],
+  "files_pasos": [
+    "A331330-unboxing.png",
+    "guia-derecha.webp",
+    "guia-izquierda.webp",
+    "instructivo-caja-minifix.webp",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png",
+    "paso_07.png",
+    "paso_08.png",
+    "paso_09.png",
+    "paso_10.png",
+    "paso_11.webp"
+  ],
+  "files_herrajes": [
+    "clavos.webp",
+    "cola.webp",
+    "guias-metalicas.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-6-30.webp",
+    "tornillo-2-5.webp",
+    "tornillo-2.webp",
+    "tornillo-40.webp",
+    "tornillo-varianta.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "producto": {
+    "id": "353250",
+    "nombre": "Torre línea Wall con una puerta ripiada y patas escandinavas"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 15 cazoleta 26", "cantidad": 2 },
+    { "item": "Tornillos Allen o Phillips de 5 cm", "cantidad": 12 },
+    { "item": "Pernos mini fix con caja", "cantidad": 6 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 4 },
+    { "item": "Soportes de estantes", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 6 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 8 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "39 x 29,5" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "39 x 29,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "109,5 x 29,5" },
+      { "letra": "H", "item": "Base patas", "cantidad": 1, "medidas": "34 x 29" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "38,6 x 38,6" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 4, "medidas": "12 x 7,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "109,5 x 29,5" },
+      { "letra": "E", "item": "Estante fijo", "cantidad": 1, "medidas": "36 x 27,5" },
+      { "letra": "F", "item": "Estante móvil", "cantidad": 1, "medidas": "36 x 27,5" },
+      { "letra": "G", "item": "Puerta", "cantidad": 1, "medidas": "37,6 x 35,3" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando 2 bases de bisagra mediante los tornillos de 1,5 cm, atornille un perno mini fix, a presión coloque 2 soporte de estantes y 2 caja mini fix[cite: 17]. Realice el mismo procedimiento para el costado izquierdo C, pero sin las bases de bisagras[cite: 17]. De esta manera queda una puerta derecha, si quiere que sea izquierda coloque las bisagras en el costado izquierdo y no en el derecho[cite: 17].",
+      "piezas": ["Costado derecho D", "Costado izquierdo C"],
+      "herrajes_usados": ["Tornillos de 1.5 cm", "Pernos mini fix con caja", "Soportes de estantes"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En el estante fijo E coloque a presión 2 cajas mini fix y 4 tarugos 6x30 en los filos[cite: 17].",
+      "piezas": ["Estante fijo E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En las puerta G coloque 2 bisagra mediante los tornillos de 1.5. En la tapa A atornille 4 pernos mini fix[cite: 17].",
+      "piezas": ["Puerta G", "Tapa A"],
+      "herrajes_usados": ["Bisagras codo 15 cazoleta 26", "Tornillos de 1.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Haga encastrar los pernos mini fix que se encuentran en los costados C-D con las perforaciones de las cajas mini fix estante fijo E usando como guía los tarugos guías, y luego para ajustar las piezas gire las caja mini fix media vuelta en sentido horario[cite: 17]. De igual manera encastre los pernos mini fix que se encuentran en la tapa A con las perforaciones superiores de los costados, luego ajuste las piezas[cite: 17]. Desde abajo ajuste el piso B mediante 4 tornillos Allen de 5 cm[cite: 17].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Estante fijo E", "Tapa A", "Piso B"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Tornillos Allen o Phillips de 5 cm"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Encastre las patas macizas, para luego ajustarla desde arriba con la base de patas H, por medio de los tornillos Allen de 5 cm[cite: 17]. A su vez coloque a presión dos tarugos guías 6x30[cite: 17].",
+      "piezas": ["- Patas macizas", "Base patas H"],
+      "herrajes_usados": ["Tornillos Allen o Phillips de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Clave los fondos de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble[cite: 17]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble (1 vértice B-C, 2 vértice B-D, 3 vértice D-E, 4 vértice C-E)[cite: 17]. Una vez armado la base de patas H con las patas macizas, ajuste este hacia el piso B, a través de los 4 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30, los cuales solo cumplen la función de guía (no golpear)[cite: 17].",
+      "piezas": ["- Fondo mueble", "Piso B", "Costado izquierdo C", "Costado derecho D", "Estante fijo E", "Base patas H", "- Patas macizas"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos de 2.5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Coloque la puerta G en las bases de bisagras colocadas en el costado derecho D, Utilizando como guía las indicaciones de 'Colocación de bisagra' y 'Regulación de bisagra'[cite: 17]. Finalmente deslice el estante móvil F sobre los soportes previamente colocados en los costados C-D haciéndolo llegar hasta el fondo[cite: 17].",
+      "piezas": ["Puerta G", "Costado derecho D", "Estante móvil F", "Costado izquierdo C"],
+      "herrajes_usados": ["Bisagras codo 15 cazoleta 26", "Soportes de estantes"],
+      "consejo_pro": "Colocación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido[cite: 17]. Luego ingrese la bisagra en la base de bisagra haciendo coincidir el tornillo de regulación lateral con la ranura en U de la base, y finalmente ajuste el tornillo de regulación de profundidad[cite: 17]."
+    }
+  ]
+}

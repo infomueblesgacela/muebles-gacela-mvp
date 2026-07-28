@@ -1,0 +1,29 @@
+{
+  "files_3d": [
+    "A000557-B-base_de_patas.glb",
+    "A000557-PATA.glb",
+    "A000557-a-tapa.glb",
+    "A000557-c-faja_grande.glb",
+    "A000557-d-faja_chica.glb",
+    "A000557-refuerzos.glb"
+  ],
+  "files_pasos": [
+    "A000557-unboxing.png",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png"
+  ],
+  "files_herrajes": [
+    "tarugo-madera.webp",
+    "tornillo-3-5.webp",
+    "tornillo-40.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

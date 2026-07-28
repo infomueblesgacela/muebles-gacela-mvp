@@ -1,0 +1,59 @@
+{
+  "producto": {
+    "id": "429091",
+    "nombre": "Mesa de comedor redonda extensible de 120 a 160 cm"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 15,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "LLave allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos Allen 5 cm", "cantidad": 16 },
+    { "item": "Tarugos 3 cm", "cantidad": 16 },
+    { "item": "Tornillos de 4 cm", "cantidad": 8 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 2, "medidas": "Ø119 x 59,5" },
+      { "letra": "B", "item": "Base de patas", "cantidad": 1, "medidas": "100 x 80" },
+      { "letra": "C", "item": "Fajas", "cantidad": 4, "medidas": "63,3 x 8" },
+      { "letra": "E", "item": "Accesorio", "cantidad": 1, "medidas": "119 x 40" },
+      { "letra": "-", "item": "Refuerzos", "cantidad": 4, "medidas": "11 x 11" },
+      { "letra": "-", "item": "Patas", "cantidad": 4, "medidas": "73 x 10" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare las fajas C colocando a presión en el filo superior 4 tarugos de 3 cm.",
+      "piezas": ["Fajas C"],
+      "herrajes_usados": ["Tarugos 3 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas B. Seguidamente encastre los tarugos de las fajas C en la base de patas.",
+      "piezas": ["Patas", "Base de patas B", "Fajas C"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 3 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Unir las fajas C a los refuerzos por medio de los tornillos Allen de 5 cm. Teniendo en cuenta que tienen un pequeño desfasaje entre las perforaciones de las primeras con las del refuerzo, introduzca primero los 2 tornillos por refuerzo y luego ajuste, este desfasaje es para un mejor aferre de pata. Luego ajustar las fajas a la base de patas B por medio de 8 tornillos de 4 cm.",
+      "piezas": ["Fajas C", "Refuerzos", "Base de patas B"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tornillos de 4 cm"],
+      "consejo_pro": "Teniendo en cuenta que tienen un pequeño desfasaje entre las perforaciones de las primeras con las del refuerzo, introduzca primero los 2 tornillos por refuerzo y luego ajuste, este desfasaje es para un mejor aferre de pata."
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Finalmente conecte las tapas A a la base de patas B deslizando las guias de las primeras sobre las guias de la segunda. Si se usa el accesorio E hacer coincidir los tarugos de este sobre las perforaciones de las tapas, en caso de no usarse dejar en un espacio donde no se golpee.",
+      "piezas": ["Tapa A", "Base de patas B", "Accesorio E"],
+      "herrajes_usados": ["Tarugos 3 cm"]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "producto": {
+    "id": "742336",
+    "nombre": "Placard STRAND línea Nordik de cuatro cajónes y seis puertas"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 150,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 40 },
+    { "item": "Bisagras codo 9 cazoleta 26", "cantidad": 18 },
+    { "item": "Pernos mini fix con caja", "cantidad": 8 },
+    { "item": "Tornillos varianta", "cantidad": 16 },
+    { "item": "Pares de guías metálicas de 40 cm", "cantidad": 4 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 76 },
+    { "item": "Tornillos de 2 cm", "cantidad": 16 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 8 },
+    { "item": "Tornillos de 4 cm", "cantidad": 18 },
+    { "item": "Tarugos 6x30", "cantidad": 26 },
+    { "item": "Caños de 57 cm", "cantidad": 2 },
+    { "item": "Soporte de caños", "cantidad": 4 },
+    { "item": "Soporte de estantes", "cantidad": 8 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "179,2 x 44,5" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "179,2 x 44,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "156,5 x 44,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "156,5 x 44,5" },
+      { "letra": "E", "item": "Separador derecho", "cantidad": 1, "medidas": "156,5 x 44,5" },
+      { "letra": "Q", "item": "Separador izquierdo", "cantidad": 1, "medidas": "156,5 x 44,5" },
+      { "letra": "F", "item": "Estante fijo", "cantidad": 2, "medidas": "57,7 x 44,5" },
+      { "letra": "G", "item": "Estante móvil", "cantidad": 2, "medidas": "57,7 x 36" },
+      { "letra": "H", "item": "Estante fijo chico", "cantidad": 1, "medidas": "57,7 x 36" },
+      { "letra": "I", "item": "Base patas", "cantidad": 1, "medidas": "169,2 x 39,5" },
+      { "letra": "J", "item": "Puerta corta sin manija", "cantidad": 2, "medidas": "113 x 29,3" },
+      { "letra": "K", "item": "Puerta corta con manija", "cantidad": 2, "medidas": "113 x 29,3" },
+      { "letra": "O", "item": "Puerta larga sin manija", "cantidad": 1, "medidas": "157,7 x 29,3" },
+      { "letra": "P", "item": "Puerta larga con manija", "cantidad": 1, "medidas": "157,7 x 29,3" },
+      { "letra": "L", "item": "Frente cajón", "cantidad": 4, "medidas": "59 x 22" },
+      { "letra": "M", "item": "Costado cajón", "cantidad": 8, "medidas": "40 x 14" },
+      { "letra": "N", "item": "Fondo cajón", "cantidad": 4, "medidas": "52,2 x 14" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 3, "medidas": "159 x 59,2" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 6, "medidas": "19 x 7,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 4, "medidas": "55 x 37,8" },
+      { "letra": "-", "item": "Zócalo lateral", "cantidad": 2, "medidas": "32 x 8" },
+      { "letra": "-", "item": "Zócalo frente", "cantidad": 2, "medidas": "32 x 8" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando 3 bases de bisagra mediante los tornillos de 1,5 cm, también el soporte plástico de caño haciéndolo encastrar en la perforación central y luego ajustándolo mediante un tornillo de 1,5 cm, como lo muestra la figura y atornille las guías metálica fijas derechas mediante los tornillos varianta[cite: 19]. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico[cite: 19].",
+      "piezas": ["Costado derecho D", "Costado izquierdo C"],
+      "herrajes_usados": ["Tornillos de 1.5 cm", "Soporte de caños", "Pares de guías metálicas de 40 cm", "Tornillos varianta"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Prepare la cara derecha del separador derecho E, colocando 3 bases de bisagra mediante los tornillos 1,5 cm, también el soporte plástico de caño haciéndolo encastrar en la perforación central y luego ajustándolo mediante un tornillo 1,5, como lo muestra la figura y atornille las guías metálica fijas izquierdas mediante los tornillos varianta[cite: 19]. En la cara izquierda coloque 3 bases de bisagra mediante los tornillos 1,5 cm, también a presión 4 soportes de estantes[cite: 19]. Realice el mismo procedimiento en las caras del separador izquierdo Q, teniendo en cuenta que es simétrico[cite: 19].",
+      "piezas": ["Separador derecho E", "Separador izquierdo Q"],
+      "herrajes_usados": ["Tornillos de 1.5 cm", "Soporte de caños", "Pares de guías metálicas de 40 cm", "Tornillos varianta", "Soporte de estantes"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Tanto en las puertas cortas con y sin manija K y J respectivamente, como en las puertas largas con y sin manija P y O, coloque 3 bisagras mediante los tornillos de 1,5 cm[cite: 19].",
+      "piezas": ["Puerta corta con manija x 2 K", "Puerta corta sin manija x 2 J", "Puerta larga con manija P", "Puerta larga sin manija O"],
+      "herrajes_usados": ["Bisagras codo 9 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas I[cite: 19]. A su vez coloque a presión dos tarugos guías 6x30[cite: 19].",
+      "piezas": ["- Patas macizas", "Base patas I"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Luego y mediante los tornillos de 4 cm, vincule los zócalos laterales hacia los zócalos frentes, para finalmente unir estas hacia las patas Macizas, tal como lo indica la figura[cite: 19]. Con los mismos tornillos ajuste desde arriba los zócalos frentes a la base de patas[cite: 19].",
+      "piezas": ["- Zócalo lateral", "- Zócalo frente", "- Patas macizas", "Base patas I"],
+      "herrajes_usados": ["Tornillos de 4 cm"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6 Armado de cajones: Coloque 2 tarugos 6x30 en el fondo de cajón N, 2 más en cada uno de los costados de cajón M a su vez encastrar las cajas mini fix[cite: 19]. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 19].",
+      "piezas": ["Fondo cajón N", "Costado cajón M"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 armado de cajones: Atornille 2 minifix en el frente de cajón L[cite: 19].",
+      "piezas": ["Frente cajón L"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8 armado de cajones: Una vez armada la estructura tipo 'U' entre M-N-M, ingrese el frente de cajón L ajuste los pernos mini fix girando 180 grados las cajas mini fix[cite: 19]. Habiendo agregado el adhesivo anteriormente[cite: 19]. Luego ajuste el fondo y los costados mediante los dos tornillos de 4 cm[cite: 19].",
+      "piezas": ["Costado cajón M", "Fondo cajón N", "Frente cajón L"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9 armado de cajones: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón L, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo[cite: 19]. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos de 2 cm[cite: 19].",
+      "piezas": ["- Piso cajón", "Frente cajón L", "Costado cajón M", "Fondo cajón N"],
+      "herrajes_usados": ["Set de Clavos", "Pares de guías metálicas de 40 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Mediante los tornillos Allen de 5 cm, una un estante fijo F con el costado derecho D, y con el separador derecho E[cite: 19]. El estante fijo restante con el costado izquierdo C, y con el separador izquierdo Q[cite: 19]. Luego el estante fijo chico H con los separadores[cite: 19]. Desde arriba una la tapa A con los costados y con los separadores y luego desde abajo el piso B, teniendo en cuenta que las perforaciones de guía queden hacia abajo[cite: 19]. Verifique que los cantos melamínicos queden hacia el frente[cite: 19].",
+      "piezas": ["Estante fijo F", "Costado derecho D", "Separador derecho E", "Costado izquierdo C", "Separador izquierdo Q", "Estante fijo chico H", "Tapa A", "Piso B"],
+      "herrajes_usados": ["Tornillos Allen 5 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Primero, con el mueble acostado clave los fondos de mueble de 3 mm, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble[cite: 19]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble (1 vértice A-D, 2 vértice A-E, 3 vértice B-D, 4 vértice B-E y repetir para los fondos restantes)[cite: 19]. Segundo, una vez armada la base de patas I con las patas macizas, ajuste esta hacia el piso B, a través de los 8 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30, los cuales solo cumplen la función de guía (no golpear)[cite: 19]. Por último, una vez vertical y ya ubicado, deslice los estantes móviles G sobre los soportes de estantes colocados en el separador izquierdo Q y en el separador derecho E[cite: 19]. También coloque los caños sobre los soportes plásticos previamente colocados en los costados C-D y en los separadores Q-E[cite: 19].",
+      "piezas": ["- Fondo mueble x 3", "Tapa A", "Separador derecho E", "Piso B", "Separador izquierdo Q", "Base patas I", "- Patas macizas", "Estante móvil x 2 G", "Costado izquierdo C", "Costado derecho D", "2 Caños de 57 cm"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos de 2.5 cm", "Tarugos 6x30", "Soporte de estantes"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Finalmente coloque las puertas cortas con manija K en los costados C - D y las puertas cortas sin manija J en los separadores E - Q. Utilizando como guía las indicaciones de 'Regulación de bisagra'[cite: 19]. Si lo requiere puede intercambiar la posición de las mismas[cite: 19]. Coloque la puerta larga con manija P en el separador izquierdo Q y la puerta larga sin manija O en el separador derecho E[cite: 19]. Si lo requiere puede intercambiar la posición de las mismas[cite: 19].",
+      "piezas": ["Puerta corta con manija x 2 K", "Costado izquierdo C", "Costado derecho D", "Puerta corta sin manija x 2 J", "Separador derecho E", "Separador izquierdo Q", "Puerta larga con manija P", "Puerta larga sin manija O"],
+      "herrajes_usados": ["Bisagras codo 9 cazoleta 26"]
+    },
+    {
+      "nro": 13,
+      "instruccion_amigable": "Paso 13: Luego ingrese los cajones como indica la 'Colocación de cajones'[cite: 19].",
+      "piezas": ["Frente cajón L"],
+      "herrajes_usados": ["Pares de guías metálicas de 40 cm"],
+      "consejo_pro": "Verticalización segura: Con la ayuda de otra persona verticalice el mueble evitando cargar todo el peso sobre dos patas, dándole preferentemente la ubicación final en el hogar[cite: 19]."
+    }
+  ]
+}

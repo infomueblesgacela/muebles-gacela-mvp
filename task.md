@@ -1,0 +1,6 @@
+- [x] Comprimir y aplicar textura de Roble Carvalho (`Mel Avellana`) al modelo 3D GLB de la Cómoda Alba (`A008395.glb`) usando un script en Python con `pygltflib`.
+- [x] Copiar el modelo texturizado al directorio público para acceso del cliente.
+- [x] Integrar `<model-viewer>` en `index.html`.
+- [x] Agregar botón "Ver en mi espacio (AR)" en el detalle del producto (PDP) para la Cómoda Alba.
+- [x] Actualizar `ARLandingPage.tsx` para mostrar un visualizador 3D interactivo premium y lanzar la cámara de realidad aumentada para la Cómoda Alba, manteniendo el mock para otros productos pero sugiriendo probar el real.
+- [x] Subir y desplegar cambios en Vercel.

@@ -1,0 +1,37 @@
+{
+  "files_3d": [
+    "A334026-Pata_maciza_derecha.glb",
+    "A334026-Pata_maciza_izquierda.glb",
+    "A334026-a-tapa.glb",
+    "A334026-b-piso.glb",
+    "A334026-c-costado_izquierdo.glb",
+    "A334026-d-costado_derecho.glb",
+    "A334026-k-base_pata.glb",
+    "A334026-lrefuerzo_patas.glb",
+    "A334026-m-fondo.glb",
+    "A334026-n-frente.glb"
+  ],
+  "files_pasos": [
+    "A334026-unboxing.png",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png"
+  ],
+  "files_herrajes": [
+    "bisagra.webp",
+    "instructivo-caja-minifix.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-6-30.webp",
+    "tornillo-1-5.webp",
+    "tornillo-2-5.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

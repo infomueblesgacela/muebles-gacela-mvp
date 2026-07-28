@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Agent files
+.agent/
+.claude/
+.gemini/
+
+# Heavy Assets / Local documents
+documents/
+public/modelos_3d/
+plantilla_productos.csv
+gacela-muebles---furniture-store.zip
+
+.vercel
+
+# Raw backups and local Excel/CSV data sheets
+Backup/
+Comprimidas/
+Manuales/
+articulos-gacela-muebles-2026/
+*.xlsx
+*.csv
+resumen_deployment.json
+file_list.txt

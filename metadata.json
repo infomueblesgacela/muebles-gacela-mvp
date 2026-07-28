@@ -1,0 +1,7 @@
+{
+  "name": "Gacela Muebles - Furniture Store",
+  "description": "A modern and elegant e-commerce landing page for a high-end furniture store, showcasing featured collections, quality standards, and the latest news.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

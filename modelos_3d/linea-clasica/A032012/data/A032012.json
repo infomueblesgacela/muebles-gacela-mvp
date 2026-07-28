@@ -1,0 +1,198 @@
+{
+  "producto": {
+    "id": "320/12 y 320/22",
+    "nombre": "Placard con puertas de abrir, con colgante, estantes móviles y cajones"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 240,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Pernos mini fix con caja", "cantidad": 6 },
+    { "item": "Pares de guías metálicas de 40 cm", "cantidad": 3 },
+    { "item": "Soporte de estantes", "cantidad": 8 },
+    { "item": "Tarugos 6x30", "cantidad": 38 },
+    { "item": "Bases plásticas", "cantidad": 8 },
+    { "item": "Escuadras plásticas", "cantidad": 5 },
+    { "item": "Bisagras codo 9 cazoleta 26", "cantidad": 30 },
+    { "item": "Tornillos Phillips 5 cm", "cantidad": 32 },
+    { "item": "Tornillos varianta", "cantidad": 12 },
+    { "item": "Tornillos de 4 cm", "cantidad": 18 },
+    { "item": "Tornillos de 1,5 cm", "cantidad": 134 },
+    { "item": "Tornillos de 2 cm", "cantidad": 12 },
+    { "item": "Soporte de caños", "cantidad": 4 },
+    { "item": "Caños de 57,5 cm", "cantidad": 2 },
+    { "item": "Manijas cn tornillos de 3 cm", "cantidad": 15 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      {"letra": "A", "item": "Tapa arriba", "cantidad": 1, "medidas": "177 x 44,5"},
+      {"letra": "B", "item": "Pisos", "cantidad": 2, "medidas": "177 x 44,5"},
+      {"letra": "C", "item": "Costado arriba izquierdo", "cantidad": 1, "medidas": "118,5 x 44,5"},
+      {"letra": "D", "item": "Costado arriba derecho", "cantidad": 1, "medidas": "118,5 x 44,5"},
+      {"letra": "M", "item": "Costado abajo izquierdo", "cantidad": 1, "medidas": "90 x 44,5"},
+      {"letra": "N", "item": "Costado abajo derecho", "cantidad": 1, "medidas": "90 x 44,5"},
+      {"letra": "E", "item": "Separadores arriba", "cantidad": 2, "medidas": "105,5 x 44,5"},
+      {"letra": "Ñ", "item": "Separadores abajo", "cantidad": 2, "medidas": "71,3 x 44,5"},
+      {"letra": "G", "item": "Puertas arriba", "cantidad": 6, "medidas": "108 x 29,4"},
+      {"letra": "O", "item": "Puertas abajo", "cantidad": 6, "medidas": "49,7 x 29,4"},
+      {"letra": "K", "item": "Zócalo frente", "cantidad": 1, "medidas": "177 x 15"},
+      {"letra": "H", "item": "Estante móvil", "cantidad": 2, "medidas": "58 x 35"},
+      {"letra": "U", "item": "Frente arriba", "cantidad": 1, "medidas": "180 x 10"},
+      {"letra": "L", "item": "Zócalo fondo", "cantidad": 1, "medidas": "177 x 15"},
+      {"letra": "I", "item": "Tapa abajo frente", "cantidad": 1, "medidas": "177 x 12,5"},
+      {"letra": "J", "item": "Tapa abajo fondo", "cantidad": 1, "medidas": "177 x 12,5"},
+      {"letra": "S/L", "item": "Piso cajón", "cantidad": 3, "medidas": "55,3 x 37,8"},
+      {"letra": "T", "item": "Frente cajón", "cantidad": 3, "medidas": "59,1 x 24,7"},
+      {"letra": "P", "item": "Costado cajón", "cantidad": 6, "medidas": "40 x 18"},
+      {"letra": "R", "item": "Fondo cajón", "cantidad": 3, "medidas": "52,5 x 18"},
+      {"letra": "S/L", "item": "Fondo mueble arriba", "cantidad": 3, "medidas": "108 x 59,5"},
+      {"letra": "S/L", "item": "Fondo mueble abajo", "cantidad": 3, "medidas": "108 x 59,5"},
+      {"letra": "S/L", "item": "Faja frente unión módulos", "cantidad": 1, "medidas": "177 x 8"},
+      {"letra": "S/L", "item": "Faja fondo unión módulos", "cantidad": 1, "medidas": "108 x 59,5"}
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "paso 1: Prepare el costado derecho abajo N, colocando una guía metálica fija derecha mediante los tornillos varianta, dos bases de bisagra mediante los tornillos 1,5 cm y clavando dos bases plásticas en el canto inferior, como lo muestra la figura. Realice el mismo procedimiento para el costado izquierdo abajo M, tenga en cuenta que es simétrico por ende se coloca la guía metálica fija izquierda.",
+      "piezas": ["Costado derecho abajo N", "Costado izquierdo abajo M"],
+      "herrajes_usados": ["Guías metálicas", "Tornillos varianta", "Bases de bisagra", "Tornillos 1,5 cm", "Bases plásticas"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "paso 2: En los separadores abajo Ñ, en la cara derecha colocar una guía metálica fija izquierda partiendo de la primer perforación mediante los tornillos varianta, con los mismos tornillos colocar en la cara izquierda una guía metálica fija derecha como lo muestra la figura. También atornille dos bases de bisagra mediante los tornillos de 1,5 cm en cada cara.",
+      "piezas": ["Separadores abajo Ñ"],
+      "herrajes_usados": ["Guías metálicas", "Tornillos varianta", "Bases de bisagra", "Tornillos 1,5 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "paso 3: En las puertas abajo O coloque 2 bisagra mediante los tornillos de 1,5 cm y una manija Gama por medio de los tornillos 3 cm.",
+      "piezas": ["Puertas abajo O"],
+      "herrajes_usados": ["Bisagras codo 9 cazoleta 26", "Tornillos 1,5 cm", "Manijas cn tornillos de 3 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4: En el zócalo K y fondo L, 4 tarugos en los cantos cortos y dos en el canto superior, además clavar en el canto inferior 2 bases plásticas posicionándola en forma pareja. En las tapas abajo frente I y fondo J 4 tarugos 6x30 2 por cada extremo.",
+      "piezas": ["Zócalo K", "Fondo L", "Tapas abajo frente I", "Tapas abajo fondo J"],
+      "herrajes_usados": ["Tarugos 6x30", "Bases plásticas"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "paso 5: Una la tapa abajo frente I y la tapa abajo fondo J con los separadores abajo Ñ por medio de los tornillos Phillips de 5 cm. Desde abajo una el piso B con los separadores mediante los mismos tornillos. Verifique que los filos de la tapa y el piso queden hacia adelante",
+      "piezas": ["Tapas abajo frente I", "Tapas abajo fondo J", "Separadores abajo Ñ", "Piso B"],
+      "herrajes_usados": ["Tornillos Phillips 5 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "paso 6: Una el costado derecho abajo N con las tapas abajo I - J y el piso B por medio de los tornillos Phillips de 5 cm. Antes de colocar el costado izquierdo introducir los tarugos del canto corto del zócalo frente K y el zócalo fondo L, en las perforaciones del costado derecho y los tarugos del canto superior en las perforaciones del piso, verificando que la cara con lustre del zócalo frente quede hacia adelante. Una vez echo realice el mismo proceso para el costado izquierdo abajo M. Finalmente ajuste los zócalos al piso mediante 6 tornillos 4 cm introduciendo estos en las perforaciones libre del piso como lo muestra la figura.",
+      "piezas": ["Costado derecho abajo N", "Tapas abajo I - J", "Piso B", "Zócalo frente K", "Zócalo fondo L", "Costado izquierdo abajo M"],
+      "herrajes_usados": ["Tornillos Phillips 5 cm", "Tarugos 6x30", "Tornillos 4 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "paso 7 armado de cajón: Coloque 2 tarugos 6x30 en el fondo de cajón r, 2 mas en cada uno de los costados de cajón P a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo.",
+      "piezas": ["Fondo cajón r", "Costados de cajón P"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "paso 8 armado de cajon: Una vez armada la estructura tipo 'U' entre P-R-P, ingrese el frente de cajón T ajuste los pernos mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm.",
+      "piezas": ["Costados de cajón P", "Fondo cajón R", "Frente de cajón T"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos 4 cm"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "paso 9 armado de cajón: Atornille 2 minifix en el frente de cajón T. Y coloque la manija gama con 2 tornillo de 3 cm.",
+      "piezas": ["Frente de cajón T"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Manijas cn tornillos de 3 cm"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "paso 10 armado de cajón: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón T, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm.",
+      "piezas": ["Piso cajón", "Frente de cajón T", "Costados de cajón P", "Fondo cajón R"],
+      "herrajes_usados": ["Set de Clavos", "Guías metálicas de 40 cm", "Tornillos de 2 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "paso 11: Clave el fondo de mueble, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. 1 vértice N-J, 2 vértice N-B, 3 vértice Ñ-J, 4 vértice Ñ-B. Luego seguir con los dos restantes.",
+      "piezas": ["Fondo de mueble"],
+      "herrajes_usados": ["Set de Clavos"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "paso 12: Prepare el costado izquierdo arriba C, colocando 3 bases de bisagra mediante los tornillos de 1,5 cm y un soporte plástico de caño haciéndolo encastrar en la perforación central superior y luego ajustándolo mediante un tornillo de 1,5 cm, como lo muestra la figura. Realice el mismo procedimiento para el costado derecho arriba D, teniendo en cuenta que es simétrico.",
+      "piezas": ["Costado izquierdo arriba C", "Costado derecho arriba D"],
+      "herrajes_usados": ["Bases de bisagra", "Tornillos 1,5 cm", "Soporte plástico de caño"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 13,
+      "instruccion_amigable": "paso 13: A los separadores arriba E hay que convertir uno en izquierdo y otro en derecho. Al derecho le colocamos 3 bases de bisagra en cada cara mediante los tornillos de 1,5 cm, luego en la cara que da hacia los laterales el soporte plástico de caño haciéndolo encastrar en la perforación central superior y luego ajustándolo mediante un tornillo de 1,5 cm, como lo muestra la figura. En la otra cara coloque a presión 4 soportes de estantes Para crear el separador izquierdo arriba. Realice el mismo procedimiento anterior pero invirtiendo las caras en el separador restante.",
+      "piezas": ["Separadores arriba E"],
+      "herrajes_usados": ["Bases de bisagra", "Tornillos 1,5 cm", "Soporte plástico de caño", "Soportes de estantes"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 14,
+      "instruccion_amigable": "paso 14: En las puertas arriba G coloque 3 bisagras mediante los tornillos de 1,5 cm y una manija Gama por medio de los tornillos 3 cm.",
+      "piezas": ["Puertas arriba G"],
+      "herrajes_usados": ["Bisagras codo 9 cazoleta 26", "Tornillos 1,5 cm", "Manijas cn tornillos de 3 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 15,
+      "instruccion_amigable": "paso 15: En el frente arriba U, coloque 5 escuadras plásticas mediante tornillos 3,5x15.",
+      "piezas": ["Frente arriba U"],
+      "herrajes_usados": ["Escuadras plásticas", "Tornillos 3,5x15"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 16,
+      "instruccion_amigable": "paso 16: Una la tapa arriba A y el piso B con los separadores arriba E, habiendo creado uno izquierdo y uno derecho y de esta manera colocándolo según su posición (ver imagen), mediante los tornillos Phillips de 5 cm introduciéndolo en las perforaciones que muestra la figura. Luego una los costados arriba C-D con la tapa y el piso mediante los mismos tornillos.",
+      "piezas": ["Tapa arriba A", "Piso B", "Separadores arriba E", "Costados arriba C-D"],
+      "herrajes_usados": ["Tornillos Phillips 5 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 17,
+      "instruccion_amigable": "paso 17: Clave el fondo de mueble, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. 1 vértice A-C, 2 vértice C-B, 3 vértice B-E, 4 vértice A-E Repita el proceso para los fondos restantes. Luego alinee la faja arriba U con los bordes superiores de los costados C-D y seguidamente atornille la misma por medio de 5 tornillos de 1,5 cm aferrando la faja por medio de las 5 escuadras plásticas 2 con los costados arriba y 3 con la tapa. Finalmente introduzca los estantes móviles H sobre los soportes de estantes y los caños sobre los soportes plásticos para caño.",
+      "piezas": ["Fondo de mueble", "Faja arriba U", "Costados arriba C-D", "Tapa arriba A", "Estantes móviles H"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos 1,5 cm", "Escuadras plásticas", "Soportes de estantes", "Soporte plástico de caño"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 18,
+      "instruccion_amigable": "paso 18: Vincule ambos módulos. Previamente colocando entre ellos las fajas unión de módulos. Las perforaciones deben quedar hacia las caras externas, por ende la faja frente quedara con el canto melaminico hacia el frente. Luego colocamos el modulo superior sobre el inferior, apoyando sobre las fajas y haciendo coincidir las perforaciones del piso B con las de las fajas, para luego unir los módulos mediante 6 tornillos de 4 cm y atornillado este a las tapas abajo I-J. Finalmente coloque las puertas arriba G en los costados arriba C-D y los separadores arriba E como lo indica la guía de 'Colocación de bisagras'.",
+      "piezas": ["Módulo superior", "Módulo inferior", "Fajas unión de módulos", "Piso B", "Tapas abajo I-J", "Puertas arriba G", "Costados arriba C-D", "Separadores arriba E"],
+      "herrajes_usados": ["Tornillos 4 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 19,
+      "instruccion_amigable": "paso 19: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen.",
+      "piezas": ["Cajones"],
+      "herrajes_usados": ["Guías metálicas"],
+      "consejo_pro": ""
+    }
+  ]
+}

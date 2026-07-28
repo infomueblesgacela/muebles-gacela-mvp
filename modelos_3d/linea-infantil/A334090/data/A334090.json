@@ -1,0 +1,69 @@
+{
+  "producto": {
+    "id": "334090",
+    "nombre": "Escritorio para sala de estar línea Tokio con patas macizas"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Escuadras metálicas", "cantidad": 2 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 8 },
+    { "item": "Llave Allen", "cantidad": 1 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 6 },
+    { "item": "Tornillos de 4 cm", "cantidad": 8 },
+    { "item": "Tornillos de 3 cm", "cantidad": 8 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 6 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "94 x 57" },
+      { "letra": "D", "item": "Frente", "cantidad": 1, "medidas": "80 x 19,6" },
+      { "letra": "E", "item": "Faja larga", "cantidad": 1, "medidas": "80 x 8" },
+      { "letra": "G", "item": "Faja corta", "cantidad": 2, "medidas": "37 x 8" },
+      { "letra": "L", "item": "Base de patas", "cantidad": 1, "medidas": "90 x 48" },
+      { "letra": "M", "item": "Patas", "cantidad": 4, "medidas": "74 x 7,5" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el frente D, colocando a presión 1 tarugo de 6x30 en el filo superior, de igual manera prepare la faja larga E y las fajas cortas G[cite: 13]. En el frente además atornille 2 escuadras metálicas, con los tornillos de 1,5 cm[cite: 13].",
+      "piezas": ["Frente D", "Faja larga E", "Faja corta G"],
+      "herrajes_usados": ["Tarugos 6x30", "Escuadras metálicas", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "paso 2: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen hacia la base de las patas L[cite: 13]. A su vez coloque a presión dos tarugos guías 6x30[cite: 13].",
+      "piezas": ["Patas M", "Base de patas L"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "paso 3: Desde abajo haga coincidir el tarugo guía de las fajas cortas G con la perforación de la base de patas y lleve las fajas hacia la misma[cite: 13]. Finalmente ajuste las fajas con las patas mediante los tornillos de 3 cm[cite: 13].",
+      "piezas": ["Faja corta G", "Base de patas L", "Patas M"],
+      "herrajes_usados": ["Tarugos 6x30", "Tornillos de 3 cm"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4: Desde abajo haga coincidir el tarugo guía de la faja larga E y del frente D con la perforación de la base de patas y lleve las fajas hacia la misma[cite: 13]. Luego ajuste estas con las fajas cortas G mediante los tornillos de 4 cm[cite: 13]. Ajuste la faja larga y el frente a la base de patas mediante los tornillos de 4 cm[cite: 13].",
+      "piezas": ["Faja larga E", "Frente D", "Base de patas L", "Faja corta G"],
+      "herrajes_usados": ["Tarugos 6x30", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "paso 5: Una la base de patas L con la tapa A, a través de 6 tornillos de 2,5 cm y utilizando como guía los dos tarugos 6 x 30[cite: 13]. Finalmente por medio de los tornillos de 1,5 cm ajuste el frente a las patas por medio de las escuadras metálicas[cite: 13].",
+      "piezas": ["Base de patas L", "Tapa A", "Frente D", "Patas M"],
+      "herrajes_usados": ["Tornillos de 2.5 cm", "Tarugos 6x30", "Tornillos de 1.5 cm", "Escuadras metálicas"]
+    }
+  ]
+}

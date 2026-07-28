@@ -1,0 +1,25 @@
+{
+  "files_3d": [
+    "A000116-a-chica.glb",
+    "A000116-a-tapa-grande.glb",
+    "A000116-base_pata_grande_.glb",
+    "A000116-base_tapa_chica.glb",
+    "A000116-pata-larga.glb",
+    "A000116-pata_corta.glb"
+  ],
+  "files_pasos": [
+    "A000116-unboxing.png",
+    "paso_01.png",
+    "paso_02.png"
+  ],
+  "files_herrajes": [
+    "bases-redondas-para-clavar.webp",
+    "tarugo-madera.webp",
+    "tornillo-3-5.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "martillo.webp"
+  ]
+}

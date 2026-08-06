@@ -6,6 +6,25 @@ import { OrbitControls, PerspectiveCamera, Environment, useGLTF } from '@react-t
 import * as THREE from 'three';
 import { Product } from '../types/product';
 import RoomPlanner3D from './RoomPlanner3D';
+// Importamos los modelos 3D como módulos Vite para forzar el fingerprint único en producción
+import glbModelUrl839BR from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_iluminado.glb?url';
+import glbModelUrl839B from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_blanco.glb?url';
+
+import glbModelUrl902BR from '../assets/modelos_3d/linea-clasica/A009022/A009022_v1_iluminado.glb?url';
+import glbModelUrl902C from '../assets/modelos_3d/linea-clasica/A009022/A009022_v1_carvalho.glb?url';
+
+const getModelUrl = (sku?: string) => {
+  if (sku === '902-2-C') return glbModelUrl902C;
+  if (sku === '902-2-BR') return glbModelUrl902BR;
+  if (sku === '839-5-B') return glbModelUrl839B;
+  return glbModelUrl839BR;
+};
+
+// Pre-cargamos todos los modelos GLB para asegurar transición instantánea sin pantallas en blanco
+useGLTF.preload(glbModelUrl839BR);
+useGLTF.preload(glbModelUrl839B);
+useGLTF.preload(glbModelUrl902BR);
+useGLTF.preload(glbModelUrl902C);
 
 interface ARLandingPageProps {
   onBackToPdp: () => void;
@@ -51,8 +70,11 @@ const generateBoxUVs = (geometry: THREE.BufferGeometry) => {
 };
 
 // Componente ModelRenderer para el Visualizador 3D Inicial con pipeline PBR Premium
-const ARModelRenderer = () => {
-  const { scene } = useGLTF('/modelos_3d/linea-clasica/A008395/A008395_v6.glb?v=5');
+const ARModelRenderer = ({ product }: { product?: Product | null }) => {
+  const isBlancoTotal = product?.sku === '839-5-B';
+  const isCarvalhoTotal = product?.sku === '902-2-C';
+  const glbUrl = getModelUrl(product?.sku);
+  const { scene } = useGLTF(glbUrl);
   const { gl, camera, controls } = useThree();
   const centeredRef = useRef(false);
 
@@ -65,9 +87,26 @@ const ARModelRenderer = () => {
   const { woodTexture, normalTexture } = useMemo(() => {
     const textureLoader = new THREE.TextureLoader();
     
-    // Carga de texturas reales (Mel Avellana Carvalho y su mapa de relieve normal) con ?v=5 para forzar refresco
-    const wood = textureLoader.load('/images/Mel Avellana (Carvalho).jpg?v=5');
-    const normal = textureLoader.load('/images/texture_normal.jpg?v=5');
+    // Carga de texturas reales (Mel Avellana Carvalho o Mel Malta Natural según el color del mueble)
+    const colorSpec = product?.specs?.find((s: any) => s.label === 'Color')?.value || '';
+    const lineSpec = product?.specs?.find((s: any) => s.label === 'Línea')?.value || '';
+    
+    const isNordik = 
+      lineSpec.toLowerCase().includes('nordik') || 
+      lineSpec.toLowerCase().includes('nordico') || 
+      lineSpec.toLowerCase().includes('nórdico') || 
+      colorSpec.toLowerCase().includes('miel') || 
+      colorSpec.toLowerCase().includes('natural') || 
+      colorSpec.toLowerCase().includes('nordik') || 
+      colorSpec.toLowerCase().includes('nórdico') || 
+      colorSpec.toLowerCase().includes('nordico');
+      
+    const woodPath = isNordik 
+      ? '/images/Mel Malta (Natural).jpg?v=6' 
+      : '/images/Mel Avellana (Carvalho).jpg?v=6';
+      
+    const wood = textureLoader.load(woodPath);
+    const normal = textureLoader.load('/images/texture_normal.jpg?v=6');
     
     // Espacio de color sRGB moderno
     wood.colorSpace = THREE.SRGBColorSpace;
@@ -92,7 +131,7 @@ const ARModelRenderer = () => {
     normal.anisotropy = maxAnisotropy;
     
     return { woodTexture: wood, normalTexture: normal };
-  }, [gl]);
+  }, [gl, product]);
 
   // Medimos la caja de entorno (Box3) del mueble para el cálculo de repetición físico automático
   const size = useMemo(() => {
@@ -137,13 +176,13 @@ const ARModelRenderer = () => {
 
   // Centrado automático y escalado de la cámara para que el mueble llene el canvas
   useEffect(() => {
-    if (!clonedScene || !camera || centeredRef.current) return;
+    if (!clonedScene || !camera) return;
     
     // Obtener caja y centro real
     const box = new THREE.Box3().setFromObject(clonedScene);
     const center = new THREE.Vector3();
-    box.getCenter(center);
     const boxSize = new THREE.Vector3();
+    box.getCenter(center);
     box.getSize(boxSize);
     
     // Si la caja está vacía o el tamaño es 0, esperar a que cargue
@@ -175,7 +214,6 @@ const ARModelRenderer = () => {
     if (controls) {
       (controls as any).target.set(0, 0, 0);
       (controls as any).update();
-      centeredRef.current = true;
     }
   }, [clonedScene, camera, controls]);
 
@@ -192,12 +230,21 @@ const ARModelRenderer = () => {
       const name = child.name.toLowerCase();
       console.log("Mesh detectado en AR:", child.name);
       
-      // Los cajones/frentes laqueados tienen prioridad absoluta para mantenerse en blanco
-      if (name.includes("frente") || name.includes("drawer") || name.includes("cajon")) {
+      if (isBlancoTotal) {
         child.material = whiteFrontMaterial;
+      } else if (isCarvalhoTotal) {
+        // Para el modelo Carvalho Total (902-2-C), conservamos la textura nativa horneada
       } else {
-        // Todas las demás partes de melamina (costados, laterales, tapas, bases, fondos, etc.) usan el woodMaterial unificado
-        child.material = woodMaterial;
+        // En Blanco-Roble (839-5-BR y 902-2-BR): puertas, frentes de cajón y fondos de mueble usan blanco
+        const isWhitePart = 
+          name.includes("puerta") || 
+          (name.includes("frente") && !name.includes("faja")) ||
+          name.includes("fondosxxmueb") || 
+          name.includes("fondo_mueble");
+        
+        if (isWhitePart) {
+          child.material = whiteFrontMaterial;
+        }
       }
       
       // Sombras duras desactivadas
@@ -206,7 +253,7 @@ const ARModelRenderer = () => {
       
       if (child.material) child.material.needsUpdate = true;
     });
-  }, [clonedScene, woodMaterial, whiteFrontMaterial]);
+  }, [clonedScene, woodMaterial, whiteFrontMaterial, isBlancoTotal, isCarvalhoTotal]);
 
   return <primitive object={clonedScene} />;
 };
@@ -418,7 +465,7 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
                     onStart={() => setIsAutoRotating(false)} // Detención definitiva al primer click o arrastre manual
                   />
 
-                  <ARModelRenderer />
+                  <ARModelRenderer product={selectedProduct} />
                   <Environment preset="city" />
                 </Suspense>
               </Canvas>
@@ -429,11 +476,16 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
               {/* @ts-ignore */}
               <model-viewer
                 ref={modelViewerRef}
-                src={typeof window !== 'undefined' ? `${window.location.origin}/modelos_3d/linea-clasica/A008395/A008395_v6.glb?v=5` : ''}
+                src={typeof window !== 'undefined' ? `${window.location.origin}${getModelUrl(selectedProduct?.sku)}` : ''}
                 ar
                 ar-modes="scene-viewer quick-look"
                 ar-placement="floor"
                 camera-controls
+                exposure="1.2"
+                environment-image="neutral"
+                shadow-intensity="1.0"
+                tone-mapping="neutral"
+                tonemapping="neutral"
               >
                 {/* @ts-ignore */}
                 <button slot="ar-button" className="hidden" />

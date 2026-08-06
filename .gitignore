@@ -45,3 +45,5 @@ articulos-gacela-muebles-2026/
 *.csv
 resumen_deployment.json
 file_list.txt
+.vercel
+.env*

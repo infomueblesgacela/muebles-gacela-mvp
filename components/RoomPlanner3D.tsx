@@ -4,6 +4,25 @@ import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import { Move, RotateCw, Palette, Layers, RefreshCw, Upload, Image, Plus, Minus, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Product } from '../types/product';
+// Importamos los modelos 3D como módulos Vite para forzar el fingerprint único en producción
+import glbModelUrl839BR from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_iluminado.glb?url';
+import glbModelUrl839B from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_blanco.glb?url';
+
+import glbModelUrl902BR from '../assets/modelos_3d/linea-clasica/A009022/A009022_v1_iluminado.glb?url';
+import glbModelUrl902C from '../assets/modelos_3d/linea-clasica/A009022/A009022_v1_carvalho.glb?url';
+
+const getModelUrl = (sku?: string) => {
+  if (sku === '902-2-C') return glbModelUrl902C;
+  if (sku === '902-2-BR') return glbModelUrl902BR;
+  if (sku === '839-5-B') return glbModelUrl839B;
+  return glbModelUrl839BR;
+};
+
+// Pre-cargamos todos los modelos GLB para asegurar transición instantánea sin pantallas en blanco
+useGLTF.preload(glbModelUrl839BR);
+useGLTF.preload(glbModelUrl839B);
+useGLTF.preload(glbModelUrl902BR);
+useGLTF.preload(glbModelUrl902C);
 
 interface RoomPlanner3DProps {
   product: Product;
@@ -51,9 +70,13 @@ const ModelRenderer = ({
   position, 
   scale, 
   rotation, 
-  setSelected 
+  setSelected,
+  product
 }: any) => {
-  const { scene } = useGLTF('/modelos_3d/linea-clasica/A008395/A008395_v6.glb?v=5');
+  const isBlancoTotal = product?.sku === '839-5-B';
+  const isCarvalhoTotal = product?.sku === '902-2-C';
+  const glbUrl = getModelUrl(product?.sku);
+  const { scene } = useGLTF(glbUrl);
   const groupRef = useRef<THREE.Group>(null);
   
   // Clonar la escena para evitar contaminar el cache compartido de useGLTF
@@ -70,9 +93,26 @@ const ModelRenderer = ({
   const { woodTexture, normalTexture } = useMemo(() => {
     const textureLoader = new THREE.TextureLoader();
     
-    // Carga de texturas reales (Mel Avellana Carvalho y su mapa de relieve normal) con ?v=5 para forzar refresco
-    const wood = textureLoader.load('/images/Mel Avellana (Carvalho).jpg?v=5');
-    const normal = textureLoader.load('/images/texture_normal.jpg?v=5');
+    // Carga de texturas reales (Mel Avellana Carvalho o Mel Malta Natural según el color del mueble)
+    const colorSpec = product?.specs?.find((s: any) => s.label === 'Color')?.value || '';
+    const lineSpec = product?.specs?.find((s: any) => s.label === 'Línea')?.value || '';
+    
+    const isNordik = 
+      lineSpec.toLowerCase().includes('nordik') || 
+      lineSpec.toLowerCase().includes('nordico') || 
+      lineSpec.toLowerCase().includes('nórdico') || 
+      colorSpec.toLowerCase().includes('miel') || 
+      colorSpec.toLowerCase().includes('natural') || 
+      colorSpec.toLowerCase().includes('nordik') || 
+      colorSpec.toLowerCase().includes('nórdico') || 
+      colorSpec.toLowerCase().includes('nordico');
+      
+    const woodPath = isNordik 
+      ? '/images/Mel Malta (Natural).jpg?v=6' 
+      : '/images/Mel Avellana (Carvalho).jpg?v=6';
+      
+    const wood = textureLoader.load(woodPath);
+    const normal = textureLoader.load('/images/texture_normal.jpg?v=6');
     
     // Espacio de color sRGB moderno
     wood.colorSpace = THREE.SRGBColorSpace;
@@ -97,7 +137,7 @@ const ModelRenderer = ({
     normal.anisotropy = maxAnisotropy;
     
     return { woodTexture: wood, normalTexture: normal };
-  }, [gl]);
+  }, [gl, product]);
 
   // Medimos la caja de entorno (Box3) del mueble para el cálculo de repetición físico automático
   const size = useMemo(() => {
@@ -161,12 +201,21 @@ const ModelRenderer = ({
 
       const name = child.name.toLowerCase();
       
-      // Los cajones/frentes laqueados tienen prioridad absoluta para mantenerse en blanco o usar el woodMaterial unificado
-      if (name.includes("frente") || name.includes("drawer") || name.includes("cajon")) {
-        child.material = (drawerColor === 'blanco') ? whiteFrontMaterial : woodMaterial;
+      if (isBlancoTotal) {
+        child.material = whiteFrontMaterial;
+      } else if (isCarvalhoTotal) {
+        // Para el modelo Carvalho Total (902-2-C), conservamos la textura nativa horneada
       } else {
-        // Todas las demás partes de melamina usan el woodMaterial unificado (vetas horizontales continuas)
-        child.material = woodMaterial;
+        // En Blanco-Roble (839-5-BR y 902-2-BR): puertas, frentes de cajón y fondos de mueble usan blanco
+        const isWhitePart = 
+          name.includes("puerta") || 
+          (name.includes("frente") && !name.includes("faja")) ||
+          name.includes("fondosxxmueb") || 
+          name.includes("fondo_mueble");
+        
+        if (isWhitePart) {
+          child.material = whiteFrontMaterial;
+        }
       }
       
       // Sombras duras desactivadas para evitar manchas negras en el fondo del living
@@ -175,7 +224,7 @@ const ModelRenderer = ({
       
       if (child.material) child.material.needsUpdate = true;
     });
-  }, [clonedScene, drawerColor, woodMaterial, whiteFrontMaterial]);
+  }, [clonedScene, drawerColor, woodMaterial, whiteFrontMaterial, isBlancoTotal, isCarvalhoTotal]);
 
   const onPointerDown = (e: any) => {
     e.stopPropagation();
@@ -614,6 +663,7 @@ const RoomPlanner3D: React.FC<RoomPlanner3DProps> = ({ product }) => {
                       rotation={rot} 
                       selected={selected}
                       setSelected={setSelected}
+                      product={product}
                     />
                   </Suspense>
                 </Canvas>

@@ -435,7 +435,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product: propProduct, onB
                 </motion.button>
               )}
 
-              {(product.sku === '839-5-BR' || product.sku === '839-5-B') && (
+              {(['839-5-BR', '839-5-B', '902-2-BR', '902-2-B', '902-2-C'].includes(product.sku)) && (
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

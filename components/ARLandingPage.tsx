@@ -7,16 +7,99 @@ import * as THREE from 'three';
 import { Product } from '../types/product';
 import RoomPlanner3D from './RoomPlanner3D';
 // Importamos los modelos 3D como módulos Vite para forzar el fingerprint único en producción
+// Línea Clásica
 import glbModelUrl839BR from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_iluminado.glb?url';
 import glbModelUrl839B from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_blanco.glb?url';
-
 import glbModelUrl902BR from '../assets/modelos_3d/linea-clasica/A009022/A009022_v1_iluminado.glb?url';
 import glbModelUrl902C from '../assets/modelos_3d/linea-clasica/A009022/A009022_v1_carvalho.glb?url';
+import glbModelUrl828B from '../assets/modelos_3d/linea-clasica/A008285/A008285_v1_blanco.glb?url';
+import glbModelUrl828BR from '../assets/modelos_3d/linea-clasica/A008285/A008285_v1_blanco_roble.glb?url';
+import glbModelUrl32012 from '../assets/modelos_3d/linea-clasica/A032012/A032012_v1.glb?url';
+import glbModelUrl70815 from '../assets/modelos_3d/linea-clasica/A070815/A070815_v1.glb?url';
+import glbModelUrl221150 from '../assets/modelos_3d/linea-clasica/A221150/A221150_v1.glb?url';
+import glbModelUrl710150 from '../assets/modelos_3d/linea-clasica/A710150/A710150_v1.glb?url';
+
+// Línea Nordik
+import glbModelUrl234094 from '../assets/modelos_3d/linea-nordik/A234094/A234094_v1.glb?url';
+import glbModelUrl321021 from '../assets/modelos_3d/linea-nordik/A321021/A321021_v1.glb?url';
+import glbModelUrl331330 from '../assets/modelos_3d/linea-nordik/A331330/A331330_v1.glb?url';
+import glbModelUrl334026 from '../assets/modelos_3d/linea-nordik/A334026/A334026_v1.glb?url';
+import glbModelUrl334093 from '../assets/modelos_3d/linea-nordik/A334093/A334093_v1.glb?url';
+import glbModelUrl405330 from '../assets/modelos_3d/linea-nordik/A405330/A405330_v1.glb?url';
+import glbModelUrl446330 from '../assets/modelos_3d/linea-nordik/A446330/A446330_v1.glb?url';
+import glbModelUrl716330 from '../assets/modelos_3d/linea-nordik/A716330/A716330_v1.glb?url';
+import glbModelUrl732330 from '../assets/modelos_3d/linea-nordik/A732330/A732330_v1.glb?url';
+import glbModelUrl742332 from '../assets/modelos_3d/linea-nordik/A742332/A742332_v1.glb?url';
+import glbModelUrl742334 from '../assets/modelos_3d/linea-nordik/A742334/A742334_v1.glb?url';
+import glbModelUrl742336 from '../assets/modelos_3d/linea-nordik/A742336/A742336_v1.glb?url';
+
+// Línea Kyoto
+import glbModelUrl322250 from '../assets/modelos_3d/linea-kyoto/A322250/A322250_v1.glb?url';
+import glbModelUrl326250 from '../assets/modelos_3d/linea-kyoto/A326250/A326250_v1.glb?url';
+import glbModelUrl331250 from '../assets/modelos_3d/linea-kyoto/A331250/A331250_v1.glb?url';
+import glbModelUrl334250 from '../assets/modelos_3d/linea-kyoto/A334250/A334250_v1.glb?url';
+import glbModelUrl353250 from '../assets/modelos_3d/linea-kyoto/A353250/A353250_v1.glb?url';
+import glbModelUrl446250 from '../assets/modelos_3d/linea-kyoto/A446250/A446250_v1.glb?url';
+import glbModelUrl760250 from '../assets/modelos_3d/linea-kyoto/A760250/A760250_v1.glb?url';
+
+// Línea Curvalba
+import glbModelUrl334271 from '../assets/modelos_3d/linea-curvalba/A334271/A334271_v1.glb?url';
+import glbModelUrl334272 from '../assets/modelos_3d/linea-curvalba/A334272/A334272_v1.glb?url';
+import glbModelUrl353270 from '../assets/modelos_3d/linea-curvalba/A353270/A353270_v1.glb?url';
+import glbModelUrl405270 from '../assets/modelos_3d/linea-curvalba/A405270/A405270_v1.glb?url';
+import glbModelUrl446270 from '../assets/modelos_3d/linea-curvalba/A446270/A446270_v1.glb?url';
+import glbModelUrl732270 from '../assets/modelos_3d/linea-curvalba/A732270/A732270_v1.glb?url';
+import glbModelUrl742270 from '../assets/modelos_3d/linea-curvalba/A742270/A742270_v1.glb?url';
+import glbModelUrl742272 from '../assets/modelos_3d/linea-curvalba/A742272/A742272_v1.glb?url';
+import glbModelUrl742273 from '../assets/modelos_3d/linea-curvalba/A742273/A742273_v1.glb?url';
 
 const getModelUrl = (sku?: string) => {
+  // Clásica
   if (sku === '902-2-C') return glbModelUrl902C;
   if (sku === '902-2-BR') return glbModelUrl902BR;
   if (sku === '839-5-B') return glbModelUrl839B;
+  if (sku === '839-5-BR') return glbModelUrl839BR;
+  if (sku === '828-5-B') return glbModelUrl828B;
+  if (sku === '828-5-BR') return glbModelUrl828BR;
+  if (sku === '320-12') return glbModelUrl32012;
+  if (sku === '708-15') return glbModelUrl70815;
+  if (sku === '221150') return glbModelUrl221150;
+  if (sku === '710150') return glbModelUrl710150;
+  
+  // Nordik
+  if (sku === '234094') return glbModelUrl234094;
+  if (sku === '321021') return glbModelUrl321021;
+  if (sku === '331330') return glbModelUrl331330;
+  if (sku === '334026') return glbModelUrl334026;
+  if (sku === '334093') return glbModelUrl334093;
+  if (sku === '405330') return glbModelUrl405330;
+  if (sku === '446330') return glbModelUrl446330;
+  if (sku === '716330') return glbModelUrl716330;
+  if (sku === '732330') return glbModelUrl732330;
+  if (sku === '742332') return glbModelUrl742332;
+  if (sku === '742334') return glbModelUrl742334;
+  if (sku === '742336') return glbModelUrl742336;
+  
+  // Kyoto
+  if (sku === '322250') return glbModelUrl322250;
+  if (sku === '326250') return glbModelUrl326250;
+  if (sku === '331250') return glbModelUrl331250;
+  if (sku === '334250') return glbModelUrl334250;
+  if (sku === '353250') return glbModelUrl353250;
+  if (sku === '446250') return glbModelUrl446250;
+  if (sku === '760250') return glbModelUrl760250;
+  
+  // Curvalba
+  if (sku === '334271') return glbModelUrl334271;
+  if (sku === '334272') return glbModelUrl334272;
+  if (sku === '353270') return glbModelUrl353270;
+  if (sku === '405270') return glbModelUrl405270;
+  if (sku === '446270') return glbModelUrl446270;
+  if (sku === '732270') return glbModelUrl732270;
+  if (sku === '742270') return glbModelUrl742270;
+  if (sku === '742272') return glbModelUrl742272;
+  if (sku === '742273') return glbModelUrl742273;
+  
   return glbModelUrl839BR;
 };
 
@@ -25,6 +108,40 @@ useGLTF.preload(glbModelUrl839BR);
 useGLTF.preload(glbModelUrl839B);
 useGLTF.preload(glbModelUrl902BR);
 useGLTF.preload(glbModelUrl902C);
+useGLTF.preload(glbModelUrl828B);
+useGLTF.preload(glbModelUrl828BR);
+useGLTF.preload(glbModelUrl32012);
+useGLTF.preload(glbModelUrl70815);
+useGLTF.preload(glbModelUrl221150);
+useGLTF.preload(glbModelUrl710150);
+useGLTF.preload(glbModelUrl234094);
+useGLTF.preload(glbModelUrl321021);
+useGLTF.preload(glbModelUrl331330);
+useGLTF.preload(glbModelUrl334026);
+useGLTF.preload(glbModelUrl334093);
+useGLTF.preload(glbModelUrl405330);
+useGLTF.preload(glbModelUrl446330);
+useGLTF.preload(glbModelUrl716330);
+useGLTF.preload(glbModelUrl732330);
+useGLTF.preload(glbModelUrl742332);
+useGLTF.preload(glbModelUrl742334);
+useGLTF.preload(glbModelUrl742336);
+useGLTF.preload(glbModelUrl322250);
+useGLTF.preload(glbModelUrl326250);
+useGLTF.preload(glbModelUrl331250);
+useGLTF.preload(glbModelUrl334250);
+useGLTF.preload(glbModelUrl353250);
+useGLTF.preload(glbModelUrl446250);
+useGLTF.preload(glbModelUrl760250);
+useGLTF.preload(glbModelUrl334271);
+useGLTF.preload(glbModelUrl334272);
+useGLTF.preload(glbModelUrl353270);
+useGLTF.preload(glbModelUrl405270);
+useGLTF.preload(glbModelUrl446270);
+useGLTF.preload(glbModelUrl732270);
+useGLTF.preload(glbModelUrl742270);
+useGLTF.preload(glbModelUrl742272);
+useGLTF.preload(glbModelUrl742273);
 
 interface ARLandingPageProps {
   onBackToPdp: () => void;
@@ -174,86 +291,105 @@ const ARModelRenderer = ({ product }: { product?: Product | null }) => {
     });
   }, []);
 
-  // Centrado automático y escalado de la cámara para que el mueble llene el canvas
+  // Centrado automático, normalización de escala y encuadre perfecto de cámara
   useEffect(() => {
     if (!clonedScene || !camera) return;
     
-    // Obtener caja y centro real
-    const box = new THREE.Box3().setFromObject(clonedScene);
+    // 1. Resetear transformaciones previas para medir la geometría pura
+    clonedScene.position.set(0, 0, 0);
+    clonedScene.scale.set(1, 1, 1);
+    clonedScene.updateMatrixWorld(true);
+
+    // 2. Medir caja envolvente real del objeto
+    const rawBox = new THREE.Box3().setFromObject(clonedScene);
+    const rawSize = new THREE.Vector3();
+    rawBox.getSize(rawSize);
+    const rawMaxDim = Math.max(rawSize.x, rawSize.y, rawSize.z);
+    
+    if (rawMaxDim === 0) return;
+
+    // 3. Normalizar la escala para que cualquier mueble mida exactamente 1.6 unidades en el viewport 3D
+    const TARGET_SIZE = 1.6;
+    const scaleFactor = TARGET_SIZE / rawMaxDim;
+    clonedScene.scale.setScalar(scaleFactor);
+    clonedScene.updateMatrixWorld(true);
+    
+    // 4. Centrar el mueble en el origen (0, 0, 0)
+    const normalizedBox = new THREE.Box3().setFromObject(clonedScene);
     const center = new THREE.Vector3();
-    const boxSize = new THREE.Vector3();
-    box.getCenter(center);
-    box.getSize(boxSize);
-    
-    // Si la caja está vacía o el tamaño es 0, esperar a que cargue
-    if (boxSize.x === 0) return;
-    
-    // Centrar el objeto en el origen local (0, 0, 0)
+    normalizedBox.getCenter(center);
     clonedScene.position.set(-center.x, -center.y, -center.z);
+    clonedScene.updateMatrixWorld(true);
     
-    // Ajustar la cámara para encuadrar perfectamente según el tamaño del mueble
-    const maxDim = Math.max(boxSize.x, boxSize.y, boxSize.z);
+    // 5. Ajustar la cámara para encuadre ideal y nítido
     const fov = (camera as THREE.PerspectiveCamera).fov || 45;
-    const fovRad = fov * (Math.PI / 180);
-    let cameraDistance = Math.abs(maxDim / 2 / Math.tan(fovRad / 2));
+    const fovRad = (fov * Math.PI) / 180;
+    let cameraDistance = (TARGET_SIZE / 2) / Math.tan(fovRad / 2);
     
-    // Si la pantalla es vertical (aspect < 1), el campo de visión horizontal es más estrecho.
-    // Debemos alejar la cámara proporcionalmente para que el ancho del mueble no se corte en los costados.
     const aspect = (camera as THREE.PerspectiveCamera).aspect || 1;
     if (aspect < 1) {
       cameraDistance /= aspect;
     }
     
-    // Margen de padding (1.35) para un encuadre perfecto y espaciado
-    cameraDistance *= 1.35;
+    // Margen de padding suave (1.18) para que llene el visor con elegancia sin cortarse
+    cameraDistance *= 1.18;
     
-    camera.position.set(cameraDistance * 0.8, cameraDistance * 0.4, cameraDistance);
+    camera.position.set(cameraDistance * 0.8, cameraDistance * 0.45, cameraDistance * 0.95);
+    (camera as THREE.PerspectiveCamera).near = 0.01;
+    (camera as THREE.PerspectiveCamera).far = 100;
     camera.lookAt(0, 0, 0);
     camera.updateProjectionMatrix();
     
     if (controls) {
-      (controls as any).target.set(0, 0, 0);
-      (controls as any).update();
+      const ctrl = controls as any;
+      ctrl.target.set(0, 0, 0);
+      ctrl.minDistance = 0.4;
+      ctrl.maxDistance = 8.0;
+      ctrl.update();
     }
-  }, [clonedScene, camera, controls]);
+  }, [clonedScene, camera, controls, product?.sku]);
 
-  // Mapeo Heurístico mediante traverse
+  // Mapeo Heurístico mediante traverse (solo para modelos antiguos sin texturas horneadas)
   useEffect(() => {
+    const hasNativeMaterials = [
+      // Clásica
+      '828-5-B', '828-5-BR', '320-12', '708-15', '221150', '710150', '902-2-BR', '902-2-C',
+      // Nordik
+      '234094', '321021', '331330', '334026', '334093', '405330', '446330', '716330', '732330', '742332', '742334', '742336',
+      // Kyoto
+      '322250', '326250', '331250', '334250', '353250', '446250', '760250',
+      // Curvalba
+      '334271', '334272', '353270', '405270', '446270', '732270', '742270', '742272', '742273'
+    ].includes(product?.sku || '');
+
     clonedScene.traverse((child: any) => {
       if (!child.isMesh) return;
 
-      // Proyección UV procedural únicamente si carece de coordenadas UV nativas
-      if (!child.geometry.attributes.uv) {
-        generateBoxUVs(child.geometry);
-      }
+      if (!hasNativeMaterials) {
+        if (!child.geometry.attributes.uv) {
+          generateBoxUVs(child.geometry);
+        }
 
-      const name = child.name.toLowerCase();
-      console.log("Mesh detectado en AR:", child.name);
-      
-      if (isBlancoTotal) {
-        child.material = whiteFrontMaterial;
-      } else if (isCarvalhoTotal) {
-        // Para el modelo Carvalho Total (902-2-C), conservamos la textura nativa horneada
-      } else {
-        // En Blanco-Roble (839-5-BR y 902-2-BR): puertas, frentes de cajón y fondos de mueble usan blanco
-        const isWhitePart = 
-          name.includes("puerta") || 
-          (name.includes("frente") && !name.includes("faja")) ||
-          name.includes("fondosxxmueb") || 
-          name.includes("fondo_mueble");
-        
-        if (isWhitePart) {
+        const name = child.name.toLowerCase();
+        if (isBlancoTotal) {
           child.material = whiteFrontMaterial;
+        } else {
+          const isWhitePart = 
+            name.includes("puerta") || 
+            (name.includes("frente") && !name.includes("faja")) ||
+            (name.includes("fondo") && !name.includes("cajo") && !name.includes("cajon"));
+          
+          if (isWhitePart) {
+            child.material = whiteFrontMaterial;
+          }
         }
       }
       
-      // Sombras duras desactivadas
       child.castShadow = false;
       child.receiveShadow = false;
-      
       if (child.material) child.material.needsUpdate = true;
     });
-  }, [clonedScene, woodMaterial, whiteFrontMaterial, isBlancoTotal, isCarvalhoTotal]);
+  }, [clonedScene, woodMaterial, whiteFrontMaterial, isBlancoTotal, isCarvalhoTotal, product?.sku]);
 
   return <primitive object={clonedScene} />;
 };
@@ -440,7 +576,7 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
             {/* Canvas 3D de alta calidad fotorrealista PBR */}
             <div className="absolute inset-0 cursor-grab active:cursor-grabbing">
               <Canvas
-                camera={{ position: [1.5, 0.8, 2.2], fov: 45, near: 0.01, far: 100 }}
+                camera={{ position: [2.0, 1.2, 2.5], fov: 45, near: 0.01, far: 500 }}
                 gl={{ 
                   alpha: true, 
                   antialias: true,
@@ -450,16 +586,16 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
                 }}
               >
                 <Suspense fallback={null}>
-                  <ambientLight color="#ffffff" intensity={0.45} />
+                  <ambientLight color="#ffffff" intensity={0.55} />
                   <hemisphereLight args={['#ffffff', '#b0b0b0', 1.2]} />
-                  <directionalLight position={[3, 6, 4]} color="#ffffff" intensity={2.0} />
+                  <directionalLight position={[4, 8, 5]} color="#ffffff" intensity={2.0} />
                   <OrbitControls 
                     makeDefault 
                     enableDamping 
                     dampingFactor={0.05}
                     target={[0, 0, 0]}
-                    minDistance={0.5}
-                    maxDistance={10.0}
+                    minDistance={0.05}
+                    maxDistance={100.0}
                     autoRotate={isAutoRotating} // Auto-rotación sutil activada inicialmente
                     autoRotateSpeed={0.6} // Velocidad lenta y premium de presentación
                     onStart={() => setIsAutoRotating(false)} // Detención definitiva al primer click o arrastre manual

@@ -203,15 +203,14 @@ const ModelRenderer = ({
       
       if (isBlancoTotal) {
         child.material = whiteFrontMaterial;
-      } else if (isCarvalhoTotal) {
-        // Para el modelo Carvalho Total (902-2-C), conservamos la textura nativa horneada
+      } else if (isCarvalhoTotal || product?.sku === '902-2-BR') {
+        // Para los modelos 902-2 (Carvalho y Blanco-Roble), conservamos la textura nativa horneada
       } else {
-        // En Blanco-Roble (839-5-BR y 902-2-BR): puertas, frentes de cajón y fondos de mueble usan blanco
+        // En Blanco-Roble (839-5-BR y otros): puertas, frentes de cajón y fondos de mueble usan blanco
         const isWhitePart = 
           name.includes("puerta") || 
           (name.includes("frente") && !name.includes("faja")) ||
-          name.includes("fondosxxmueb") || 
-          name.includes("fondo_mueble");
+          (name.includes("fondo") && !name.includes("cajo") && !name.includes("cajon"));
         
         if (isWhitePart) {
           child.material = whiteFrontMaterial;

@@ -41,6 +41,9 @@ Backup/
 Comprimidas/
 Manuales/
 articulos-gacela-muebles-2026/
+/modelos_3d/
+/scratch/
+/TEXTURAS/
 *.xlsx
 *.csv
 resumen_deployment.json

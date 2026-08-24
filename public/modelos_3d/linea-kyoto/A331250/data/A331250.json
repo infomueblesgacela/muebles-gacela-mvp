@@ -1,0 +1,45 @@
+{
+  "producto": {
+    "id": "331250",
+    "nombre": "Mesas de living con tapa elíptica y estante ripiado"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 12 },
+    { "item": "Tarugos 6 x 30", "cantidad": 4 },
+    { "item": "Tornillos de 2 cm", "cantidad": 10 },
+    { "item": "Bases redondas para clavar", "cantidad": 4 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "119 x 59" },
+      { "letra": "B", "item": "Estante", "cantidad": 1, "medidas": "80 x 32" },
+      { "letra": "-", "item": "Patas", "cantidad": 4, "medidas": "41 x 7,5" },
+      { "letra": "-", "item": "Base de patas", "cantidad": 2, "medidas": "37 x 18" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Coloque dos tarugos guía de 6x30 en las perforaciones que muestra la imagen en la base de patas, luego atornille 2 patas con los tornillos Allen de 5 cm[cite: 16]. Realice el mismo procedimiento para las patas y la base de patas restante[cite: 16].",
+      "piezas": ["Base de patas", "Patas"],
+      "herrajes_usados": ["Tarugos 6 x 30", "Tornillos Allen de 5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Usando como guía los tarugos de 6x30, presente la base de patas a la tapa A luego atornille la base con la tapa con los tornillos de 2 cm[cite: 16]. Los tarugos solo sirven de guía y sobresalen hacia abajo (no golpear)[cite: 16]. Repita el proceso con la base de pata ya armada restante[cite: 16]. Por medio de los tornillos Allen de 5 cm una el estante B con las 4 patas dejando la cara ripiada hacia arriba[cite: 16]. Finalmente clave las bases en las patas[cite: 16].",
+      "piezas": ["Base de patas", "Tapa A", "Estante B", "Patas"],
+      "herrajes_usados": ["Tarugos 6 x 30", "Tornillos de 2 cm", "Tornillos Allen de 5 cm", "Bases redondas para clavar"]
+    }
+  ]
+}

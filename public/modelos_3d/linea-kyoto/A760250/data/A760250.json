@@ -1,0 +1,87 @@
+{
+  "producto": {
+    "id": "760250",
+    "nombre": "Gabinete línea Wall de dos puertas ripiadas y patas escandinavas"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 15 cazoleta 26", "cantidad": 4 },
+    { "item": "Llave Allen", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 12 },
+    { "item": "Pernos mini fix con caja", "cantidad": 4 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 4 },
+    { "item": "Soportes de estantes", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 6 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 16 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "80 x 38" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "80 x 38" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "48,5 x 38" },
+      { "letra": "I", "item": "Base patas", "cantidad": 1, "medidas": "110 x 35" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 2, "medidas": "51 x 40,5" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 4, "medidas": "19 x 7,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "48,5 x 38" },
+      { "letra": "-", "item": "Faja frente", "cantidad": 1, "medidas": "77 x 6" },
+      { "letra": "G", "item": "Estante móvil", "cantidad": 1, "medidas": "77 x 32" },
+      { "letra": "H", "item": "Puerta", "cantidad": 2, "medidas": "45,2 x 38" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado izquierdo C, colocando a presión 2 caja para mini fix, 2 soporte de estantes y 2 bases de bisagra mediante 4 tornillos de 1,5 cm. Prepare de igual modo el costado derecho D, tener en cuenta que son simétricos.",
+      "piezas": ["Costado izquierdo C", "Costado derecho D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Soportes de estantes", "Bisagras codo 15 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En las puertas H coloque 2 bisagra mediante los tornillos de 1,5 cm. En la Tapa A, atornille 4 Pernos mini fix cubriendo todas las perforaciones.",
+      "piezas": ["Puerta x 2 H", "Tapa A"],
+      "herrajes_usados": ["Bisagras codo 15 cazoleta 26", "Tornillos de 1.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En la faja frente coloque a presión 4 tarugos guías.",
+      "piezas": ["- Faja frente"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Colocar la faja frente entre los costados C-D introduciendo los tarugos guía de la faja en las perforaciones de los costados. Luego acoplar los costados a la Tapa A introduciendo los pernos minifix de esta en las perforaciones con caja minifix de los primeros mencionados luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Por ultimo desde abajo ajuste por medio de 4 tornillos Allen de 5 cm el piso B a los costados.",
+      "piezas": ["- Faja frente", "Costado izquierdo C", "Costado derecho D", "Tapa A", "Piso B"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Tornillos Allen 5 cm"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Encastre las patas macizas, para luego ajustarla desde arriba con la base de patas I, por medio de los tornillos Allen de 5 cm. A su vez coloque a presión dos tarugos guías 6x30.",
+      "piezas": ["- Patas macizas", "Base patas I"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Clave los fondos de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. 1 vértice A-C, 2 vértice mitad de A, 3 vértice C-B, 4 vértice mitad de B. Repetir para el otro fondo. Una vez armado la base de patas I con las patas macizas, ajuste este hacia el piso B, a través de los 4 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30, los cuales solo cumplen la función de guía (no golpear).",
+      "piezas": ["- Fondo mueble x 2", "Tapa A", "Costado izquierdo C", "Piso B", "Base patas I", "- Patas macizas"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos de 2.5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Coloque las Puertas H en las bases de bisagras colocadas en los Costados C-D, Utilizando como guía las indicaciones de 'Colocación de bisagra' y 'Regulación de bisagra'. Finalmente deslice el estante móvil G sobre los soportes previamente colocados en los costados haciéndolo llegar hasta el fondo.",
+      "piezas": ["Puerta x 2 H", "Costado izquierdo C", "Costado derecho D", "Estante móvil G"],
+      "herrajes_usados": ["Bisagras codo 15 cazoleta 26", "Soportes de estantes"],
+      "consejo_pro": "Colocación y regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido. Luego ingrese la bisagra en la base de bisagra haciendo coincidir el tornillo de regulación lateral con la ranura en U de la base, y finalmente ajuste el tornillo de regulación de profundidad."
+    }
+  ]
+}

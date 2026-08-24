@@ -1,0 +1,44 @@
+{
+  "producto": {
+    "id": "429090",
+    "nombre": "Mesa de comedor redonda con patas macizas 90 cm"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 15,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "LLave allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos Allen 5 cm", "cantidad": 8 },
+    { "item": "Tornillos de 3 cm", "cantidad": 8 },
+    { "item": "Tarugos 6 x 30", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "-", "item": "Tapa chica", "cantidad": 1, "medidas": "Ø 90" },
+      { "letra": "B", "item": "Base de patas", "cantidad": 1, "medidas": "55 x 55" },
+      { "letra": "-", "item": "Patas largas", "cantidad": 4, "medidas": "73 x 10" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Coloque un tarugo guía de 6x30 en la base de patas B, en la perforación que muestra la imagen. Luego encastre las espigas de las patas en los canales de las bases aplicando fuerza y desde arriba atornille con los tornillos Allen de 5 cm.",
+      "piezas": ["Base de patas B", "Patas largas"],
+      "herrajes_usados": ["Tarugos 6 x 30", "Tornillos Allen 5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Usando como guía el tarugo de 6x30, presente la base de patas B con la tapa y ajuste con los tornillos de 3 cm. El tarugo solo sirve de guía y sobresale hacia abajo (no golpear).",
+      "piezas": ["Base de patas B", "Tapa chica"],
+      "herrajes_usados": ["Tarugos 6 x 30", "Tornillos de 3 cm"],
+      "consejo_pro": "El tarugo solo sirve de guía y sobresale hacia abajo (no golpear)."
+    }
+  ]
+}

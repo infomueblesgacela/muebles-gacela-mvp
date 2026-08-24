@@ -1,0 +1,78 @@
+{
+  "producto": {
+    "id": "334026",
+    "nombre": "Escritorio línea escandinava con doble tapa rebatible"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Pernos mini fix con caja", "cantidad": 4 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 20 },
+    { "item": "Bisagras codo 0 casoleta 26", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 14 },
+    { "item": "Tornillos de 1,5 cm", "cantidad": 16 },
+    { "item": "Tornillos de 2,5 cm", "cantidad": 6 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 2, "medidas": "60 x 44,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "44,5 x 10,6" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "44,5 x 10,6" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "120 x 44,5" },
+      { "letra": "K", "item": "Base pata", "cantidad": 1, "medidas": "110 x 39,5" },
+      { "letra": "-", "item": "Patas macizas der.", "cantidad": 2, "medidas": "63 x 7,5" },
+      { "letra": "-", "item": "Patas macizas izq.", "cantidad": 2, "medidas": "63 x 7,5" },
+      { "letra": "L", "item": "Refuerzo patas", "cantidad": 2, "medidas": "33 x 10" },
+      { "letra": "M", "item": "Fondo", "cantidad": 1, "medidas": "116,8 x 10,6" },
+      { "letra": "N", "item": "Frente", "cantidad": 1, "medidas": "116,8 x 10,6" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare las tapas A, atornillando 2 bisagras mediante los tornillos de 1,5 cm.",
+      "piezas": ["Tapa x 2 A"],
+      "herrajes_usados": ["Bisagras codo 0 casoleta 26", "Tornillos de 1,5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Al fondo M, atornille 4 bases de bisagras mediante los tornillos de 1,5 cm y en las perforaciones de los cantos que muestra la figura coloque a presión 2 tarugos de 6x30. En el frente N solo coloque a presión los tarugos.",
+      "piezas": ["Fondo M", "Frente N"],
+      "herrajes_usados": ["Tornillos de 1,5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Una los costados C - D, con el fondo M y el frente N por medio de 4 tornillos Allen de 5 cm previamente haciendo coincidir los tarugos de estos últimos con las perforaciones de los primeros. Luego desde abajo ajuste el piso B por medio de 8 tornillos Allen de 5 cm, 4 a los costados C - D y 4 al fondo y al frente M - N.",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Fondo M", "Frente N", "Piso B"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Prepare los Refuerzos de patas L, colocando a presión 4 tarugos guías 6x30 y dos cajas minifix, como así también las patas atornillando un minifix por cada una. Una las tres piezas introduciendo los pernos minifix de las patas en las perforaciones con caja minifix de los refuerzos de patas utilizando los tarugos como guía, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix.",
+      "piezas": ["Refuerzo patas x 2 L", "Patas macizas der.", "Patas macizas izq."],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas K. A su vez coloque a presión dos tarugos guías 6x30.",
+      "piezas": ["Patas macizas der.", "Patas macizas izq.", "Base pata K"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Una vez armada la base de patas K con las patas macizas, ajuste esta hacia el piso B, a través de los 6 tornillos de 2,5 cm y utilizando como guía los tarugos colocados en la base de patas, los cuales solo sirven de guía (no golpear). Coloque las tapas A en las bases de bisagras colocadas en el fondo M utilizando como guía el contenido de 'Regulación y colocación de bisagra'.",
+      "piezas": ["Base pata K", "Patas macizas der.", "Patas macizas izq.", "Piso B", "Tapa x 2 A", "Fondo M"],
+      "herrajes_usados": ["Tornillos de 2,5 cm", "Tarugos 6x30", "Bisagras codo 0 casoleta 26"],
+      "consejo_pro": "Regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido. Luego ingrese la bisagra en la base de bisagra haciendo coincidir el tornillo de regulación lateral con la ranura en U de la base, y finalmente ajuste el tornillo de regulación de profundidad."
+    }
+  ]
+}

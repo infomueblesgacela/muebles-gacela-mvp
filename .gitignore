@@ -30,7 +30,6 @@ dist-ssr
 
 # Heavy Assets / Local documents
 documents/
-public/modelos_3d/
 plantilla_productos.csv
 gacela-muebles---furniture-store.zip
 

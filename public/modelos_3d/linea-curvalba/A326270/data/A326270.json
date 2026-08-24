@@ -1,0 +1,113 @@
+{
+  "producto": {
+    "id": "326270",
+    "nombre": "Mesa de centro línea Curvalba con un cajón y un estante"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Escuadras plásticas", "cantidad": 1 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Par de guías metálicas de 35 cm", "cantidad": 1 },
+    { "item": "Bases plásticas", "cantidad": 4 },
+    { "item": "Pernos mini fix con caja", "cantidad": 14 },
+    { "item": "Tornillos de 4 cm", "cantidad": 3 },
+    { "item": "Tornillos de 1,5 cm", "cantidad": 2 },
+    { "item": "Tarugos 6x30", "cantidad": 17 },
+    { "item": "Tornillos de 2 cm", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "90 x 44,5" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "87 x 41,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "38,5 x 41,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "38,5 x 41,5" },
+      { "letra": "G", "item": "Frente cajón", "cantidad": 1, "medidas": "89,8 x 19,5" },
+      { "letra": "E", "item": "Fondo", "cantidad": 1, "medidas": "87 x 20" },
+      { "letra": "J", "item": "Costado cajón", "cantidad": 2, "medidas": "35 x 8" },
+      { "letra": "K", "item": "Fondo cajón", "cantidad": 1, "medidas": "81,4 x 8" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 1, "medidas": "84,2 x 32,8" },
+      { "letra": "-", "item": "Faja frente", "cantidad": 1, "medidas": "87 x 6" },
+      { "letra": "-", "item": "Refuerzo cajón", "cantidad": 1, "medidas": "32,4 x 6" },
+      { "letra": "-", "item": "Zócalo", "cantidad": 1, "medidas": "87 x 6" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando a presión 2 caja mini fix, colocando la guía metálica fija derecha mediante los tornillos varianta, también atornille 3 pernos mini fix en las perforaciones que muestra la figura y clave dos bases plásticas. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico.",
+      "piezas": ["Costado derecho C", "Costado izquierdo D"],
+      "herrajes_usados": ["Caja mini fix", "Par de guías metálicas de 35 cm", "Tornillos varianta", "Pernos mini fix con caja", "Bases plásticas"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "paso 2: En el fondo coloque a presión 3 cajas mini fix en las perforaciones de la cara y 2 tarugos guías de 6x30 en el canto laterales como lo muestra la figura.",
+      "piezas": ["Fondo E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "paso 3: Prepare el zócalo, colocando a presión 5 tarugos guías de 6x30 y atornillando la escuadra plásticas con un tornillo de 1,5 cm (la escuadra deben quedar en línea con el tarugo superior). En la faja frente coloque 4 tarugos guías de 6x30, ocupando todas las perforaciones. En la tapa A atornille 5 pernos mini fix.",
+      "piezas": ["Zócalo", "Faja frente", "Tapa A"],
+      "herrajes_usados": ["Tarugos 6x30", "Escuadras plásticas", "Tornillos de 1,5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4: Una el fondo E y el piso B a los costados C - D, introduciendo los pernos minifix de estos en las perforaciones de las cajas minifix de los primeros, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Previamente haciendo coincidir los tarugos de la faja frente y el zócalo con las perforaciones de los costados. Además el tarugo superior del zócalo debe coincidir con la perforación inferior del piso.",
+      "piezas": ["Fondo E", "Piso B", "Costado izquierdo C", "Costado derecho D", "Faja frente", "Zócalo"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5 Armado de cajon: Coloque 2 tarugos 6x30 en el fondo de cajón K, 2 mas en cada uno de los costados de cajón J a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo.",
+      "piezas": ["Fondo cajón K", "Costado cajón J"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6 Armado de cajón: En el frente de cajón G atornillar 3 pernos mini fix.",
+      "piezas": ["Frente cajón G"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 Armado de cajón: Una vez armada la estructura tipo \"U\" entre J-K-J, ingrese el frente de cajón I ajuste los pernos mini fax girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm.",
+      "piezas": ["Costado cajón J", "Fondo cajón K", "Frente cajón G"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8 Armado de cajón: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón G, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm.",
+      "piezas": ["Piso cajón", "Frente cajón G", "Costado cajón J", "Fondo cajón K"],
+      "herrajes_usados": ["Set de Clavos", "Par de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "paso 9: Haga coincidir la perforación lateral del refuerzo de cajón con el perno mini fix colocado en el frente de cajón G, ajuste las piezas girando la caja mini fix media vuelta en sentido horario. Finalmente ajuste el refuerzo al fondo de cajón K mediante 1 tornillo de 4 cm.",
+      "piezas": ["Refuerzo cajón", "Frente cajón G", "Fondo cajón K"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Una la tapa A a los costados C - D, introduciendo los pernos minifix de la tapa en las perforaciones de las cajas minifix de estos, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Desde abajo ajuste el zócalo por medio de un tornillo de 1,5 cm al piso B y a través de la escuadra plástica. Finalmente coloque el cajón ya armado sobre las guías fijas ya colocadas en los costados.",
+      "piezas": ["Tapa A", "Costado izquierdo C", "Costado derecho D", "Zócalo", "Piso B", "Cajón"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 1,5 cm", "Escuadras plásticas", "Par de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen.",
+      "piezas": ["Cajón"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm"],
+      "consejo_pro": "Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen."
+    }
+  ]
+}

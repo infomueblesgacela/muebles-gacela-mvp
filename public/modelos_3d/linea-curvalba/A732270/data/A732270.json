@@ -1,0 +1,94 @@
+{
+  "producto": {
+    "id": "732270",
+    "nombre": "Mesa de luz línea Curvalba con un cajón y un estante"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 4 },
+    { "item": "Bases plásticas", "cantidad": 4 },
+    { "item": "Par de guías metálicas de 35 cm", "cantidad": 1 },
+    { "item": "Tornillos de 4 cm", "cantidad": 2 },
+    { "item": "Tarugos 6x30", "cantidad": 14 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Pernos mini fix con caja", "cantidad": 6 },
+    { "item": "Tornillos de 2 cm", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "40 x 40" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "37 x 38,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "53,5 x 38,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "53,5 x 38,5" },
+      { "letra": "-", "item": "Faja frente", "cantidad": 2, "medidas": "37 x 6" },
+      { "letra": "G", "item": "Frente cajón", "cantidad": 1, "medidas": "39,8 x 21,5" },
+      { "letra": "J", "item": "Costado cajón", "cantidad": 2, "medidas": "35 x 10" },
+      { "letra": "K", "item": "Fondo cajón", "cantidad": 1, "medidas": "31,4 x 10" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "48,6 x 39,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 1, "medidas": "34,2 x 32,8" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando a presión 2 caja mini fix, colocando la guía metálica fija derecha mediante los tornillos varianta y clavando desde abajo dos bases plásticas[cite: 11]. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico[cite: 11]. En la tapa A atornille 4 pernos mini fix[cite: 11]. En las fajas frente coloque 4 tarugos guías de 6x30, ocupando todas las perforaciones[cite: 11].",
+      "piezas": ["Costado derecho D", "Costado izquierdo C", "Tapa A", "Faja frente"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Par de guías metálicas de 35 cm", "Tornillos varianta", "Bases plásticas", "Tarugos 6x30"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Una el piso B con los costados C - D, por medio de 4 tornillos Allen de 5 cm previamente haga coincidir los tarugos de las fajas frente, con las perforaciones de los costados[cite: 11]. Desde arriba una la tapa A a los costados, introduciendo los pernos minifix de la tapa en las perforaciones de las cajas minifix de los costados[cite: 11]. Luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix[cite: 11].",
+      "piezas": ["Piso B", "Costado izquierdo C", "Costado derecho D", "Faja frente", "Tapa A"],
+      "herrajes_usados": ["Tornillos Allen de 5 cm", "Tarugos 6x30", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3 Armado de cajones: Coloque 2 tarugos 6x30 en el fondo de cajón K, 2 mas en cada uno de los costados de cajón J a su vez encastrar las cajas mini fix[cite: 11]. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 11].",
+      "piezas": ["Fondo cajón K", "Costado cajón J"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4 armado de cajon: En el frente de cajón G atornillar dos pernos mini fix[cite: 11].",
+      "piezas": ["Frente cajón G"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "paso 5 armado de cajones: Una vez armada la estructura tipo \"U\" entre K-J-K, ingrese el frente de cajón G ajuste los pernos mini fix girando 180 grados las cajas mini fix[cite: 11]. Habiendo agregado el adhesivo anteriormente[cite: 11]. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm[cite: 11].",
+      "piezas": ["Fondo cajón K", "Costado cajón J", "Frente cajón G"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "paso 6: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón G, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo[cite: 11]. Atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm[cite: 11].",
+      "piezas": ["Piso cajón", "Frente cajón G", "Costado cajón J", "Fondo cajón K"],
+      "herrajes_usados": ["Set de Clavos", "Par de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "paso 7: Con el mueble acostado clave el fondo de mueble de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble[cite: 11]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble[cite: 11]. Vértices: 1 vértice A-C, 2 vértice A-D, 3 vértice B-D, 4 vértice B-C[cite: 11].",
+      "piezas": ["Fondo mueble", "Tapa A", "Costado izquierdo C", "Costado derecho D", "Piso B"],
+      "herrajes_usados": ["Set de Clavos"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "paso 8: Finalmente coloque el cajón ya armado sobre las guías fijas ya colocadas en los costados[cite: 11]. Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 11].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm"],
+      "consejo_pro": "Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 11]."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "producto": {
+    "id": "A009022",
+    "nombre": "GAMMEL - Bahiut_Vajillero"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Pernos mini fix con cajas", "cantidad": 15 },
+    { "item": "Pares de guías metálicas de 350", "cantidad": 1 },
+    { "item": "Soporte de estantes", "cantidad": 12 },
+    { "item": "Tarugos 6x30", "cantidad": 20 },
+    { "item": "Bases plásticas", "cantidad": 6 },
+    { "item": "Escuadras plásticas", "cantidad": 2 },
+    { "item": "Bisagras codo15", "cantidad": 8 },
+    { "item": "Tornillos Phillips de 7 x 50", "cantidad": 8 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Tornillos de 4x40", "cantidad": 3 },
+    { "item": "Tornillos de 4x30", "cantidad": 4 },
+    { "item": "Tornillos de 3.5x20", "cantidad": 4 },
+    { "item": "Tornillos de 3.5x16", "cantidad": 36 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      {"letra": "A", "item": "Tapa", "cantidad": 1},
+      {"letra": "B", "item": "Piso", "cantidad": 1},
+      {"letra": "C", "item": "Costado izquierdo", "cantidad": 1},
+      {"letra": "D", "item": "Costado derecho", "cantidad": 1},
+      {"letra": "F", "item": "Separador izquierdo", "cantidad": 1},
+      {"letra": "G", "item": "Separador derecho", "cantidad": 1},
+      {"letra": "H", "item": "Estante grande", "cantidad": 1},
+      {"letra": "I", "item": "Faja frente", "cantidad": 1},
+      {"letra": "S", "item": "Zócalo delantero", "cantidad": 1},
+      {"letra": "U", "item": "Zócalo trasero", "cantidad": 1},
+      {"letra": "V", "item": "Estante móvil grande", "cantidad": 1},
+      {"letra": "R", "item": "Estante móvil chico", "cantidad": 2},
+      {"letra": "J", "item": "Puertas grandes", "cantidad": 2},
+      {"letra": "L", "item": "Puertas chicas", "cantidad": 2},
+      {"letra": "N", "item": "Frente cajón", "cantidad": 1},
+      {"letra": "O", "item": "Costados de cajón", "cantidad": 2, "medidas": "35 x 10"},
+      {"letra": "Q", "item": "Fondo cajón", "cantidad": 1},
+      {"letra": "S/L", "item": "Piso cajón", "cantidad": 1},
+      {"letra": "S/L", "item": "Refuerzo cajón", "cantidad": 1},
+      {"letra": "S/L", "item": "Fondo mueble lateral", "cantidad": 2},
+      {"letra": "S/L", "item": "Fondo mueble centro", "cantidad": 3}
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Prepare el costado derecho D, clavando 2 bases plásticas, atornillando 2 pernos mini fix, colocando a presión 2 soportes de estantes, 2 cajas mini fix y las 2 bases de bisagras por medio de los tornillos 3,5x15. Repetir el proceso con el costado izquierdo C teniendo en cuenta que este es simétrico.",
+      "piezas": ["Costado derecho D", "Costado izquierdo C"],
+      "herrajes_usados": ["Bases plásticas", "Pernos mini fix", "Soporte de estantes", "Cajas mini fix", "Bisagras codo15", "Tornillos de 3.5x16"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "A su vez coloque sobre la puertas chicas L las bisagras mediante los tornillos 3,5x15, hacer lo mismo para las puertas grandes J.",
+      "piezas": ["Puertas chicas L", "Puertas grandes J"],
+      "herrajes_usados": ["Bisagras codo15", "Tornillos de 3.5x16"],
+      "comma": ""
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "En el separador izquierdo F, en la cara izquierda colocar a presión dos soportes de estantes. Y en la cara derecha colocar a presión 2 cajas mini fix, 2 soporte de estantes, una guía metálicas por medio de los tornillos varianta y atornillar 2 bases de bisagras y una escuadra plástica por medio de los tornillos 3,5x15. Realizar la misma operación ara el separador derecho G, tener en cuenta que es simétrico.",
+      "piezas": ["Separador izquierdo F", "Separador derecho G"],
+      "herrajes_usados": ["Soporte de estantes", "Cajas mini fix", "Guías metálicas de 350", "Tornillos varianta", "Bisagras codo15", "Escuadras plásticas", "Tornillos de 3.5x16"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "En el piso B coloque a presión 4 cajas de mini fix en la cara inferior. Y en los zócalos S-U colocar a presión 5 tarugos 6x30 2 por cada extremo y uno en el filo superior y clavar en el filo inferior 1 base plástica posicionándola en el centro.",
+      "piezas": ["Piso B", "Zócalo delantero S", "Zócalo trasero U"],
+      "herrajes_usados": ["Cajas mini fix", "Tarugos 6x30", "Bases plásticas"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5, armado de cajón: Coloque 2 tarugos 6x30 en el fondo de cajón Q, 2 mas en los costados de cajón O y a su vez en los costados encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo. Seguidamente coloque dos minifix y el tirador en el frente de cajón N.",
+      "piezas": ["Fondo cajón Q", "Costados de cajón O", "Frente cajón N"],
+      "herrajes_usados": ["Tarugos 6x30", "Cajas mini fix", "Envase de cola", "Pernos mini fix con cajas"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6, armado de cajón: Una vez armada la estructura tipo 'U' entre OQ-O, ingrese el frente de cajón N ajuste los pernos mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4 x 40.",
+      "piezas": ["Costados de cajón O", "Fondo cajón Q", "Frente cajón N"],
+      "herrajes_usados": ["Pernos mini fix con cajas", "Cajas mini fix", "Tornillos de 4x40"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 armado de cajón: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón I, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos 3,5x20.",
+      "piezas": ["Piso cajón", "Frente cajón I", "Costados de cajón O", "Fondo cajón Q"],
+      "herrajes_usados": ["Set de Clavos", "Guías metálicas de 350", "Tornillos de 3.5x20"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8 armado de cajón: Haga coincidir la perforación lateral del refuerzo de cajón con el perno mini fix colocado en el frente de cajón N, ajuste las piezas girando la caja mini fix media vuelta en sentido horario. Finalmente ajuste el refuerzo al fondo de cajón Q mediante 1 tornillo 4 x 40",
+      "piezas": ["Refuerzo cajón", "Frente cajón N", "Fondo cajón Q"],
+      "herrajes_usados": ["Pernos mini fix con cajas", "Cajas mini fix", "Tornillos de 4x40"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "paso 9: Una el separador izquierdo F y el separador derecho G al estante grande H por medio de 4 tornillos Phillips 7x50 como así también al piso B con los mismos tornillos, como lo muestra la figura.",
+      "piezas": ["Separador izquierdo F", "Separador derecho G", "Estante grande H", "Piso B"],
+      "herrajes_usados": ["Tornillos Phillips de 7 x 50"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "paso 10: Haga coincidir el tarugo vertical del zócalo delantero S y del zócalo trasero U con los agujeros centrales del piso B. Seguidamente haga coincidir los mini fix del costado izquierdo C y del derecho D con los agujeros laterales del piso. Previamente introduciendo los tarugos laterales de los zócalos y de la faja frente I, en las perforaciones de los costados. Luego para ajustar las piezas gire la caja para mini fix media vuelta y por medio de 4 tornillos 4x40 una los zócalos al piso. Tener en cuenta que el borde sin filo va hacia atrás. Ajuste la faja frente por medio de 2 tornillos 3,5x15 a través de las escuadras plásticas colocadas en los separadores F-G. Ajuste desde arriba la tapa A haciendo coincidir las perforaciones que se encuentran en los costados and in los separadores, con los pernos mini fix de la misma y posteriormente girando la caja mini fix 180°.",
+      "piezas": ["Zócalo delantero S", "Zócalo trasero U", "Piso B", "Costado izquierdo C", "Costado derecho D", "Faja frente I", "Tapa A", "Separador izquierdo F", "Separador derecho G"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con cajas", "Cajas mini fix", "Tornillos de 4x40", "Tornillos de 3.5x16", "Escuadras plásticas"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "paso 11: Clave los fondos de mueble en los vértices del mismo teniendo en cuenta las escuadras justas del mueble, posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. Distribuya como muestra la figura.",
+      "piezas": ["Fondo mueble lateral x2", "Fondo mueble centro x3"],
+      "herrajes_usados": ["Set de Clavos"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "paso 12 Luego deslice el estante móvil grande V y los estantes móviles chicos R sobre los soportes previamente colocados en los costados CD y los separadores F-G haciéndolo llegar hasta el fondo.",
+      "piezas": ["Estante móvil grande V", "Estante móvil chico R", "Costado izquierdo C", "Costado derecho D", "Separador izquierdo F", "Separador derecho G"],
+      "herrajes_usados": ["Soporte de estantes"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 13,
+      "instruccion_amigable": "paso 13: Coloque las puertas grandes J y las puertas chicas L teniendo en cuenta que el tornillo de ajuste lateral A se encuentre enroscado hasta por lo menos la mitad de su recorrido. Una vez ingresada, ajuste la puerta mediante el tornillo de ajuste y de regulación de profundidad C. Para terminar regúle la bisagra como muestra el video 'Regulación de bisagra'.",
+      "piezas": ["Puertas grandes J", "Puertas chicas L"],
+      "herrajes_usados": ["Bisagras codo15"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 14,
+      "instruccion_amigable": "Finalmente ingrese el cajón haciendo coincidir las guías. Como lo muestra la figura. Finalizando así el armado del mueble.",
+      "piezas": ["Cajón armado"],
+      "herrajes_usados": ["Pares de guías metálicas de 350"],
+      "consejo_pro": ""
+    }
+  ]
+}

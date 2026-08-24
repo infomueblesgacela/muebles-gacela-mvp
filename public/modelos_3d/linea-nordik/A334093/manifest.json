@@ -1,0 +1,32 @@
+{
+  "files_3d": [
+    "A334093-Faja.glb",
+    "A334093-Pata_corta.glb",
+    "A334093-Pata_larga.glb",
+    "A334093-a-tapa.glb",
+    "A334093-b-piso.glb",
+    "A334093-c-costado.glb",
+    "A334093-d-fondo_abajo.glb",
+    "A334093-e-fondo_arriba.glb",
+    "A334093-f-sobre-tapa.glb"
+  ],
+  "files_pasos": [
+    "A334093-unboxing.png",
+    "instructivo-caja-minifix.webp",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png"
+  ],
+  "files_herrajes": [
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-6-30.webp",
+    "tornillo-5.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

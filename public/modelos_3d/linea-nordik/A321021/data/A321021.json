@@ -1,0 +1,119 @@
+{
+  "producto": {
+    "id": "321021",
+    "nombre": "Escritorio línea escandinava con un cajón, con panel y estante"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave allen",
+      "Cinta metrica",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Bases con tarugo", "cantidad": 2 },
+    { "item": "Pernos mini fix con caja", "cantidad": 8 },
+    { "item": "Tarugos 6x30", "cantidad": 24 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 6 },
+    { "item": "Tornillos de 4 cm", "cantidad": 5 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 23 },
+    { "item": "Tirador botón", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "85 x 52" },
+      { "letra": "C", "item": "Costado abajo izquierdo", "cantidad": 1, "medidas": "50 x 10,6" },
+      { "letra": "D", "item": "Costado abajo derecho", "cantidad": 1, "medidas": "50 x 10,6" },
+      { "letra": "J", "item": "Cost. cajón izquierdo", "cantidad": 1, "medidas": "40 x 8,4" },
+      { "letra": "K", "item": "Cost. cajón derecho", "cantidad": 1, "medidas": "40 x 8,4" },
+      { "letra": "H", "item": "Fondo arriba", "cantidad": 1, "medidas": "85 x 35" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "85 x 50" },
+      { "letra": "M", "item": "Base pata", "cantidad": 1, "medidas": "77 x 42" },
+      { "letra": "E", "item": "Costado arriba", "cantidad": 2, "medidas": "35 x 10" },
+      { "letra": "I", "item": "Frente cajón", "cantidad": 1, "medidas": "85 x 11,8" },
+      { "letra": "J", "item": "Fondo de cajón", "cantidad": 1, "medidas": "81,7 x 10,3" },
+      { "letra": "-", "item": "Piso de cajón", "cantidad": 1, "medidas": "81,4 x 41" },
+      { "letra": "F", "item": "Separador abajo", "cantidad": 2, "medidas": "23,5 x 10" },
+      { "letra": "-", "item": "Separador arriba", "cantidad": 1, "medidas": "10 x 10" },
+      { "letra": "G", "item": "Estante", "cantidad": 1, "medidas": "82 x 10" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 4, "medidas": "63 x 7,5" },
+      { "letra": "-", "item": "Refuerzo cajón", "cantidad": 2, "medidas": "40 x 6" },
+      { "letra": "H", "item": "Fondo abajo", "cantidad": 1, "medidas": "81,8 x 10,6" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado abajo derecho D y el costado abajo izquierdo C, colocando a presión 2 caja mini fix[cite: 5802].",
+      "piezas": ["Costado abajo derecho D", "Costado abajo izquierdo C"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En la tapa A atornille 4 pernos mini fix en las perforaciones que muestra la figura[cite: 5804, 5805].",
+      "piezas": ["Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En los costados arriba E coloque a presión un tarugo de 6x30 en la perforación que marca la figura[cite: 5803]. En los separadores abajo F, coloque a presión 4 tarugos 6x30 en los cantos cortos, y coloque 2 en el separador arriba[cite: 5810, 5811]. En el fondo, coloque a presión 4 tarugos 6x30 en los cantos cortos y 2 en los largos[cite: 5812].",
+      "piezas": ["Costado arriba E", "Separador abajo x 2 F", "- Separador arriba", "H Fondo abajo"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Una los costados arriba E y el estante G por medio de 2 tornillos Allen de 5 cm[cite: 5814]. Luego haga coincidir los tarugos de los separadores abajo F con las perforaciones del estante G y luego con las perforaciones de la tapa A para luego ajustar de abajo con 2 tornillos de 5 cm[cite: 5815]. Verifique que los cantos melaminicos queden hacia adelante[cite: 5816]. Desde arriba una el separador arriba con el estante introduciendo los tarugos en las perforaciones de este ultimo[cite: 5817, 5818].",
+      "piezas": ["Costado arriba E", "Estante G", "Separador abajo x 2 F", "Tapa A", "- Separador arriba"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Por medio de tornillos Allen de 5 cm una el fondo arriba H con los costados arriba E, el estante G y el separador arriba, luego desde abajo con la tapa A[cite: 5828]. Seguidamente una los costados abajo C - D con la tapa A introduciendo los pernos minifix de esta en las perforaciones con caja minifix de las primeras, previamente haciendo coincidir los tarugos del fondo abajo con las perforaciones de los costados abajo y la perforación de la tapa[cite: 5829, 5830, 5831]. Luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix[cite: 5832, 5833]. Por ultimo y desde abajo por medio de 4 tornillos Allen de 5 cm una el piso B con los costados abajo C - D, previamente haciendo coincidir el tarugo del fondo con la perforación del piso[cite: 5842].",
+      "piezas": ["H Fondo arriba", "Costado arriba E", "Estante G", "- Separador arriba", "Tapa A", "Costado abajo izquierdo C", "Costado abajo derecho D", "H Fondo abajo", "Piso B"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen de 5 cm hacia la base de las patas M[cite: 5844]. A su vez coloque a presión dos tarugos guías 6x30 como muestra la imagen[cite: 5844].",
+      "piezas": ["- Patas macizas", "Base pata M"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: En el frente de cajón I atornille 4 pernos mini fix en las perforaciones que muestra la figura, y por medio de un tornillo de 4 cm el tirador botón[cite: 5849]. Agregar una caja mini fix a cada refuerzo de cajón[cite: 5850].",
+      "piezas": ["Frente cajón I", "- Refuerzo cajón x 2"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 4 cm", "Tirador botón"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: En el costado de cajón izquierdo J coloque a presión 2 tarugos 6x30 en los cantos cortos y a su vez encastrar una caja mini fix[cite: 5851]. Realizar el mismo procedimiento para el costado de cajón derecho K teniendo en cuenta que es simétrico[cite: 5852]. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 5853].",
+      "piezas": ["Cost. cajón izquierdo J", "Cost. cajón derecho K"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: Una los costados de cajón J - K con el frente de cajón I, introduciendo los pernos de este ultimo con las perforaciones de los primeros, usando como guía los tarugos de estos[cite: 5854]. Ajuste los mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente[cite: 5855]. Usando el mismo sistema mini fix, una los refuerzos de cajón con el frente[cite: 5856].",
+      "piezas": ["Cost. cajón izquierdo J", "Cost. cajón derecho K", "Frente cajón I", "- Refuerzo cajón x 2"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Envase de cola"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Introduzca el piso de cajón sobre el canal del frente de cajón I, luego desde atrás introduciendo el piso en el fondo de cajón L, una el fondo a los costados y a los refuerzos por medio de 4 tornillos de 4 cm[cite: 5861]. Seguidamente clave el piso sobre los filos inferiores de los costados siguiendo una escuadra correcta del cajón[cite: 5862]. Habiendo agregado el adhesivo anteriormente[cite: 5863].",
+      "piezas": ["- Piso de cajón", "Frente cajón I", "J Fondo de cajón", "Cost. cajón izquierdo J", "Cost. cajón derecho K", "- Refuerzo cajón x 2"],
+      "herrajes_usados": ["Tornillos de 4 cm", "Set de Clavos", "Envase de cola"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Una vez armada la base de patas M con las patas macizas, ajuste esta hacia el piso B, a través de los 6 tornillos de 2,5 cm y utilizando como guía los tarugos colocados en la base de patas, los cuales solo sirven de guía (no golpear)[cite: 5867]. Finalmente ingrese el cajón hasta una profundidad que pueda quedar el acceso para colocar a presión 2 bases con tarugos en las perforaciones para bases que están en la tapa A. Dichas bases sirven de tope para el cajón[cite: 5871].",
+      "piezas": ["Base pata M", "- Patas macizas", "Piso B", "Frente cajón I", "Tapa A"],
+      "herrajes_usados": ["Tornillos de 2.5 cm", "Tarugos 6x30", "Bases con tarugo"]
+    }
+  ]
+}

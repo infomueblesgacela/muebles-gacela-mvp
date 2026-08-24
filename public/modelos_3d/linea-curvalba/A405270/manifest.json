@@ -1,0 +1,46 @@
+{
+  "files_3d": [
+    "A405270-Faja_frente.glb",
+    "A405270-a-tapa.glb",
+    "A405270-b-piso.glb",
+    "A405270-c-entre_tapa.glb",
+    "A405270-d-costado_izquierdo.glb",
+    "A405270-e-costado_derecho.glb",
+    "A405270-f-estante_fijo.glb",
+    "A405270-fondo_de_mueble.glb",
+    "A405270-g-separador_arriba.glb",
+    "A405270-h-separador_abajo.glb",
+    "A405270-i-estante_movil.glb",
+    "A405270-j-puerta_izquierda.glb",
+    "A405270-k-puerta_derecha.glb",
+    "A405270-zocalo.glb"
+  ],
+  "files_pasos": [
+    "A405270-unboxing.png",
+    "instructivo-caja-minifix.webp",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png",
+    "paso_07.png",
+    "paso_08.png"
+  ],
+  "files_herrajes": [
+    "base-plastica.webp",
+    "bisagra.webp",
+    "clavos.webp",
+    "escuadra_plastica.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "soporte-de-estantes.webp",
+    "tarugo-madera.webp",
+    "tornillo-1-5.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

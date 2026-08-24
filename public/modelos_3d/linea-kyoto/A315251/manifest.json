@@ -1,0 +1,63 @@
+{
+  "files_3d": [
+    "A315251-Fondo_mueble.glb",
+    "A315251-ZOCALOSXZO001.glb",
+    "A315251-Zocalo_frente.glb",
+    "A315251-a-tapa.glb",
+    "A315251-b-piso.glb",
+    "A315251-c-costado_izquierdo.glb",
+    "A315251-d-costado_derecho.glb",
+    "A315251-e-sobre_tapa.glb",
+    "A315251-f-estante.glb",
+    "A315251-g-separador_arriba.glb",
+    "A315251-h-separador_abajo.glb",
+    "A315251-i-frente_ripiado_izquierdo.glb",
+    "A315251-j_frente_ripiado_derecho.glb",
+    "A315251-k-frente_izquierdo.glb",
+    "A315251-l-frente_derecho.glb",
+    "A315251-m-estante_movil.glb",
+    "A315251-n-puerta.glb",
+    "A315251-o_zocalo_derecho.glb",
+    "A315251-parante_fondo.glb"
+  ],
+  "files_pasos": [
+    "A315251-unboxing.png",
+    "instructivo-caja-minifix.webp",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png",
+    "paso_07.png",
+    "paso_08.png",
+    "paso_09.png",
+    "paso_10.png",
+    "paso_11.png",
+    "paso_12.png",
+    "paso_13.png",
+    "paso_14.png",
+    "paso_15.png"
+  ],
+  "files_herrajes": [
+    "base-plastica.webp",
+    "carro-interior.webp",
+    "clavos.webp",
+    "clip.webp",
+    "escuadra_plastica.webp",
+    "guia-inferior.webp",
+    "guia-superior.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "soporte-de-estantes.webp",
+    "tarugo-6-30.webp",
+    "tornillo-1-5.webp",
+    "tornillo_allen.webp",
+    "traba.webp"
+  ],
+  "files_herramientas": [
+    "cinta-metrica.webp",
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

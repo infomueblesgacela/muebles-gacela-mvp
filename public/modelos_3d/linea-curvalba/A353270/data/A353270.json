@@ -1,0 +1,71 @@
+{
+  "producto": {
+    "id": "353270",
+    "nombre": "Torre línea Curvalba con puerta y estante móvil"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 0 cazoleta 26", "cantidad": 2 },
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 8 },
+    { "item": "Pernos mini fix con caja", "cantidad": 4 },
+    { "item": "Bases plásticas", "cantidad": 4 },
+    { "item": "Soportes de estantes", "cantidad": 4 },
+    { "item": "Tarugos 6x30", "cantidad": 8 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 8 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "39 x 31" },
+      { "letra": "B", "item": "Piso y estante", "cantidad": 2, "medidas": "36 x 29,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "118,5 x 29,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "118,5 x 29,5" },
+      { "letra": "F", "item": "Estante móvil", "cantidad": 1, "medidas": "36 x 29,5" },
+      { "letra": "-", "item": "Faja y zócalo", "cantidad": 1, "medidas": "36 x 6" },
+      { "letra": "G", "item": "Puerta", "cantidad": 1, "medidas": "43 x 38,8" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "47 x 38,5" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado izquierdo C, colocando 2 bases de bisagra mediante los tornillos de 1,5 cm, a presión coloque 2 soporte de estantes y 2 caja mini fix. Realice el mismo procedimiento para el costado derecho D, pero sin las bases de bisagras[cite: 11].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D"],
+      "herrajes_usados": ["Tornillos de 1.5 cm", "Soportes de estantes", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En las faja - zócalo coloque a presión 4 tarugos 6x30 en los filos[cite: 11].",
+      "piezas": ["Faja y zócalo"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En la puerta G coloque 2 bisagra mediante los tornillos de 1.5cm. En la tapa A atornille 4 pernos mini fix[cite: 11].",
+      "piezas": ["Puerta G", "Tapa A"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Una los costados C - D a los estantes y piso B mediante 4 tornillos Allen de 5 cm previamente haciendo coincidir los tarugos de la faja y zócalo con las perforaciones de los costados. Desde arriba encastre los pernos mini fix que se encuentran en la tapa A con las perforaciones superiores de los costados, tenga en cuenta que la marca guía quede hacia atrás y luego para ajustar las piezas gire las caja mini fix media vuelta en sentido horario. Desde abajo clave las bases plásticas en los filos inferiores de los costados[cite: 11].",
+      "piezas": ["Costado izquierdo C", "Costado derecho D", "Piso y estante B", "Faja y zócalo", "Tapa A"],
+      "herrajes_usados": ["Tornillos Allen de 5 cm", "Tarugos 6x30", "Pernos mini fix con caja", "Bases plásticas"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Clave el fondo de mueble de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. 1 vértice B piso - C, 2 vértice B piso - D, 3 vértice B estante - D, 4 vértice B estante - C. Coloque la puerta G en las bases de bisagras colocadas en el costado izquierdo C, Utilizando como guía las indicaciones de 'Colocación de bisagra' y 'Regulación de bisagra'. Finalmente deslice el estante móvil F sobre los soportes previamente colocados en los costados C-D haciéndolo llegar hasta el fondo[cite: 11].",
+      "piezas": ["Fondo mueble", "Piso y estante B", "Costado izquierdo C", "Costado derecho D", "Puerta G", "Estante móvil F"],
+      "herrajes_usados": ["Set de Clavos", "Bisagras codo 0 cazoleta 26", "Soportes de estantes"]
+    }
+  ]
+}

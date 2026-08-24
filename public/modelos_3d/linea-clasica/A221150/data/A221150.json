@@ -1,0 +1,77 @@
+{
+  "producto": {
+    "id": "221150",
+    "nombre": "Escritorio con repisa de oficina línea clásica con estantes fijos"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    {
+      "item": "Tornillos de 4 cm",
+      "cantidad": 15
+    },
+    {
+      "item": "Tornillos Phillips de 5 cm",
+      "cantidad": 4
+    },
+    {
+      "item": "Bases plásticas con clavos",
+      "cantidad": 6
+    },
+    {
+      "item": "Pernos mini fix con caja",
+      "cantidad": 5
+    },
+    {
+      "item": "Tarugos 6x30",
+      "cantidad": 4
+    },
+    {
+      "item": "Set de Clavos",
+      "cantidad": 1
+    }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      {"letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "120 x 40"},
+      {"letra": "B", "item": "Costado izquierdo", "cantidad": 1, "medidas": "110 x 30"},
+      {"letra": "C", "item": "Costado derecho", "cantidad": 1, "medidas": "73,5 x 40"},
+      {"letra": "D", "item": "Separador", "cantidad": 1, "medidas": "73,5 x 30"},
+      {"letra": "E", "item": "Fondo vertical", "cantidad": 1, "medidas": "110 x 30"},
+      {"letra": "H", "item": "Frente", "cantidad": 1, "medidas": "90 x 15"},
+      {"letra": "F", "item": "Estante arriba", "cantidad": 1, "medidas": "27 x 30"},
+      {"letra": "G", "item": "Estante abajo", "cantidad": 2, "medidas": "27 x 30"}
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Prepare el estante arriba F colocando a presión 2 tarugos 6x30 como muestra la figura, en el canto con 3 perforaciones. En el frente H, coloque a presión una caja mini fix, y dos tarugos 6x30. En la tapa A atornille 5 pernos mini fix. Tanto en el costado derecho C como en el separador D coloque a presión 2 cajas para mini fix y desde abajo clave 2 bases plásticas. En el costado izquierdo B clave 2 bases plásticas.",
+      "piezas": ["Estante arriba F", "Frente H", "Tapa A", "Costado derecho C", "Separador D", "Costado izquierdo B"],
+      "herrajes_usados": ["Tarugos 6x30", "Caja mini fix", "Pernos mini fix", "Cajas para mini fix", "Bases plásticas"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Una el separador D con el frente H y el costado derecho C mediante dos tornillos Phillips de 5 cm usando de guía los tarugos del frente. Luego desde arriba una la tapa A al costado derecho al separador y al frente, introduciendo los pernos minifix de la tapa en las perforaciones de las cajas minifix de estos. Para ajustar las piezas gire 180 grados en sentido horario las cajas mini fix.",
+      "piezas": ["Separador D", "Frente H", "Costado derecho C", "Tapa A"],
+      "herrajes_usados": ["Tornillos Phillips de 5 cm", "Cajas mini fix", "Pernos mini fix"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Una el separador D con los estantes abajo G y el costado izquierdo B mediante 4 tornillos Phillips de 5 cm. A su vez una la tapa A con el costado izquierdo este al estante arriba por medio de 4 tornillos mas. Finalmente desde atrás una el fondo vertical E a los estantes abajo por medio de 4 tornillos de 4 cm y al estante arriba por medio de 1 tornillo phillips de 5 cm y usando como guía los tarugos.",
+      "piezas": ["Separador D", "Estante abajo G", "Costado izquierdo B", "Tapa A", "Fondo vertical E", "Estante arriba F"],
+      "herrajes_usados": ["Tornillos Phillips de 5 cm", "Tornillos de 4 cm"],
+      "consejo_pro": ""
+    }
+  ]
+}

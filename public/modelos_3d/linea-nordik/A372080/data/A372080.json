@@ -1,0 +1,61 @@
+{
+  "producto": {
+    "id": "372080",
+    "nombre": "Mesas de arrime redondas con patas invertidas"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 15,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Pernos mini fix con caja", "cantidad": 16 },
+    { "item": "Tornillos de 2 cm", "cantidad": 2 },
+    { "item": "Clavos cabeza caucho", "cantidad": 8 },
+    { "item": "Tarugos 6x30", "cantidad": 8 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa grande (di 75)", "cantidad": 1, "medidas": "75" },
+      { "letra": "B", "item": "Tapa chica (di 59)", "cantidad": 1, "medidas": "59" },
+      { "letra": "C", "item": "Patas largas x4", "cantidad": 4, "medidas": "53 x 5" },
+      { "letra": "D", "item": "Patas cortas x4", "cantidad": 4, "medidas": "33 x 5" },
+      { "letra": "E", "item": "Travesaño grande superior", "cantidad": 1, "medidas": "61 x 5" },
+      { "letra": "F", "item": "Travesaño grande inferior", "cantidad": 1, "medidas": "61 x 5" },
+      { "letra": "G", "item": "Travesaño chico superior", "cantidad": 1, "medidas": "45 x 5" },
+      { "letra": "H", "item": "Travesaño chico inferior", "cantidad": 1, "medidas": "45 x 5" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Tanto en las patas largas C como en las patas chicas D, atornillar 1 mini fix, colocar a presión 1 tarugo 6x30 y 1 caja mini fix en las perforaciones que muestra la figura, por último clavar un clavo cabeza de caucho en la parte inferior, tratando de que este quede centrado[cite: 18].",
+      "piezas": ["Patas largas x4 C", "Patas cortas x4 D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Clavos cabeza caucho"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En los travesaños grandes E-F como así también en los travesaños chicos G-H, colocar a presión 2 cajas mini fix por travesaño[cite: 18]. En la tapa grande A y en la tapa chica B, atornille 4 mini fix en las perforaciones[cite: 18].",
+      "piezas": ["Travesaño grande superior E", "Travesaño grande inferior F", "Travesaño chico superior G", "Travesaño chico inferior H", "Tapa grande (di 75) A", "Tapa chica (di 59) B"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Una un par de patas chicas D con el travesaño grande inferior F, usando como guía los tarugos que se encuentran en las patas y una vez encastrados girar las cajas de los mini fix 180 grados en sentido horario[cite: 18]. Luego repetir la operación con el par de patas chicas restantes y el travesaño grande superior E[cite: 18]. Finalmente una los travesaños haciendo coincidir el encastre y colocando desde abajo un tornillo de 2 cm (3,5x20)[cite: 18].",
+      "piezas": ["Patas cortas x4 D", "Travesaño grande inferior F", "Travesaño grande superior E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Una las patas chicas D con la tapa grande A haciendo coincidir los mini fix de esta con las cajas mini fix de las patas, una vez encastrados girar las cajas de los mini fix 180 grados en sentido horario, terminando así el armado de la mesa baja[cite: 18]. Repita el paso 2 y 3 utilizando las patas largas C, los travesaños chicos G-H y la tapa chica B para el armado de la mesa alta[cite: 18].",
+      "piezas": ["Patas cortas x4 D", "Tapa grande (di 75) A", "Patas largas x4 C", "Travesaño chico superior G", "Travesaño chico inferior H", "Tapa chica (di 59) B"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Tornillos de 2 cm"],
+      "consejo_pro": "Alineación de cajas de fijación: Observe que la flecha grabada en cada caja para mini fix debe estar perfectamente alineada hacia el orificio de entrada para que el perno pueda ingresar correctamente[cite: 18]."
+    }
+  ]
+}

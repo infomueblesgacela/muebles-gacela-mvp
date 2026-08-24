@@ -1,0 +1,27 @@
+{
+  "files_3d": [
+    "A429091-Refuerzo.glb",
+    "A429091-a-tapa.glb",
+    "A429091-b-base_de_patas.glb",
+    "A429091-c-fajas.glb",
+    "A429091-e-accesorio.glb",
+    "A429091-pata.glb"
+  ],
+  "files_pasos": [
+    "A429091-unboxing.png",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png"
+  ],
+  "files_herrajes": [
+    "tarugo-3.webp",
+    "tornillo-4.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

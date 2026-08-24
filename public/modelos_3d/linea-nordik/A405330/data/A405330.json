@@ -1,0 +1,106 @@
+{
+  "producto": {
+    "id": "405330",
+    "nombre": "Bahiut VIND línea Nordik de tres puertas de 140 cm"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 45,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 0 cazoleta 26", "cantidad": 6 },
+    { "item": "Tornillos Allen o Phillips de 5 cm", "cantidad": 30 },
+    { "item": "Pernos mini fix con caja", "cantidad": 4 },
+    { "item": "Soporte de estantes", "cantidad": 4 },
+    { "item": "Tornillos de 4 cm", "cantidad": 10 },
+    { "item": "Tarugos 6x30", "cantidad": 6 },
+    { "item": "Set de Clavos", "cantidad": 1 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 24 },
+    { "item": "Tornillos de 2,5 cm", "cantidad": 6 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "136,8 x 43" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "140 x 44,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "80 x 44,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "80 x 44,5" },
+      { "letra": "I", "item": "Base patas", "cantidad": 1, "medidas": "130 x 39,5" },
+      { "letra": "E", "item": "Faja fondo", "cantidad": 1, "medidas": "136,8 x 6" },
+      { "letra": "F", "item": "Estante fijo", "cantidad": 2, "medidas": "44,6 x 40" },
+      { "letra": "G", "item": "Estante móvil", "cantidad": 1, "medidas": "44,6 x 40" },
+      { "letra": "M", "item": "Separador izquierdo", "cantidad": 1, "medidas": "77 x 44,5" },
+      { "letra": "N", "item": "Separador derecho", "cantidad": 1, "medidas": "77 x 44,5" },
+      { "letra": "J", "item": "Puerta izquierda", "cantidad": 1, "medidas": "80 x 45,8" },
+      { "letra": "K", "item": "Puerta derecha", "cantidad": 1, "medidas": "80 x 45,8" },
+      { "letra": "L", "item": "Puerta centro", "cantidad": 1, "medidas": "80 x 47,6" },
+      { "letra": "-", "item": "Zócalo frente", "cantidad": 2, "medidas": "115,5 x 8" },
+      { "letra": "-", "item": "Zócalo lateral", "cantidad": 2, "medidas": "32 x 8" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 3, "medidas": "79,5 x 46" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 5, "medidas": "19 x 7,5" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el separador derecho N, colocando a presión 2 cajas para mini fix, 2 soportes de estantes y 2 bases de bisagra mediante 4 tornillos de 1,5 cm, en las perforaciones que muestra la figura. En el separador izquierdo M solo coloque a presión 2 cajas para mini fix, 2 soportes de estantes, tener en cuenta que son simétricos. Tanto en el costado izquierdo C como en el derecho D solo atornille las bases de bisagras. [cite: 2329, 2330, 2331]",
+      "piezas": ["Separador derecho N", "Separador izquierdo M", "Costado izquierdo C", "Costado derecho D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Soportes de estantes", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Tanto en la puerta central L como en las puertas laterales J - K coloque 2 bisagras mediante los tornillos de 1,5 cm. [cite: 2334]",
+      "piezas": ["Puerta centro L", "Puerta izquierda J", "Puerta derecha K"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En la Tapa A, atornille 4 Pernos mini fix cubriendo todas las perforaciones. [cite: 2335]",
+      "piezas": ["Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: En la faja fondo E coloque a presión 4 tarugos guías. [cite: 2336]",
+      "piezas": ["Faja fondo E"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Encastre las patas macizas en la base de patas I, para luego ajustarla desde arriba por medio de los tornillos Allen de 5 cm. A su vez coloque a presión dos tarugos guías 6x30. [cite: 2342, 2343]",
+      "piezas": ["- Patas macizas", "Base patas I"],
+      "herrajes_usados": ["Tornillos Allen o Phillips de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Acoplar los separadores M - N a la Tapa A introduciendo los pernos mini fix de esta en las perforaciones con caja mini fix de los primeros mencionados, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Luego por medio de los tornillos Allen de 5 cm una el costado derecho D con la tapa A y un estante fijo F y este unirlo al separador derecho N. De igual manera unir el costado izquierdo C con el estante fijo restante y el separador izquierdo M. Previamente a la unión de los costados con la tapa introducir los tarugos de la faja fondo E in las perforaciones de los costados. [cite: 2346, 2347, 2348, 2349, 2350, 2351, 2360]",
+      "piezas": ["Separador izquierdo M", "Separador derecho N", "Tapa A", "Costado derecho D", "Estante fijo F", "Costado izquierdo C", "Faja fondo E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos Allen o Phillips de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Desde atrás unir la faja fondo E a la tapa A por medio de dos tornillos de 4 cm. Luego por medio de 8 tornillos Allen de 5 cm una el piso B a los costados C-D y a los separadores M-N. Seguidamente clave los fondos de 3 mm, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. (1 vértice A-C, 2 vértice de A-M, 3 vértice C-B, 4 vértice de B-M). Repetir para el resto de los fondos. Finalmente deslice el estante móvil G sobre los soportes previamente colocados en los separadores. [cite: 2368, 2369, 2370, 2371, 2374, 2375, 2376, 2377, 2378, 2379]",
+      "piezas": ["Faja fondo E", "Tapa A", "Piso B", "Costado izquierdo C", "Costado derecho D", "Separador izquierdo M", "Separador derecho N", "- Fondo mueble x 3", "Estante móvil G"],
+      "herrajes_usados": ["Tornillos de 4 cm", "Tornillos Allen o Phillips de 5 cm", "Set de Clavos", "Soportes de estantes"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: Para terminar de armar la base de patas I, mediante los tornillos de 4 cm vincule las fajas laterales hacia las fajas frentes, para finalmente unir estas hacia las patas Macizas, tal como lo indica la figura. [cite: 2389, 2390]",
+      "piezas": ["Base patas I", "- Zócalo lateral", "- Zócalo frente", "- Patas macizas"],
+      "herrajes_usados": ["Tornillos de 4 cm"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: Una vez armado la base de patas I ajuste este hacia el piso B, a través de los 6 tornillos de 2,5 cm y utilizando como guía las perforaciones donde van los dos tarugos 6 x 30. LOS TARUGOS SOLO SIRVEN DE GUÍA NO GOLPEARLOS. Finalmente coloque las Puertas J-L-K en las bases de bisagras colocadas en los Costados C-D y del separador derecho N, Utilizando como guía las indicaciones de 'Colocación de bisagra' y 'Regulación de bisagra'. [cite: 2383, 2384, 2385, 2386]",
+      "piezas": ["Base patas I", "Piso B", "Puerta izquierda J", "Puerta centro L", "Puerta derecha K", "Costado izquierdo C", "Costado derecho D", "Separador derecho N"],
+      "herrajes_usados": ["Tornillos de 2,5 cm", "Tarugos 6x30", "Bisagras codo 0 cazoleta 26"],
+      "consejo_pro": "Regulación de puertas: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido antes de encastrar la bisagra en su base. [cite: 2395, 2402]"
+    }
+  ]
+}

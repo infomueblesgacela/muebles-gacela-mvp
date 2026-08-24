@@ -1,0 +1,97 @@
+{
+  "producto": {
+    "id": "405270",
+    "nombre": "Bahiut línea Curvalba con dos puertas y estantes fijos laterales"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 60,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave allen de 4",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Bisagras codo 0 cazoleta 26", "cantidad": 4 },
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 8 },
+    { "item": "Soporte de estantes", "cantidad": 4 },
+    { "item": "Pernos mini fix con caja", "cantidad": 20 },
+    { "item": "Tarugos 6x30", "cantidad": 14 },
+    { "item": "Escuadras plásticas", "cantidad": 2 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 20 },
+    { "item": "Bases plásticas", "cantidad": 6 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "120 x 44,5" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "117 x 43" },
+      { "letra": "C", "item": "Entre tapa", "cantidad": 1, "medidas": "117 x 43" },
+      { "letra": "D", "item": "Costado izquierdo", "cantidad": 1, "medidas": "93,5 x 43" },
+      { "letra": "E", "item": "Costado derecho", "cantidad": 1, "medidas": "93,5 x 43" },
+      { "letra": "F", "item": "Estante fijo", "cantidad": 2, "medidas": "30,5 x 43" },
+      { "letra": "G", "item": "Separador arriba", "cantidad": 1, "medidas": "20,3 x 43" },
+      { "letra": "H", "item": "Separador abajo", "cantidad": 1, "medidas": "64,2 x 43" },
+      { "letra": "I", "item": "Estante móvil", "cantidad": 1, "medidas": "84,8 x 38" },
+      { "letra": "J", "item": "Puerta izquierda", "cantidad": 1, "medidas": "62,7 x 43,7" },
+      { "letra": "K", "item": "Puerta derecha", "cantidad": 1, "medidas": "62,7 x 43,7" },
+      { "letra": "-", "item": "Faja frente", "cantidad": 1, "medidas": "84,8 x 6" },
+      { "letra": "-", "item": "Zócalo", "cantidad": 2, "medidas": "117 x 6" },
+      { "letra": "-", "item": "Fondo de mueble", "cantidad": 2, "medidas": "66,7 x 43,7" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado izquierdo D, colocando a presión 2 cajas para mini fix, atornillando 8 pernos mini fix y clavando en el filo inferior dos bases plásticas[cite: 10].",
+      "piezas": ["Costado izquierdo D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Bases plásticas"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "paso 2: En el costado derecho E, coloque a presión 2 soporte de estantes y 2 cajas para mini fix, atornille 4 pernos mini fix y adhiera 2 bases de bisagra mediante los tornillos de 1,5 cm por ultimo clave en el filo inferior dos bases plásticas[cite: 10]. De igual manera prepare el separador abajo H, pero sin los pernos mini fix ni las bases plásticas, teniendo en cuenta que es simétrico a este último[cite: 10].",
+      "piezas": ["Costado derecho E", "Separador abajo H"],
+      "herrajes_usados": ["Soporte de estantes", "Pernos mini fix con caja", "Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "paso 3 Prepare los zócalos, colocando a presión 5 tarugos guías de 6x30 atornillando la escuadra plástica con un tornillo de 1,5 cm y clavando desde abajo una base plástica ( tanto la base como la escuadra deben quedar centrados)[cite: 10]. En la faja frente coloque 4 tarugos guías de 6x30, ocupando todas las perforaciones[cite: 10].",
+      "piezas": ["Zócalo", "Faja frente"],
+      "herrajes_usados": ["Tarugos 6x30", "Escuadras plásticas", "Tornillos de 1.5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "paso 4: A la entre tapa C, coloque a presión 4 cajas para mini fix y atornille 2 pernos mini fix[cite: 10]. En el piso B, solo coloque a presión 4 cajas para mini fix[cite: 10]. Y en la tapa A, solo atornille 6 pernos mini fix[cite: 10].",
+      "piezas": ["Entre tapa C", "Piso B", "Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: En las puertas J-K coloque 2 bisagra mediante los tornillos de 1,5 cm[cite: 10]. Tanto en los estantes fijos F como en el separador arriba G coloque a presión 2 cajas para mini fix[cite: 10].",
+      "piezas": ["Puerta izquierda J", "Puerta derecha K", "Estante fijo F", "Separador arriba G"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "paso 6: Mediante los tornillos Allen de 5 cm, una el separador abajo H con el piso B[cite: 10]. Luego los estantes fijos F al separador abajo[cite: 10]. Por otro lado la entre tapa C con el separador arriba G[cite: 10]. Finalmente introduzca los pernos mini fix de la entre tapa en las perforaciones del separador abajo, luego gire las cajas mini fix 180° en sentido horario, para ajustar las piezas[cite: 10].",
+      "piezas": ["Separador abajo H", "Piso B", "Estante fijo F", "Entre tapa C", "Separador arriba G"],
+      "herrajes_usados": ["Tornillos Allen de 5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "paso 7: Introduzca los pernos mini fix del costado izquierdo D en las perforaciones de la entre tapa C, el piso B y los estantes fijos F, luego gire las cajas mini fix 180° en sentido horario, para ajustar las piezas[cite: 10]. Luego introduzca los pernos mini fix del costado derecho E en las perforaciones de la entre tapa y del piso[cite: 10]. PREVIAMENTE habiendo echo coincidir los tarugos de la faja frente y de los zócalos con las perforaciones de los costados, del piso y del separador H[cite: 10]. Para luego ajustar las piezas por medio de las cajas mini fix[cite: 10]. Desde arriba introduzca los pernos mini fix de la tapa A en las perforaciones de los costados y del separador arriba G, luego gire las cajas mini fix 180° en sentido horario, para ajustar las piezas[cite: 10].",
+      "piezas": ["Costado izquierdo D", "Entre tapa C", "Piso B", "Estante fijo F", "Costado derecho E", "Faja frente", "Zócalo", "Separador abajo H", "Tapa A", "Separador arriba G"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: Desde abajo ajuste los zócalos al piso B por medio de dos tornillos de 1,5 cm y a través de las escuadras plásticas[cite: 10]. Luego clave el fondo de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble[cite: 10]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble (Vértices: 1 vértice H-C, 2 vértice C medio, 3 vértice H-B, 4 vértice B medio)[cite: 10]. Realizar la misma operación con el fondo restante uniéndolos por medio de la H plástica provista[cite: 10]. Deslice el estante móvil E sobre los soportes previamente colocados en el costado derecho E y en el separador H haciéndolo llegar hasta el fondo[cite: 10]. Coloque las puertas J - K en las bases de bisagras colocadas en el costado derecho E y en el separador H utilizando como guía el contenido de 'Regulación y colocación de bisagra'[cite: 10].",
+      "piezas": ["Zócalo", "Piso B", "Fondo de mueble", "Separador abajo H", "Entre tapa C", "Estante móvil I", "Costado derecho E", "Puerta izquierda J", "Puerta derecha K"],
+      "herrajes_usados": ["Tornillos de 1.5 cm", "Escuadras plásticas", "Set de Clavos", "Soporte de estantes", "Bisagras codo 0 cazoleta 26"],
+      "consejo_pro": "Colocación y regulación de bisagras: El tornillo de regulación de profundidad debe encontrarse en la mitad de su recorrido[cite: 10]. Luego ingrese la bisagra en la base de bisagra haciendo coincidir el tornillo de regulación lateral con la ranura en U de la base, y finalmente ajuste el tornillo de regulación de profundidad[cite: 10]."
+    }
+  ]
+}

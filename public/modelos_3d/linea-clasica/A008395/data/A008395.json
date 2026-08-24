@@ -1,0 +1,193 @@
+{
+  "producto": {
+    "id": "839/5",
+    "nombre": "Cómoda de 6 cajones con faja inclinada"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    {
+      "item": "Envase de cola",
+      "cantidad": 1
+    },
+    {
+      "item": "Tornillos Allen o Philips 5 cm",
+      "cantidad": 6
+    },
+    {
+      "item": "Pares de guías metálicas de 30 cm",
+      "cantidad": 6
+    },
+    {
+      "item": "Tornillos de 4 cm",
+      "cantidad": 16
+    },
+    {
+      "item": "Bases plásticas",
+      "cantidad": 6
+    },
+    {
+      "item": "Tornillos de 1,5 cm",
+      "cantidad": 8
+    },
+    {
+      "item": "Set de Clavos",
+      "cantidad": 1
+    },
+    {
+      "item": "Tarugos 6x30",
+      "cantidad": 74
+    },
+    {
+      "item": "Escuadras metálicas",
+      "cantidad": 4
+    },
+    {
+      "item": "Tornillos varianta",
+      "cantidad": 24
+    },
+    {
+      "item": "Pernos mini fix con caja",
+      "cantidad": 17
+    },
+    {
+      "item": "Tornillos de 2 cm",
+      "cantidad": 24
+    }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      {"letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "120 x 40"},
+      {"letra": "B", "item": "Piso adelante", "cantidad": 1, "medidas": "117 x 8"},
+      {"letra": "S/L", "item": "Piso atrás", "cantidad": 1, "medidas": "117 x 8"},
+      {"letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "73,5 x 40"},
+      {"letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "73,5 x 40"},
+      {"letra": "S/L", "item": "Zócalo frente melamina", "cantidad": 1, "medidas": "117 x 6"},
+      {"letra": "S/L", "item": "Zócalo atrás crudo", "cantidad": 1, "medidas": "117 x 6"},
+      {"letra": "E", "item": "Separador", "cantidad": 1, "medidas": "66 x 38"},
+      {"letra": "S/L", "item": "Faja", "cantidad": 6, "medidas": "57,6 x 6"},
+      {"letra": "J", "item": "Frente cajón izquierdo", "cantidad": 3, "medidas": "57,8 x 19"},
+      {"letra": "K", "item": "Frente cajón derecho", "cantidad": 3, "medidas": "57,8 x 19"},
+      {"letra": "L", "item": "Costado cajón", "cantidad": 12, "medidas": "35 x 10"},
+      {"letra": "M", "item": "Fondo cajón", "cantidad": 6, "medidas": "52 x 10"},
+      {"letra": "S/L", "item": "Fondo mueble", "cantidad": 2, "medidas": "119,5 x 34,3"},
+      {"letra": "S/L", "item": "Piso cajón", "cantidad": 6, "medidas": "55 x 32,8"}
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Prepare el costado derecho E, colocando a presión 2 caja mini fix, colocando 3 guías metálicas fijas derechas mediante los tornillos varianta y clavando dos bases plásticas. Realice el mismo procedimiento en el costado izquierdo D, teniendo en cuenta que es simétrico.",
+      "piezas": ["Costado derecho E", "Costado izquierdo D"],
+      "herrajes_usados": ["Caja mini fix", "Tornillos varianta", "Bases plásticas", "Guías metálicas"],
+      "consejo_pro": "Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "En las fajas frente coloque a presión 4 tarugos guías de 6x30 y solo a dos por medio de los tornillos de 1,5 cm 2 escuadras metálicas, quedando estas en línea con el filo. Prepare los zócalos (frente y atrás), colocando a presión 4 tarugos guías de 6x30 y clavando desde abajo una base plástica dejándola centrada.",
+      "piezas": ["Faja frente", "Zócalo frente", "Zócalo atrás"],
+      "herrajes_usados": ["Tarugos guías 6x30", "Tornillos de 1,5 cm", "Escuadras metálicas", "Bases plásticas"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "En el separador E, coloque a presión una caja mini fix, en la cara izquierda atornille 3 guías metálicas fijas derechas mediante los tornillos varianta y en la cara derecha las guías metálicas fijas izquierdas. Verificando que los tornillos variantas no ingresen en la misma perforación. Desde arriba introduzca a presión dos tarugos.",
+      "piezas": ["Separador E"],
+      "herrajes_usados": ["Caja mini fix", "Tornillos varianta", "Tarugos 6x30", "Guías metálicas"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "En la tapa A atornille 5 pernos mini fix.",
+      "piezas": ["Tapa A"],
+      "herrajes_usados": ["Pernos mini fix"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "En el piso adelante B y en el piso atrás coloque en los extremos 2 tarugos 6x30, en las perforaciones que están en línea con las que muestra la imagen.",
+      "piezas": ["Piso adelante B", "Piso atrás"],
+      "herrajes_usados": ["Tarugos 6x30"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Una el piso adelante B y el piso atrás con el separador F mediante 2 tornillos allen de 5 cm introduciéndolo en las perforaciones que muestra la figura y teniendo en cuenta que los tarugos colocados queden hacia afuera. Luego haga coincidir los tarugos de las fajas frentes a las cuales se le colocaron las escuadras y fíjelas al separador por medio de 2 tornillos de 1,5 cm a través de las escuadras.",
+      "piezas": ["Piso adelante B", "Piso atrás", "Separador F", "Faja frente"],
+      "herrajes_usados": ["Tornillos allen 5 cm", "Tornillos de 1,5 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Una el piso adelante B y el piso atrás con los costados D - E mediante 4 tornillos allen de 5 cm, introduciéndolo en las perforaciones que muestra la figura, previamente haciendo coincidir los tarugos colocados de las fajas frentes, los tarugos de los pisos y de los zócalos con las perforaciones de los costados y del separador F.",
+      "piezas": ["Piso adelante B", "Piso atrás", "Costado D", "Costado E", "Separador F"],
+      "herrajes_usados": ["Tornillos allen 5 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Armado de cajones: Coloque 2 tarugos 6x30 en el fondo de cajón M, 2 mas en cada uno de los costados de cajón L a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo.",
+      "piezas": ["Fondo cajón M", "Costado cajón L"],
+      "herrajes_usados": ["Tarugos 6x30", "Cajas mini fix", "Envase de cola"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Armado de cajones: En el frente de cajón derecho K atornillar 2 pernos mini fix.",
+      "piezas": ["Frente cajón derecho K"],
+      "herrajes_usados": ["Pernos mini fix"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Armado de cajones: Una vez armada la estructura tipo 'U' entre L-M-L, ingrese el frente de cajón derecho K ajuste los pernos mini fax girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm.",
+      "piezas": ["Costado cajón L", "Fondo cajón M", "Frente cajón derecho K"],
+      "herrajes_usados": ["Pernos mini fix", "Cajas mini fix", "Tornillos 4 cm"],
+      "consejo_pro": "NOTA: Observe que la flecha debe estar alineada al orificio para ingresar correctamente."
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Armado de cajones: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón derecho K, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm.",
+      "piezas": ["Piso cajón", "Frente cajón derecho K", "Costado cajón L", "Fondo cajón M"],
+      "herrajes_usados": ["Set de Clavos", "Guías metálicas", "Tornillos 2 cm"],
+      "consejo_pro": "Repetir el proceso con los dos cajones derechos restantes y con los tres cajones izquierdos."
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Desde arriba una la tapa A, a los costados D - E y al separador F haciendo coincidir los pernos mini fix de la tapa con las perforaciones de las cajas mini fix de los segundos usando como guía los tarugos del separador, luego ajuste las piezas girando las cajas mini fix 180° en sentido horario.",
+      "piezas": ["Tapa A", "Costado D", "Costado E", "Separador F"],
+      "herrajes_usados": ["Pernos mini fix", "Cajas mini fix"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 13,
+      "instruccion_amigable": "Luego ajuste el zócalo delantero con el piso adelante B y el zócalo atrás con el piso atrás mediante los tornillos de 4 cm, teniendo la precaución que el tornillo entre en la mitad de los zócalos. Y a las fajas frentes con las escuadras metálicas unirla a los costados por medio de 2 tornillos de 1,5 cm.",
+      "piezas": ["Zócalo frente", "Piso adelante B", "Zócalo atrás", "Piso atrás", "Fajas frente"],
+      "herrajes_usados": ["Tornillos 4 cm", "Escuadras metálicas", "Tornillos 1,5 cm"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 14,
+      "instruccion_amigable": "Clave el fondo de mueble, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble: \n1 Vértice A-E, \n2 Vértice A-D, \n3 Mitad E, \n4 Mitad D. \nPosteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. Repetir el procedimiento con el fondo restante.",
+      "piezas": ["Fondo mueble", "Tapa A", "Costado D", "Costado E"],
+      "herrajes_usados": ["Set de Clavos"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 15,
+      "instruccion_amigable": "Finalmente ingrese los cajones haciendo coincidir las guías, como lo muestra la figura. Y teniendo en cuenta que los frentes J son cajones izquierdos y los K derechos. Terminando así la parte de abajo del mueble.",
+      "piezas": ["Cajones"],
+      "herrajes_usados": ["Guías metálicas"],
+      "consejo_pro": "Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen."
+    }
+  ]
+}

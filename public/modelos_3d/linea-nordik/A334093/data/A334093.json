@@ -1,0 +1,64 @@
+{
+  "producto": {
+    "id": "334093",
+    "nombre": "Escritorio con patas macizas en X y tapa elevada"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 30,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4 mm",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos de 5 cm", "cantidad": 8 },
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 8 },
+    { "item": "Tornillos Allen de 7 cm", "cantidad": 8 },
+    { "item": "Pernos mini fix con caja", "cantidad": 8 },
+    { "item": "Tarugos de 3 cm", "cantidad": 8 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "100 x 52" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "93,7 x 38" },
+      { "letra": "C", "item": "Costados", "cantidad": 2, "medidas": "36,5 x 10" },
+      { "letra": "D", "item": "Fondo abajo", "cantidad": 1, "medidas": "93,6 x 10" },
+      { "letra": "E", "item": "Fondo arriba", "cantidad": 1, "medidas": "100 x 12" },
+      { "letra": "F", "item": "Sobre tapa", "cantidad": 1, "medidas": "107 x 11" },
+      { "letra": "-", "item": "Patas larga", "cantidad": 2, "medidas": "105 x 10" },
+      { "letra": "-", "item": "Patas cortas", "cantidad": 2, "medidas": "90 x 10" },
+      { "letra": "-", "item": "Faja", "cantidad": 1, "medidas": "93,7 x 6" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Arme el fondo arriba E, colocando a presión 4 tarugos de 3 cm y 2 cajas mini fix en las perforaciones que muestra la figura. Hacer lo mismo para el fondo abajo D. Y en los costados C colocar solo las cajas mini fix.",
+      "piezas": ["Fondo arriba E", "Fondo abajo D", "Costados x 2 C"],
+      "herrajes_usados": ["Tarugos de 3 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Arme la tapa A, atornillando 6 mini fix en las perforaciones que muestra la figura. Luego introduzca los pernos minifix de la tapa en las perforaciones de las cajas minifix del fondo abajo D y de los costados C, en el fondo previamente haciendo coincidir los tarugos guías. Luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Desde abajo una el piso B con los costados y el fondo abajo por medio de los tornillos Allen de 5 cm, previamente haciendo coincidir los tarugos guías.",
+      "piezas": ["Tapa A", "Fondo abajo D", "Costados x 2 C", "Piso B"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos Allen de 5 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Arme la sobre tapa F, atornillando 2 mini fix en las perforaciones que muestra la figura. Luego introduzca los pernos minifix de la sobre tapa en las perforaciones de las cajas minifix del fondo arriba E, previamente haciendo coincidir los tarugos guías. Luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Desde abajo una el fondo arriba con la tapa A por medio de los tornillos Allen de 5 cm, previamente haciendo coincidir los tarugos guías. Se recomienda armarlo en forma invertida y al borde de una mesa apoyando la tapa A y dejando en un nivel mas bajo la sobre tapa F.",
+      "piezas": ["Sobre tapa F", "Fondo arriba E", "Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos Allen de 5 cm"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Una las patas cortas al piso B por medio de los tornillos Allen de 7 cm y a la faja por medio de los tornillos de 5 cm, asentando la cara superior sobre la tapa A. Luego una las patas largas a la tapa A por medio de los tornillos Allen de 7 cm, asentando la cara superior en la sobre tapa F. Antes de ajustar las patas verifique la altura de base de patas como lo indica la figura (76 cm) y con el mueble invertido. Una vez confirmadas las medidas ajuste las patas a través de las perforaciones pasantes de las patas cortas por medio de los tornillos de 5 cm desde adentro.",
+      "piezas": ["- Patas cortas", "Piso B", "- Faja", "- Patas larga", "Tapa A", "Sobre tapa F"],
+      "herrajes_usados": ["Tornillos Allen de 7 cm", "Tornillos de 5 cm"],
+      "consejo_pro": "Control de escuadra en patas: Antes del ajuste definitivo de los tornillos de 5 cm desde adentro, asegúrese con una cinta métrica que la altura total de la base de las patas invertidas quede perfectamente a 76 cm."
+    }
+  ]
+}

@@ -72,6 +72,11 @@ const getFolderAndLine = (product: any) => {
     }
   }
 
+  // Handle Comedores mapping
+  if (['557', '557-1', '557-2', '429090', '429091', '427091'].includes(String(product.sku || product.id))) {
+    lineFolder = 'linea-comedores';
+  }
+
   return { lineFolder, folderName };
 };
 

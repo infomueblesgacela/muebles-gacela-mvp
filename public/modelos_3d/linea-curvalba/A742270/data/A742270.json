@@ -1,0 +1,131 @@
+{
+  "producto": {
+    "id": "742270",
+    "nombre": "Placard línea Curvalba de dos puertas, un cajón y un estante"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 105,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 16 },
+    { "item": "Bisagras codo 0 cazoleta 26", "cantidad": 6 },
+    { "item": "Llave Allen", "cantidad": 1 },
+    { "item": "Pernos mini fix con caja", "cantidad": 3 },
+    { "item": "Tornillos varianta", "cantidad": 4 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 30 },
+    { "item": "Par de guías metálicas de 40 cm", "cantidad": 1 },
+    { "item": "Tornillos de 2 cm", "cantidad": 4 },
+    { "item": "Tornillos de 4 cm", "cantidad": 10 },
+    { "item": "Escuadras plásticas", "cantidad": 2 },
+    { "item": "Caño de 86 cm", "cantidad": 1 },
+    { "item": "Bases plásticas", "cantidad": 6 },
+    { "item": "Tarugos 6x30", "cantidad": 30 },
+    { "item": "Soporte de caños", "cantidad": 2 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "90 x 52" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "87 x 50" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "178,5 x 50" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "178,5 x 50" },
+      { "letra": "E", "item": "Entre tapa", "cantidad": 1, "medidas": "87 x 50" },
+      { "letra": "F", "item": "Estante", "cantidad": 1, "medidas": "87 x 40" },
+      { "letra": "-", "item": "Zócalo", "cantidad": 3, "medidas": "87 x 6" },
+      { "letra": "-", "item": "Faja frente", "cantidad": 1, "medidas": "87 x 6" },
+      { "letra": "L", "item": "Faja parante izquierdo", "cantidad": 1, "medidas": "124 x 6" },
+      { "letra": "O", "item": "Faja parante derecho", "cantidad": 1, "medidas": "124 x 7,5" },
+      { "letra": "G", "item": "Puerta", "cantidad": 2, "medidas": "125 x 43,5" },
+      { "letra": "-", "item": "Refuerzo cajón", "cantidad": 1, "medidas": "42,3 x 6" },
+      { "letra": "H", "item": "Frente cajón", "cantidad": 1, "medidas": "89,8 x 23,5" },
+      { "letra": "J", "item": "Costado cajón", "cantidad": 2, "medidas": "450 x 12" },
+      { "letra": "K", "item": "Fondo cajón", "cantidad": 1, "medidas": "81,4 x 12" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 2, "medidas": "173,5 x 44,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 1, "medidas": "84,2 x 42,8" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando 3 bases de bisagra mediante los tornillos de 1,5 cm, también el soporte plástico de caño haciéndolo encastrar en la perforación central y luego ajustándolo mediante un tornillo de estos[cite: 12]. Atornille las guías metálica fijas derechas mediante los tornillos varianta y clave desde abajo 2 bases plásticas[cite: 12]. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico[cite: 12].",
+      "piezas": ["Costado derecho D", "Costado izquierdo C"],
+      "herrajes_usados": ["Tornillos de 1.5 cm", "Soporte de caños", "Par de guías metálicas de 40 cm", "Tornillos varianta", "Bases plásticas"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En las puertas G coloque 3 bisagra mediante los tornillos de 1,5 cm[cite: 12].",
+      "piezas": ["Puerta G"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En el parante izquierdo L coloque 4 tarugos guías de 6x30, como lo muestra la figura y en el parante derecho M coloque 2 tarugos guías en los extremos[cite: 12].",
+      "piezas": ["Faja parante izquierdo L"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Prepare 2 zócalos, colocando a presión 5 tarugos guías de 6x30 atornillando la escuadra plástica con un tornillo de 1,5 cm y clavando desde abajo una base plástica (tanto la base como la escuadra deben quedar centrados)[cite: 12]. Prepare el zócalo restante y la faja frente, colocando a presión 4 tarugos guías solo en los extremos[cite: 12].",
+      "piezas": ["Zócalo", "Faja frente"],
+      "herrajes_usados": ["Tarugos 6x30", "Escuadras plásticas", "Tornillos de 1.5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Mediante los tornillos Allen de 5 cm, una el estante F, el piso B y la entre tapa E con el costado derecho D y con el costado izquierdo C[cite: 12]. Previamente haciendo coincidir los tarugos guías de los zócalos y la faja frente en las perforaciones de los costados, a vez el tarugo superior de los zócalos inferiores con las perforaciones del piso[cite: 12]. Verifique que los cantos melaminicos queden hacia el frente[cite: 12].",
+      "piezas": ["Estante F", "Piso B", "Entre tapa E", "Costado derecho D", "Costado izquierdo C", "Zócalo", "Faja frente"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6 armado de cajón: Coloque 2 tarugos 6x30 en el fondo de cajón K, 2 más en cada uno de los costados de cajón J a su vez encastrar las cajas mini fix[cite: 12]. Agregar adhesivo en cada perforación donde lleve tarugo[cite: 12].",
+      "piezas": ["Fondo cajón K", "Costado cajón J"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 armado de cajón: Atornille 3 minifix en el frente de cajón H[cite: 12].",
+      "piezas": ["Frente cajón H"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8 Armado de cajón: Una vez armada la estructura tipo 'U' entre J-K-J, ingrese el frente de cajón H ajuste los pernos mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente[cite: 12]. Luego ajuste el fondo y los costados mediante los dos tornillos 4x40[cite: 12].",
+      "piezas": ["Costado cajón J", "Fondo cajón K", "Frente cajón H"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9 armado de cajón: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón H, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo[cite: 12]. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos 3,5x20[cite: 12].",
+      "piezas": ["Piso cajón", "Frente cajón H", "Costado cajón J", "Fondo cajón K"],
+      "herrajes_usados": ["Set de Clavos", "Par de guías metálicas de 40 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10 armado de cajón: Haga coincidir la perforación lateral del refuerzo de cajón con el perno mini fix colocado en el frente de cajón H, ajuste las piezas girando la caja mini fix media vuelta en sentido horario[cite: 12]. Finalmente ajuste el refuerzo al fondo de cajón K mediante 1 tornillo de 4 cm[cite: 12].",
+      "piezas": ["Refuerzo cajón", "Frente cajón H", "Fondo cajón K"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Primero por medio de 3 tornillos de 4 cm una el parante izquierdo L con el parante derecho O utilizando como guía los tarugos del primero[cite: 12]. Luego desde arriba una la tapa A a los costados C-D por medio de los tornillos Allen de 5 cm, previamente haciendo coincidir los tarugos de los parantes con las perforaciones de la tapa y de la entre tapa E, para luego ajustar los parantes a estas por medio de 4 tornillos de 4 cm[cite: 12]. Segundo, con el mueble acostado clave los fondos de mueble de 3 mm, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble[cite: 12]. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble (Vértices: 1 vértice A-C, 2 medio de A, 3 vértice B-C, 4 medio B)[cite: 12]. Repita para el fondo restante pero colocando la H plástica[cite: 12]. Por último desde abajo por medio de 2 tornillos de 1,5 cm una los zócalos al piso B a través de las escuadras plásticas[cite: 12].",
+      "piezas": ["Faja parante izquierdo L", "Faja parante derecho O", "Tapa A", "Costado izquierdo C", "Costado derecho D", "Entre tapa E", "Fondo mueble", "Zócalo", "Piso B"],
+      "herrajes_usados": ["Tornillos de 4 cm", "Tornillos Allen 5 cm", "Set de Clavos", "Tornillos de 1.5 cm", "Escuadras plásticas"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Finalmente coloque las puertas G en los costados C-D. Utilizando como guía las indicaciones de 'Regulación de bisagra'[cite: 12]. Luego ingrese los cajones como indica la 'Colocación de cajones'[cite: 12]. También coloque el caño sobre los soportes plásticos previamente colocados en los costados[cite: 12].",
+      "piezas": ["Puerta G", "Costado izquierdo C", "Costado derecho D", "Caño de 86 cm"],
+      "herrajes_usados": ["Bisagras codo 0 cazoleta 26", "Par de guías metálicas de 40 cm", "Soporte de caños"],
+      "consejo_pro": "Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen[cite: 12]."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "producto": {
+    "id": "740150 / 740151",
+    "nombre": "Organizador linea clasica de 3 cajones sublimados con faja"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 75,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos phillips 5 cm", "cantidad": 8 },
+    { "item": "Pernos mini fix con caja", "cantidad": 18 },
+    { "item": "Pares de guías metálicas de 30 cm", "cantidad": 3 },
+    { "item": "Bases plásticas", "cantidad": 8 },
+    { "item": "Tornillos varianta", "cantidad": 12 },
+    { "item": "Tornillos de 4 cm", "cantidad": 6 },
+    { "item": "Tornillos de 2 cm", "cantidad": 12 },
+    { "item": "Tarugos 6x30", "cantidad": 22 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "120 x 34" },
+      { "letra": "B", "item": "Costado izquierdo", "cantidad": 1, "medidas": "42,5 x 34" },
+      { "letra": "C", "item": "Costado derecho", "cantidad": 1, "medidas": "42,5 x 34" },
+      { "letra": "E", "item": "Separadores", "cantidad": 2, "medidas": "41 x 34" },
+      { "letra": "F", "item": "Frente cajón", "cantidad": 3, "medidas": "37 x 37" },
+      { "letra": "D", "item": "Piso frente", "cantidad": 1, "medidas": "116,7 x 8,4" },
+      { "letra": "G", "item": "Costado de cajón izquierdo", "cantidad": 3, "medidas": "30 x 28" },
+      { "letra": "H", "item": "Costados de cajón derecho", "cantidad": 3, "medidas": "30 x 28" },
+      { "letra": "-", "item": "Fajas", "cantidad": 3, "medidas": "37,9 x 6" },
+      { "letra": "I", "item": "Fondo de cajón", "cantidad": 3, "medidas": "32,4 x 28" },
+      { "letra": "-", "item": "Fondo de mueble", "cantidad": 1, "medidas": "119,4 x 43,6" },
+      { "letra": "-", "item": "Piso atrás", "cantidad": 1, "medidas": "116,7 x 8,4" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho C, colocando a presión 2 cajas para mini fix y 2 bases plásticas en el filo inferior. Además mediante 2 tornillos varianta 1 guía metálica. Realizar la misma operación para el costado izquierdo B, tener en cuenta que es simétrico.",
+      "piezas": ["Costado derecho C", "Costado izquierdo B"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Bases plásticas", "Tornillos varianta", "Pares de guías metálicas de 30 cm"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "paso 2: En los separadores E, colocando a presión 1 caja para mini fix y 2 tarugos guías 6x30 en el filo superior. Además mediante 2 tornillos varianta 1 guía metálica en cada cara. En las fajas coloque a presión 4 tarugos guías 6x30 en los filos perforados.",
+      "piezas": ["Separadores E", "- Fajas"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Tornillos varianta", "Pares de guías metálicas de 30 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Prepare la tapa A, atornillando 6 pernos mini fix.",
+      "piezas": ["Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4 Coloque 2 tarugos 6x30 en el fondo de cajón I, en los costados de cajón G-H encastre 4 cajas mini fix.",
+      "piezas": ["Fondo de cajón I", "Costado de cajón izquierdo G", "Costados de cajón derecho H"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Seguidamente atornille 4 minifix en el frente de cajón F.",
+      "piezas": ["Frente cajón F"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "paso 6: Una vez armada la estructura tipo \"U\" entre G-I-H, ingrese el frente de cajón F ajuste los pernos mini fix girando 180 grados las cajas mini fix en sentido horario. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm.",
+      "piezas": ["Costado de cajón izquierdo G", "Fondo de cajón I", "Costados de cajón derecho H", "Frente cajón F"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón F, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos de 2 cm.",
+      "piezas": ["Frente cajón F", "Costado de cajón izquierdo G", "Costados de cajón derecho H", "Fondo de cajón I"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos de 2 cm", "Pares de guías metálicas de 30 cm"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "paso 8: Ajuste el piso frente D y el piso atrás a los costados B-C y a los separadores E, a través de 8 tornillos Phillips de 5 cm como muestra la figura, verifique que el filo del piso quede hacia adelante. Previamente coloque los tarugos de las fajas en las perforaciones de los costados y los separadores. Luego desde arriba conecte la tapa A, haciendo coincidir las cajas para minifix de los costados y los separadores con los pernos mini fix de la tapa usando como guía los tarugos de los separadores. Aferre las piezas girando media vuelta en sentido horario las cajas.",
+      "piezas": ["Piso frente D", "- Piso atrás", "Costado izquierdo B", "Costado derecho C", "Separadores E", "- Fajas", "Tapa A"],
+      "herrajes_usados": ["Tornillos phillips 5 cm", "Tarugos 6x30", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: Clave el fondo de 3 mm, tal como lo indica el grafico, siguiendo el orden correcto y la escuadras justa del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria. En el piso frente D y en el piso atrás, coloque a presión 4 base plástica en las perforaciones que muestra la figura. (1 vértice A-B, 2 vértice A-C, 3 vértice --B, 4 vértice --C).",
+      "piezas": ["- Fondo de mueble", "Piso frente D", "- Piso atrás"],
+      "herrajes_usados": ["Set de Clavos", "Bases plásticas"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Finalmente ingrese los cajones haciendo coincidir las guías, como muestra la figura.",
+      "piezas": ["Frente cajón F"],
+      "herrajes_usados": ["Pares de guías metálicas de 30 cm"],
+      "consejo_pro": "Colocación de cajones: Hacer coincidir la guía móvil en cajones con la guía fija en mueble."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "files_3d": [
+    "A372150-a-tapa_grande.glb",
+    "A372150-b-tapa_chica.glb",
+    "A372150-c-estante_grande.glb",
+    "A372150-d-estante_chico.glb",
+    "A372150-e-patas_largas.glb",
+    "A372150-f-patas_cortas.glb"
+  ],
+  "files_pasos": [
+    "A372150-unboxing.png",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png"
+  ],
+  "files_herrajes": [
+    "clavos-de-caucho.webp",
+    "corner.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-madera.webp",
+    "tornillo-1-5.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "martillo.webp"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "producto": {
+    "id": "446270",
+    "nombre": "Rack línea Curvalba de 1,6 mts con tres cajones y un estante"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Llave Allen 4",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Escuadras plásticas", "cantidad": 2 },
+    { "item": "Tornillos Allen de 5 cm", "cantidad": 8 },
+    { "item": "Pares de guías metálicas de 35 cm", "cantidad": 3 },
+    { "item": "Tornillos varianta", "cantidad": 12 },
+    { "item": "Bases plásticas", "cantidad": 6 },
+    { "item": "Tornillos de 4 cm", "cantidad": 6 },
+    { "item": "Tornillos de 1,5 cm", "cantidad": 4 },
+    { "item": "Pernos mini fix con caja", "cantidad": 22 },
+    { "item": "Tornillos de 2 cm", "cantidad": 12 },
+    { "item": "Tarugos 6x30", "cantidad": 30 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "160 x 40" },
+      { "letra": "B", "item": "Piso", "cantidad": 1, "medidas": "157 x 38,5" },
+      { "letra": "E", "item": "Separador", "cantidad": 2, "medidas": "20 x 35,5" },
+      { "letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "53,5 x 38,5" },
+      { "letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "53,5 x 38,5" },
+      { "letra": "G", "item": "Frente cajón lateral izquierdo", "cantidad": 1, "medidas": "53,3 x 21,5" },
+      { "letra": "H", "item": "Frente cajón lateral derecho", "cantidad": 1, "medidas": "53,3 x 21,5" },
+      { "letra": "I", "item": "Frente cajón centro", "cantidad": 1, "medidas": "52,4 x 21,5" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "159,5 x 48,5" },
+      { "letra": "-", "item": "Zócalo", "cantidad": 1, "medidas": "157 x 6" },
+      { "letra": "J", "item": "Costado cajón", "cantidad": 6, "medidas": "35 x 10" },
+      { "letra": "K", "item": "Fondo cajón", "cantidad": 3, "medidas": "52 x 10" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 3, "medidas": "48,6 x 32,8" },
+      { "letra": "-", "item": "Faja frente", "cantidad": 1, "medidas": "157 x 6" },
+      { "letra": "F", "item": "Entre piso", "cantidad": 1, "medidas": "157 x 10" },
+      { "letra": "-", "item": "Fondo", "cantidad": 1, "medidas": "157 x 24" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho D, colocando a presión 2 caja mini fix, colocando la guía metálica fija derecha mediante los tornillos varianta, también atornille 4 pernos mini fix en las perforaciones que muestra la figura y clave dos bases plásticas. Realice el mismo procedimiento en el costado izquierdo C, teniendo en cuenta que es simétrico.",
+      "piezas": ["Costado derecho D", "Costado izquierdo C"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos varianta", "Pares de guías metálicas de 35 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En el separador E, coloque a presión 2 caja mini fix, en la cara izquierda atornille la guía metálica fija derecha mediante los tornillos varianta y en la cara derecha la guía metálica fija izquierda. Verificando que los tornillos variantas no ingresen en la misma perforación.",
+      "piezas": ["Separador E"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos varianta", "Pares de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Prepare el zócalo, colocando a presión 6 tarugos guías de 6x30, atornillando 2 escuadras plásticas con dos tornillos de 1,5 cm y clavando desde abajo dos bases plásticas (tanto la base como la escuadra deben quedar en línea con los tarugos superiores).",
+      "piezas": ["Zócalo"],
+      "herrajes_usados": ["Tarugos 6x30", "Escuadras plásticas", "Tornillos de 1,5 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: En el fondo coloque a presión 4 cajas mini fix en las perforaciones de la cara y 2 tarugos guías de 6x30 en el canto superior como lo muestra la figura. En la faja frente coloque 4 tarugos guías de 6x30, ocupando todas las perforaciones. En la tapa A atornille 8 pernos mini fix.",
+      "piezas": ["Fondo", "Faja frente", "Tapa A"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Una el fondo y el entre piso F con los separadores E por medio de cuatro tornillos Allen de 5 cm. Luego coloque a presión cuatro cajas mini fix en el entrepiso F en las perforaciones que muestra la figura.",
+      "piezas": ["Fondo", "Entre piso F", "Separador E"],
+      "herrajes_usados": ["Tornillos Allen de 5 cm", "Pernos mini fix con caja"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Una el fondo y el entre piso F a los costados C - D, introduciendo los pernos minifix de estos en las perforaciones de las cajas minifix de los primeros, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Por medio de los tornillos Allen de 5 cm una el piso B a los costados, previamente haciendo coincidir los tarugos de la faja frente y el zócalo con las perforaciones de los costados. Además el tarugo superior del zócalo debe coincidir con la perforación inferior del piso.",
+      "piezas": ["Fondo", "Entre piso F", "Costado izquierdo C", "Costado derecho D", "Piso B", "Faja frente", "Zócalo"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos Allen de 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7: Armado de cajones (procedimiento base con el Frente de cajón centro I): Coloque 2 tarugos 6x30 en el fondo de cajón K, 2 más en cada uno de los costados de cajón J a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo.",
+      "piezas": ["Fondo cajón K", "Costado cajón J"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8: En el frente de cajón centro I atornillar 2 pernos mini fix.",
+      "piezas": ["Frente cajón centro I"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9: Una vez armada la estructura tipo 'U' entre J-K-J, ingrese el frente de cajón centro I ajuste los pernos mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos 4 cm.",
+      "piezas": ["Costado cajón J", "Fondo cajón K", "Frente cajón centro I"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón centro I, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Atornille las guías metálicas como muestra la figura mediante 4 tornillos 2 cm. Repetir los pasos de armado para los cajones laterales usando el Frente de cajón lateral izquierdo G y el Frente de cajón lateral derecho H.",
+      "piezas": ["Piso cajón", "Frente cajón centro I", "Costado cajón J", "Fondo cajón K", "Frente cajón lateral izquierdo G", "Frente cajón lateral derecho H"],
+      "herrajes_usados": ["Set de Clavos", "Pares de guías metálicas de 35 cm", "Tornillos de 2 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Una la tapa A a los costados C - D y a los separadores E, introduciendo los pernos minifix de la tapa en las perforaciones de las cajas minifix de estos, luego ajuste las piezas girando 180 grados en sentido horario las cajas mini fix. Desde abajo ajuste el zócalo por medio de dos tornillos de 1,5 cm al piso B y a través de la escuadra plástica. Con el mueble acostado clave el fondo de mueble de 3 mm, tal como lo indica el gráfico, siguiendo el orden correcto y las escuadras justas del mueble. Posteriormente distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble (Vértices: 1 A-C, 2 A-D, 3 B-C, 4 B-D).",
+      "piezas": ["Tapa A", "Costado izquierdo C", "Costado derecho D", "Separador E", "Zócalo", "Piso B", "Fondo mueble"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos de 1,5 cm", "Escuadras plásticas", "Set de Clavos"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Finalmente coloque los cajones ya armados sobre las guías fijas ya colocadas en los costados y siguiendo el orden correcto de los frentes de cajón.",
+      "piezas": ["Frente cajón lateral izquierdo G", "Frente cajón centro I", "Frente cajón lateral derecho H"],
+      "herrajes_usados": ["Pares de guías metálicas de 35 cm"],
+      "consejo_pro": "Colocación de cajones: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen."
+    }
+  ]
+}

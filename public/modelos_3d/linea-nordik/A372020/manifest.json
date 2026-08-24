@@ -1,0 +1,26 @@
+{
+  "files_3d": [
+    "A372020-E-base_patas_largas.glb",
+    "A372020-Pata_chica.glb",
+    "A372020-Pata_grande.glb",
+    "A372020-a-tapa_grande.glb",
+    "A372020-b-tapa_chica.glb",
+    "A372020-c-base_de_pata_ancha_grande.glb",
+    "A372020-c-base_de_patas_ancha_chica.glb"
+  ],
+  "files_pasos": [
+    "A372020-unboxing.png",
+    "paso_01.png",
+    "paso_02.png"
+  ],
+  "files_herrajes": [
+    "base-redonda-para-clavar.webp",
+    "tarugo-6-30.webp",
+    "tornillo-3-5.webp",
+    "tornillo_philips.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "martillo.webp"
+  ]
+}

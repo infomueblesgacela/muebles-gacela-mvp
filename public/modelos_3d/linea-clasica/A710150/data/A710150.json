@@ -1,0 +1,92 @@
+{
+  "producto": {
+    "id": "710150",
+    "nombre": "Botinero clásico de tres cajones horizontal"
+  },
+  "metadata": {
+    "dificultad": "Alto",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz"
+    ]
+  },
+  "herrajes": [
+    { "item": "Tornillos Philips de 7 x 50", "cantidad": 8 },
+    { "item": "Kit botineros", "cantidad": 3 },
+    { "item": "Bases plásticas", "cantidad": 5 },
+    { "item": "Pernos mini fix con cajas", "cantidad": 8 },
+    { "item": "Tornillos de 3.5x25", "cantidad": 30 },
+    { "item": "Tarugos 6x30", "cantidad": 6 },
+    { "item": "Set de clavos", "cantidad": 1 },
+    { "item": "Tornillos de 3.5x15", "cantidad": 12 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      {"letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "B", "item": "Piso", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "C", "item": "Costado izquierdo", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "D", "item": "Costado derecho", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "E", "item": "Separador izq.", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "F", "item": "Separador der.", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "G", "item": "Frente cajón lateral", "cantidad": 2, "medidas": "S/M"},
+      {"letra": "H", "item": "Frente cajón centro", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "J", "item": "Fondo y divisor de cajón", "cantidad": 6, "medidas": "S/M"},
+      {"letra": "-", "item": "Piso de cajón", "cantidad": 3, "medidas": "S/M"},
+      {"letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "S/M"},
+      {"letra": "-", "item": "Zócalo", "cantidad": 1, "medidas": "S/M"}
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Prepare el costado izquierdo C, colocando a presión 1 soporte de eje y 2 cajas mini fix. A su vez, coloque 1 tope por medio de 1 tornillo 3,5x25 y, desde abajo, clave 2 bases plásticas. Repita el proceso para el costado derecho D, teniendo en cuenta que es simétrico.",
+      "piezas": ["Costado izquierdo C", "Costado derecho D"],
+      "herrajes_usados": ["Soporte de eje", "Cajas mini fix", "Tornillo 3,5x25", "Bases plásticas"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "En el separador izquierdo E, en la cara izquierda, coloque a presión 1 soporte de eje y 2 cajas mini fix. A su vez, coloque 1 tope por medio de 1 tornillo 3,5x25. Repita el proceso en la cara derecha, sin las cajas, y note que las perforaciones se encuentran hacia arriba desplazadas. Repita el proceso para el separador derecho F, teniendo en cuenta que es simétrico.",
+      "piezas": ["Separador izq. E", "Separador der. F"],
+      "herrajes_usados": ["Soporte de eje", "Cajas mini fix", "Tornillo 3,5x25"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "En el zócalo, coloque a presión 6 tarugos 6x30 y, desde abajo, clave 1 base plástica. En la tapa A, atornille 8 pernos mini fix en las perforaciones de bordes.",
+      "piezas": ["Zócalo", "Tapa A"],
+      "herrajes_usados": ["Tarugos 6x30", "Base plástica", "Pernos mini fix"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Una el piso B con el separador izquierdo E y con el separador F por medio de 4 tornillos Phillips 7x50. Luego, encastre los tarugos superiores del zócalo en las perforaciones inferiores del piso y, seguidamente, una el costado izquierdo C y el costado derecho D al piso por medio de los tornillos Phillips 7x50 restantes, previamente haciendo coincidir los tarugos de los zócalos con las perforaciones de los costados. Desde arriba, una la tapa A con los costados y los separadores, haciendo coincidir las perforaciones que se encuentran en estos últimos con los pernos mini fix de la tapa. Luego, ajuste las piezas girando las cajas para mini fix media vuelta en sentido horario.",
+      "piezas": ["Piso B", "Separador izq. E", "Separador der. F", "Zócalo", "Costado izquierdo C", "Costado derecho D", "Tapa A"],
+      "herrajes_usados": ["Tornillos Phillips 7x50", "Tarugos", "Pernos mini fix", "Cajas mini fix"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Atornille los costados plásticos al fondo de cajón J y al piso de cajón por medio de 6 tornillos 3,5x25: 4 para el fondo y 2 para el piso. Note que los costados plásticos tienen una letra impresa: 'I' (costado izquierdo) y 'D' (costado derecho). Colóquelas según su posición y como muestra la figura.",
+      "piezas": ["Fondo y divisor de cajón J", "Piso de cajón"],
+      "herrajes_usados": ["Tornillos 3,5x25"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Atornille los costados plásticos al frente de cajón centro H por medio de 4 tornillos 3,5x15. Realice esta operación para los frentes de cajones laterales G, teniendo en cuenta que las perforaciones están levemente desplazadas.",
+      "piezas": ["Frente cajón centro H", "Frente cajón lateral G"],
+      "herrajes_usados": ["Tornillos 3,5x15"],
+      "consejo_pro": ""
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Clave el fondo de mueble de 3 mm, tal como lo indica el gráfico, siguiendo el orden correcto y la escuadra justa del mueble. Posteriormente, distribuya los clavos a una distancia aproximada de 15 cm entre ellos, proporcionándole la rigidez necesaria al mueble. Orden de los vértices: Vértice A-C, Vértice A-D, Vértice B-D, Vértice B-C. Introduzca los cajones haciendo coincidir el círculo de los costados plásticos con el soporte de eje ya colocado en los costados C-D y en los separadores E-F. Manteniendo el cajón abierto y los costados plásticos tocando los topes ya colocados, introduzca los ejes y ajústelos mediante los tornillos que vienen en el kit. Una vez ajustados los ejes, introduzca el divisorio J y fíjelo mediante 2 tornillos 3,5x25.",
+      "piezas": ["Fondo mueble", "Cajones", "Divisor de cajón J"],
+      "herrajes_usados": ["Set de clavos", "Tornillos 3,5x25"],
+      "consejo_pro": ""
+    }
+  ]
+}

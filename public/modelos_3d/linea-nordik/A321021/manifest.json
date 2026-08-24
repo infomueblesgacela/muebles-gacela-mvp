@@ -1,0 +1,52 @@
+{
+  "files_3d": [
+    "A321021-Fondo_abajo.glb",
+    "A321021-Patas_macizas.glb",
+    "A321021-Piso_de_cajon.glb",
+    "A321021-Refuerzo_cajon.glb",
+    "A321021-Sseparador_arriba.glb",
+    "A321021-a-tapa.glb",
+    "A321021-b-piso.glb",
+    "A321021-c-costado_abajo_izquierdo.glb",
+    "A321021-d-costado_abajo_derecho.glb",
+    "A321021-e-costado_arriba.glb",
+    "A321021-f-separador_abajo.glb",
+    "A321021-g-estante.glb",
+    "A321021-h-fondo_arriba.glb",
+    "A321021-i-frente_cajon.glb",
+    "A321021-j-costado_cajon_izquierdo.glb",
+    "A321021-j-fondo_cajon.glb",
+    "A321021-k-costado_cajon_derecho.glb",
+    "A321021-m-base_pata.glb"
+  ],
+  "files_pasos": [
+    "A321021-unboxing.png",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png",
+    "paso_07.png",
+    "paso_08.png",
+    "paso_09.png",
+    "paso_10.png",
+    "paso_11.png"
+  ],
+  "files_herrajes": [
+    "bases-con-tarugo.webp",
+    "clavos.webp",
+    "cola.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-6-30.webp",
+    "tirador-boton.webp",
+    "tornillo-2-5.webp",
+    "tornillo-40.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

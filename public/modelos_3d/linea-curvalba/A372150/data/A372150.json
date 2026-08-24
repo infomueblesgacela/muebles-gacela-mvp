@@ -1,0 +1,59 @@
+{
+  "producto": {
+    "id": "372150",
+    "nombre": "Mesas de arrime redondas con dos niveles"
+  },
+  "metadata": {
+    "dificultad": "Bajo",
+    "tiempo_min": 15,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Pernos mini fix con caja", "cantidad": 6 },
+    { "item": "Tornillos de 1,5 cm", "cantidad": 12 },
+    { "item": "Corner", "cantidad": 6 },
+    { "item": "Clavos cabeza caucho", "cantidad": 6 },
+    { "item": "Tarugos 6x30", "cantidad": 12 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa grande", "cantidad": 1, "medidas": "Ø 59" },
+      { "letra": "B", "item": "Tapa chica", "cantidad": 1, "medidas": "Ø 44" },
+      { "letra": "C", "item": "Estante grande", "cantidad": 1, "medidas": "Ø 44" },
+      { "letra": "D", "item": "Estante chico", "cantidad": 1, "medidas": "Ø 29" },
+      { "letra": "E", "item": "Patas largas", "cantidad": 3, "medidas": "58,5 x 6" },
+      { "letra": "F", "item": "Patas cortas", "cantidad": 3, "medidas": "43,5 x 6" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: En la tapa grande A y en la tapa chica B, atornille 3 pernos mini fix en las perforaciones internas[cite: 10].",
+      "piezas": ["Tapa grande A", "Tapa chica B"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: Tanto en las patas largas E como en las patas cortas F, colocar a presión un tarugo 6x30 y una caja mini fix en las perforaciones que muestra la figura, por último clavar un clavo cabeza de caucho en la parte inferior, tratando de que este quede centrado[cite: 10].",
+      "piezas": ["Patas largas E", "Patas cortas F"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Clavos cabeza caucho"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: En el estante grande C y en el estante chico D colocar a presión 3 tarugos 6 x 30 en las perforaciones del canto y atornillando 3 córner por medio de 3 tornillos de 1,5 cm[cite: 10].",
+      "piezas": ["Estante grande C", "Estante chico D"],
+      "herrajes_usados": ["Tarugos 6x30", "Corner", "Tornillos de 1,5 cm"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: Una las patas chicas F con la tapa grande A haciendo coincidir los mini fix de esta con las cajas mini fix de las patas y usando los tarugos como guía, una vez encastrados girar las cajas de los mini fix 180 grados en sentido horario[cite: 10]. Previamente haga coincidir los tarugos del estante grande C con las perforaciones en el canto de las patas[cite: 10]. Finalmente atornille las escuadras ya colocadas en el estante, a las patas por medio de 3 tornillos de 1,5 cm[cite: 10]. Repita el proceso para la mesa restante usando las patas largas E, la tapa chica B y el estante chico D[cite: 10].",
+      "piezas": ["Patas cortas F", "Tapa grande A", "Estante grande C", "Patas largas E", "Tapa chica B", "Estante chico D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tarugos 6x30", "Corner", "Tornillos de 1,5 cm"]
+    }
+  ]
+}

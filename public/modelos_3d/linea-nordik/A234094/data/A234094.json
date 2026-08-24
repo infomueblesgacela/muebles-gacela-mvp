@@ -1,0 +1,131 @@
+{
+  "producto": {
+    "id": "234094",
+    "nombre": "Escritorio línea Tokio con tres cajones y dos patas macizas"
+  },
+  "metadata": {
+    "dificultad": "Medio",
+    "tiempo_min": 90,
+    "herramientas_necesarias": [
+      "Martillo de carpintero",
+      "Destornillador de punta en cruz",
+      "1 Llave Allen",
+      "Usar regla para verificar tamaño de tornillos"
+    ]
+  },
+  "herrajes": [
+    { "item": "Envase de cola", "cantidad": 1 },
+    { "item": "Tornillos Allen 5 cm", "cantidad": 18 },
+    { "item": "Escuadra metálica", "cantidad": 1 },
+    { "item": "Pernos mini fix con caja", "cantidad": 10 },
+    { "item": "Tornillos varianta", "cantidad": 12 },
+    { "item": "Llave Allen", "cantidad": 1 },
+    { "item": "Par de guías metálicas de 35 cm", "cantidad": 3 },
+    { "item": "Tornillos de 1.5 cm", "cantidad": 2 },
+    { "item": "Tiradores botón con tornillos", "cantidad": 3 },
+    { "item": "Tornillos de 2.5 cm", "cantidad": 7 },
+    { "item": "Tornillos de 3 cm", "cantidad": 3 },
+    { "item": "Tornillos de 4 cm", "cantidad": 7 },
+    { "item": "Tornillos de 2 cm", "cantidad": 12 },
+    { "item": "Tarugos 6x30", "cantidad": 36 },
+    { "item": "Bases plásticas", "cantidad": 4 },
+    { "item": "Set de Clavos", "cantidad": 1 }
+  ],
+  "piezas_despiece": {
+    "unidad_medida": "CM",
+    "articulos": [
+      { "letra": "A", "item": "Tapa", "cantidad": 1, "medidas": "120 x 58" },
+      { "letra": "B", "item": "Piso adelante", "cantidad": 1, "medidas": "35 x 9" },
+      { "letra": "C", "item": "Piso atrás", "cantidad": 1, "medidas": "35 x 9" },
+      { "letra": "J", "item": "Frente cajón", "cantidad": 3, "medidas": "38 x 19" },
+      { "letra": "K", "item": "Costado cajón", "cantidad": 6, "medidas": "40 x 12" },
+      { "letra": "L", "item": "Fondo cajón", "cantidad": 3, "medidas": "29,5 x 12" },
+      { "letra": "M", "item": "Base patas", "cantidad": 1, "medidas": "110 x 48" },
+      { "letra": "-", "item": "Zócalos", "cantidad": 2, "medidas": "35 x 6" },
+      { "letra": "-", "item": "Fondo mueble", "cantidad": 1, "medidas": "55,5 x 36" },
+      { "letra": "-", "item": "Patas macizas", "cantidad": 2, "medidas": "74 x 7,5" },
+      { "letra": "-", "item": "Piso cajón", "cantidad": 3, "medidas": "32,3 x 37,8" },
+      { "letra": "G", "item": "Separador derecho", "cantidad": 1, "medidas": "39,4 x 10" },
+      { "letra": "H", "item": "Separador izquierdo", "cantidad": 1, "medidas": "39,4 x 10" },
+      { "letra": "I", "item": "Fondo", "cantidad": 1, "medidas": "90 x 10" },
+      { "letra": "D", "item": "Costado izquierdo", "cantidad": 1, "medidas": "62 x 48" },
+      { "letra": "E", "item": "Costado derecho", "cantidad": 1, "medidas": "62 x 48" },
+      { "letra": "F", "item": "Entre tapa", "cantidad": 1, "medidas": "48 x 38" }
+    ]
+  },
+  "pasos": [
+    {
+      "nro": 1,
+      "instruccion_amigable": "Paso 1: Prepare el costado derecho E, colocando a presión dos cajas para minifix, atornillando la guía metálica fijas derechas mediante los tornillos varianta y clavando dos bases plásticas. En el costado izquierdo D, realice el mismo procedimiento usando las guías fijas izquierdas y teniendo en cuenta que el costado es simétrico respecto al otro.",
+      "piezas": ["Costado derecho E", "Costado izquierdo D"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tornillos varianta", "Par de guías metálicas de 35 cm", "Bases plásticas"]
+    },
+    {
+      "nro": 2,
+      "instruccion_amigable": "Paso 2: En fondo I colocar a presión 4 tarugos de 6 x 30 en las perforaciones que muestra la figura.",
+      "piezas": ["Fondo I"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 3,
+      "instruccion_amigable": "Paso 3: Tanto en el piso adelante B como en el piso atrás C (con ranura) colocar a presión 2 tarugos de 6 x 30 en los cantos cortos en la perforación cercana al canto con filo melamínico. En los zócalos colocar a presión 4 tarugos de 6 x 30 en los cantos cortos.",
+      "piezas": ["Piso adelante B", "Piso atrás C", "- Zócalos"],
+      "herrajes_usados": ["Tarugos 6x30"]
+    },
+    {
+      "nro": 4,
+      "instruccion_amigable": "Paso 4: En la entre tapa F atornillar 4 pernos minifix en las perforaciones que muestra la figura.",
+      "piezas": ["Entre tapa F"],
+      "herrajes_usados": ["Pernos mini fix con caja"]
+    },
+    {
+      "nro": 5,
+      "instruccion_amigable": "Paso 5: Mediante los tornillos Allen de 5 cm, una el piso adelante B y el piso atrás C con el costado derecho D, y con el costado izquierdo C usando como guía los tarugos y previamente colocando los tarugos de los zócalos en las perforaciones de los costados. En el piso atrás dejar el canal hacia arriba.",
+      "piezas": ["Piso adelante B", "Piso atrás C", "Costado derecho E", "Costado izquierdo D", "- Zócalos"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30"]
+    },
+    {
+      "nro": 6,
+      "instruccion_amigable": "Paso 6: Encastre las patas macizas, para luego ajustarlas desde arriba mediante los tornillos Allen 5 cm hacia la base de las patas M. A su vez coloque a presión dos tarugos guías 6x30. Mediante los tornillos Allen de 5 cm, una el fondo I a la base de patas y luego el separador derecho G y el separador izquierdo H con el fondo usando como guía los tarugos. Finalmente ajuste el fondo a la pata por medio de un tornillo de 2,5cm y el separador izquierdo a la otra pata por medio de la escuadra metálica con dos tornillos de 1,5 cm. NOTA: Este instructivo de armado es para que el gabinete quede hacia la derecha. Si el cliente necesita que quede a la izquierda, en este paso el fondo queda hacia adelante y los separadores se giran.",
+      "piezas": ["- Patas macizas", "Base patas M", "Fondo I", "Separador derecho G", "Separador izquierdo H"],
+      "herrajes_usados": ["Tornillos Allen 5 cm", "Tarugos 6x30", "Tornillos de 2.5 cm", "Escuadra metálica", "Tornillos de 1.5 cm"]
+    },
+    {
+      "nro": 7,
+      "instruccion_amigable": "Paso 7 Armado de cajones: Coloque 2 tarugos 6x30 en el fondo de cajón L, 2 mas en cada uno de los costados de cajón K a su vez encastrar las cajas mini fix. Agregar adhesivo en cada perforación donde lleve tarugo.",
+      "piezas": ["Fondo cajón L", "Costado cajón K"],
+      "herrajes_usados": ["Tarugos 6x30", "Pernos mini fix con caja", "Envase de cola"]
+    },
+    {
+      "nro": 8,
+      "instruccion_amigable": "Paso 8 Armado de cajones: Atornille 2 minifix en el frente de cajón J. Y coloque el tirador botón con un tornillo de 3 cm.",
+      "piezas": ["Frente cajón J"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Tiradores botón con tornillos", "Tornillos de 3 cm"]
+    },
+    {
+      "nro": 9,
+      "instruccion_amigable": "Paso 9 armado de cajones: Una vez armada la estructura tipo \"U\" entre K-L-K, ingrese el frente de cajón J ajuste los pernos mini fix girando 180 grados las cajas mini fix. Habiendo agregado el adhesivo anteriormente. Luego ajuste el fondo y los costados mediante los dos tornillos de 4 cm.",
+      "piezas": ["Costado cajón K", "Fondo cajón L", "Frente cajón J"],
+      "herrajes_usados": ["Pernos mini fix con caja", "Envase de cola", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 10,
+      "instruccion_amigable": "Paso 10 armado de cajones: Desde abajo introduzca el piso de cajón sobre el canal del frente de cajón J, y clave este siguiendo una escuadra correcta del cajón sobre los filos inferiores de los costados y del fondo. Finalmente atornille las guías metálicas como muestra la figura mediante 4 tornillos de 2 cm.",
+      "piezas": ["- Piso cajón", "Frente cajón J", "Costado cajón K", "Fondo cajón L"],
+      "herrajes_usados": ["Set de Clavos", "Tornillos de 2 cm", "Par de guías metálicas de 35 cm"]
+    },
+    {
+      "nro": 11,
+      "instruccion_amigable": "Paso 11: Primero una la tapa A con la base de patas M, ya terminada con las patas los separadores y el fondo, mediante los tornillos de 2,5 cm y utilizando como guía los tarugos colocados en la base de patas, los cuales solo sirven de guía (no golpear). Segundo deslice el fondo de mueble en los canales de los costados D-E hasta el canal del piso atrás C y seguidamente desde arriba una la entre tapa F introduciendo los pernos minifix en las perforaciones de los costados y ajuste girando 180 grados las cajas mini fix, previamente colocando el sobrante del fondo de mueble en el canal de la entre tapa. Tercero por medio de los tornillos Allen de 5 cm una la entre tapa con el separador derecho G y con un tornillo de 4 cm al fondo I. NOTA: Este instructivo de armado es para que el gabinete quede hacia la derecha. Si el cliente necesita que quede a la izquierda, en este paso colocar la base de patas con el fondo hacia atrás previamente habiendo echo el paso antes mencionado.",
+      "piezas": ["Tapa A", "Base patas M", "- Fondo mueble", "Costado izquierdo D", "Costado derecho E", "Piso atrás C", "Entre tapa F", "Separador derecho G", "Fondo I"],
+      "herrajes_usados": ["Tornillos de 2.5 cm", "Tarugos 6x30", "Pernos mini fix con caja", "Tornillos Allen 5 cm", "Tornillos de 4 cm"]
+    },
+    {
+      "nro": 12,
+      "instruccion_amigable": "Paso 12: Colocar los cajones sobre las guías fijas que se encuentran ya en el mueble, como lo muestra la imagen.",
+      "piezas": ["Frente cajón J"],
+      "herrajes_usados": ["Par de guías metálicas de 35 cm"],
+      "consejo_pro": "Colocación de cajones: Deslice los cajones de forma nivelada sobre las guías fijas hasta que las ruedas encastren adecuadamente."
+    }
+  ]
+}

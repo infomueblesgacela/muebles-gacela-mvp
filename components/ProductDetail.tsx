@@ -104,6 +104,11 @@ const getFolderAndLine = (product: any) => {
     }
   }
 
+  // Handle Comedores mapping
+  if (['557', '557-1', '557-2', '429090', '429091', '427091'].includes(String(product.sku || product.id))) {
+    lineFolder = 'linea-comedores';
+  }
+
   return { lineFolder, folderName };
 };
 
@@ -409,18 +414,20 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product: propProduct, onB
 
             {/* Botonera de Soporte */}
             <div className="flex flex-col gap-4 w-full sm:max-w-md">
-              <motion.a
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                href={product.manualPdf || '#'}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center px-7 py-3.5 bg-brand-support text-brand-bg rounded-md text-[13px] uppercase tracking-widest hover:bg-brand-support-hover transition-all shadow-lg hover:shadow-xl font-clofie font-bold italic w-full"
-              >
-                <Download size={17} className="mr-2.5 shrink-0" />
-                Descargar Manual PDF
-              </motion.a>
+              {product.manualPdf && product.manualPdf !== '#' && (
+                <motion.a
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  href={product.manualPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center px-7 py-3.5 bg-brand-support text-brand-bg rounded-md text-[13px] uppercase tracking-widest hover:bg-brand-support-hover transition-all shadow-lg hover:shadow-xl font-clofie font-bold italic w-full"
+                >
+                  <Download size={17} className="mr-2.5 shrink-0" />
+                  Descargar Manual PDF
+                </motion.a>
+              )}
               
               {product.sku && hasAssemblyGuide && (
                 <motion.button

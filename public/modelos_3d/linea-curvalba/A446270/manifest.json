@@ -1,0 +1,59 @@
+{
+  "files_3d": [
+    "A446270-Faja_frente.glb",
+    "A446270-Fondo.glb",
+    "A446270-Piso_cajon.glb",
+    "A446270-Zocalo.glb",
+    "A446270-a-tapa.glb",
+    "A446270-b-piso.glb",
+    "A446270-c-costado_izquierdo.glb",
+    "A446270-d-costado_derecho.glb",
+    "A446270-e-separador.glb",
+    "A446270-f-entre_piso.glb",
+    "A446270-fondo_mueble.glb",
+    "A446270-g-frente_cajon_lateral_izquierdo.glb",
+    "A446270-h-frente_cajon_lateral_derecho.glb",
+    "A446270-j_costado_cajon.glb",
+    "A446270-k-fondo_cajon.glb",
+    "A446270-l-Frente_cajon_centro.glb"
+  ],
+  "files_pasos": [
+    "A446270-unboxing.png",
+    "guia-derecha.webp",
+    "guia-izquierda.webp",
+    "instructivo-caja-minifix.webp",
+    "paso_01.png",
+    "paso_02.png",
+    "paso_03.png",
+    "paso_04.png",
+    "paso_05.png",
+    "paso_06.png",
+    "paso_07.png",
+    "paso_08.png",
+    "paso_09.png",
+    "paso_10.png",
+    "paso_11.png",
+    "paso_12.png",
+    "paso_13.png",
+    "paso_14.webp"
+  ],
+  "files_herrajes": [
+    "base-plastica.webp",
+    "clavos.webp",
+    "cola.webp",
+    "escuadra_plastica.webp",
+    "guias-metalicas.webp",
+    "pernos-mini-fix-con-cajas.webp",
+    "tarugo-madera.webp",
+    "tornillo-1-5.webp",
+    "tornillo-2.webp",
+    "tornillo-40.webp",
+    "tornillo-varianta.webp",
+    "tornillo_allen.webp"
+  ],
+  "files_herramientas": [
+    "destornillador.webp",
+    "llave-allen.webp",
+    "martillo.webp"
+  ]
+}

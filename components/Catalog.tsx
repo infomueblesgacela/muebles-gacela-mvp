@@ -213,6 +213,8 @@ const Catalog: React.FC = () => {
                             <img 
                                 src={mainPhoto} 
                                 alt={product.Nombre_Comercial as string} 
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x600/f2f2f2/1a1a1a?text=Foto+Invalida'; }}
                             />

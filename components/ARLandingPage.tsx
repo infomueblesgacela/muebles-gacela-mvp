@@ -103,46 +103,6 @@ const getModelUrl = (sku?: string) => {
   return glbModelUrl839BR;
 };
 
-// Pre-cargamos todos los modelos GLB para asegurar transición instantánea sin pantallas en blanco
-useGLTF.preload(glbModelUrl839BR);
-useGLTF.preload(glbModelUrl839B);
-useGLTF.preload(glbModelUrl902BR);
-useGLTF.preload(glbModelUrl902C);
-useGLTF.preload(glbModelUrl828B);
-useGLTF.preload(glbModelUrl828BR);
-useGLTF.preload(glbModelUrl32012);
-useGLTF.preload(glbModelUrl70815);
-useGLTF.preload(glbModelUrl221150);
-useGLTF.preload(glbModelUrl710150);
-useGLTF.preload(glbModelUrl234094);
-useGLTF.preload(glbModelUrl321021);
-useGLTF.preload(glbModelUrl331330);
-useGLTF.preload(glbModelUrl334026);
-useGLTF.preload(glbModelUrl334093);
-useGLTF.preload(glbModelUrl405330);
-useGLTF.preload(glbModelUrl446330);
-useGLTF.preload(glbModelUrl716330);
-useGLTF.preload(glbModelUrl732330);
-useGLTF.preload(glbModelUrl742332);
-useGLTF.preload(glbModelUrl742334);
-useGLTF.preload(glbModelUrl742336);
-useGLTF.preload(glbModelUrl322250);
-useGLTF.preload(glbModelUrl326250);
-useGLTF.preload(glbModelUrl331250);
-useGLTF.preload(glbModelUrl334250);
-useGLTF.preload(glbModelUrl353250);
-useGLTF.preload(glbModelUrl446250);
-useGLTF.preload(glbModelUrl760250);
-useGLTF.preload(glbModelUrl334271);
-useGLTF.preload(glbModelUrl334272);
-useGLTF.preload(glbModelUrl353270);
-useGLTF.preload(glbModelUrl405270);
-useGLTF.preload(glbModelUrl446270);
-useGLTF.preload(glbModelUrl732270);
-useGLTF.preload(glbModelUrl742270);
-useGLTF.preload(glbModelUrl742272);
-useGLTF.preload(glbModelUrl742273);
-
 interface ARLandingPageProps {
   onBackToPdp: () => void;
   initialSelectedProduct: Product | null;

@@ -9,8 +9,6 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Catalog from './components/Catalog';
 import ProductDetail from './components/ProductDetail';
-import GaciStepByStep from './components/GaciStepByStep';
-import ARLandingPage from './components/ARLandingPage';
 import ScrollToTop from './components/ScrollToTop';
 import Nosotros from './components/Nosotros';
 import Novedades from './components/Novedades';
@@ -22,11 +20,15 @@ import TermsAndConditions from './components/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import WarrantyPolicy from './components/WarrantyPolicy';
 import FAQ from './components/FAQ';
-import ClaimsForm from './components/ClaimsForm';
-import WorkWithUs from './components/WorkWithUs';
 import Contacto from './components/Contacto';
 import Aberturas from './components/Aberturas';
-import Prueba from './components/Prueba';
+
+// Heavy 3D / secondary components lazy-loaded on demand
+const GaciStepByStep = React.lazy(() => import('./components/GaciStepByStep'));
+const ARLandingPage = React.lazy(() => import('./components/ARLandingPage'));
+const ClaimsForm = React.lazy(() => import('./components/ClaimsForm'));
+const WorkWithUs = React.lazy(() => import('./components/WorkWithUs'));
+const Prueba = React.lazy(() => import('./components/Prueba'));
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -90,8 +92,13 @@ const App: React.FC = () => {
       <Navbar onLogoClick={handleLogoClick} onProductClick={handleProductClick} />
 
       <main>
-        <AnimatePresence mode="wait">
-          <Routes location={location}>
+        <React.Suspense fallback={
+          <div className="min-h-[50vh] flex items-center justify-center">
+            <div className="w-8 h-8 border-2 border-brand-accent border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <AnimatePresence mode="wait">
+            <Routes location={location}>
             <Route 
               path="/" 
               element={<Home onProductClick={handleProductClick} onStartAR={handleStartAR} />} 
@@ -217,6 +224,7 @@ const App: React.FC = () => {
             />
           </Routes>
         </AnimatePresence>
+        </React.Suspense>
       </main>
       <Footer />
 

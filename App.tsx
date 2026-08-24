@@ -219,6 +219,10 @@ const App: React.FC = () => {
               element={<AdminNewsDraft />} 
             />
             <Route 
+              path="/admin" 
+              element={<AdminNewsDraft />} 
+            />
+            <Route 
               path="/prueba" 
               element={<Prueba />} 
             />

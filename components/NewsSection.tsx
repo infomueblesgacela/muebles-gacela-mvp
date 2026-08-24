@@ -46,6 +46,9 @@ const NewsSection: React.FC = () => {
         <img 
           src={item.coverImage} 
           alt={item.title} 
+          loading="lazy"
+          decoding="async"
+          style={{ objectPosition: item.focalPoint || 'center' }}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           draggable="false"
         />

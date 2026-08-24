@@ -108,6 +108,9 @@ const Novedades: React.FC = () => {
                                          <img 
                                              src={post.coverImage} 
                                              alt={post.title}
+                                             loading="lazy"
+                                             decoding="async"
+                                             style={{ objectPosition: post.focalPoint || 'center' }}
                                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                          />
                                          <div className="absolute top-4 left-4 bg-brand-support text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-sm bg-opacity-90">
@@ -118,9 +121,14 @@ const Novedades: React.FC = () => {
                                          <span className="text-[#A69785] text-[11px] font-outersans font-bold tracking-widest uppercase mb-3 block">
                                              {new Date(post.date).toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' })}
                                          </span>
-                                         <h3 className="text-2xl font-godber uppercase text-brand-primary mb-4 leading-tight group-hover:text-brand-support transition-colors">
+                                         <h3 className="text-2xl font-godber uppercase text-brand-primary mb-3 leading-tight group-hover:text-brand-support transition-colors">
                                              {post.title}
                                          </h3>
+                                         {post.shortDescription && (
+                                             <p className="text-sm font-clofie text-[#594A42]/80 line-clamp-2 mb-4 leading-relaxed">
+                                                 {post.shortDescription}
+                                             </p>
+                                         )}
                                          <div className="mt-auto pt-6 border-t border-[#EAE3D9] flex items-center justify-between text-[#8C7A6B] font-clofie text-xs uppercase tracking-widest font-bold">
                                              <span>Leer Nota Completa</span>
                                              <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />

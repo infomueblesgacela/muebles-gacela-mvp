@@ -7,6 +7,7 @@ import VideoViewer from './VideoViewer';
 import PieceViewer3D from './PieceViewer3D';
 import confetti from 'canvas-confetti';
 import { sendEmail } from '../utils/email';
+import { trackAssemblyStart } from '../utils/analytics';
 
 const LucideIcons: { [key: string]: React.ComponentType<any> } = {
   Hammer: Hammer,
@@ -298,6 +299,13 @@ const GaciStepByStep: React.FC<GaciStepByStepProps> = ({ product, onBackToPdp, o
           setGuideData(data);
           setManifestData(manifest);
           setCompletedSteps(new Array(data.pasos.length).fill(false));
+
+          // Track Analytics Guided Assembly Start
+          trackAssemblyStart({
+            sku: product.sku || String(product.id || ''),
+            title: product.title,
+            linea: product.linea
+          });
 
           // Map pieces checklist
           const mappedPieces = data.piezas_despiece.articulos.map((art: any, idx: number) => {

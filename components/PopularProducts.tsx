@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import db from '../data/productos.json';
 import { Product } from '../types/product';
 import { slugify } from '../utils/slugify';
+import { trackProductClick } from '../utils/analytics';
 
 // Dynamically group products by Linea and export for other components (like Navbar)
 const grouped: Record<string, any[]> = {};
@@ -105,6 +106,11 @@ const PopularProducts: React.FC<PopularProductsProps> = ({ onProductClick }) => 
                     key={product.id} 
                     className="group cursor-pointer block"
                     onClick={() => {
+                      trackProductClick({
+                        sku: product.sku,
+                        title: product.title,
+                        linea: product.linea,
+                      }, 'Home - Productos Populares');
                       window.scrollTo(0, 0);
                     }}
                   >

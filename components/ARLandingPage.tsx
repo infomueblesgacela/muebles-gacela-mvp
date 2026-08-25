@@ -6,6 +6,7 @@ import { OrbitControls, PerspectiveCamera, Environment, useGLTF } from '@react-t
 import * as THREE from 'three';
 import { Product } from '../types/product';
 import RoomPlanner3D from './RoomPlanner3D';
+import { track3DView, trackARStart } from '../utils/analytics';
 // Importamos los modelos 3D como módulos Vite para forzar el fingerprint único en producción
 // Línea Clásica
 import glbModelUrl839BR from '../assets/modelos_3d/linea-clasica/A008395/A008395_v7_iluminado.glb?url';
@@ -370,11 +371,21 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
   useEffect(() => {
     if (initialSelectedProduct) {
       setSelectedProduct(initialSelectedProduct);
+      track3DView({
+        sku: initialSelectedProduct.sku,
+        title: initialSelectedProduct.title,
+      }, 'interactive_viewer');
     }
     setIsMobileDevice(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, [initialSelectedProduct]);
 
   const triggerAR = () => {
+    if (selectedProduct) {
+      trackARStart({
+        sku: selectedProduct.sku,
+        title: selectedProduct.title,
+      });
+    }
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     if (isMobile) {
       setShowTutorial(true);
@@ -385,6 +396,12 @@ const ARLandingPage: React.FC<ARLandingPageProps> = ({ onBackToPdp, initialSelec
   };
 
   const startARSession = () => {
+    if (selectedProduct) {
+      trackARStart({
+        sku: selectedProduct.sku,
+        title: selectedProduct.title,
+      });
+    }
     setShowTutorial(false);
     const mv = modelViewerRef.current;
     if (mv) {

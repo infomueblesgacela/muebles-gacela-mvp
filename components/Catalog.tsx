@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import db from '../data/productos.json';
 import { slugify } from '../utils/slugify';
+import { trackCatalogFilter, trackProductClick } from '../utils/analytics';
 
 const Catalog: React.FC = () => {
   const [selectedLinea, setSelectedLinea] = useState<string>('');
@@ -24,6 +25,7 @@ const Catalog: React.FC = () => {
     if (lineaParam) {
       const matchedLinea = ALL_LINEAS.find(l => slugify(l) === slugify(lineaParam));
       setSelectedLinea(matchedLinea || '');
+      if (matchedLinea) trackCatalogFilter('linea', matchedLinea);
     } else {
       setSelectedLinea('');
     }
@@ -31,12 +33,14 @@ const Catalog: React.FC = () => {
     if (ambienteParam) {
       const matchedAmbiente = ALL_AMBIENTES.find(a => a.toLowerCase() === ambienteParam.toLowerCase());
       setSelectedAmbiente(matchedAmbiente || '');
+      if (matchedAmbiente) trackCatalogFilter('ambiente', matchedAmbiente);
     } else {
       setSelectedAmbiente('');
     }
     
     const searchParam = params.get('search');
     setSelectedSearch(searchParam || '');
+    if (searchParam) trackCatalogFilter('search', searchParam);
   }, [location.search]);
 
   const prodsWithSearch = useMemo(() => {
@@ -208,7 +212,18 @@ const Catalog: React.FC = () => {
                         transition={{ duration: 0.3 }}
                         className="group flex flex-col cursor-pointer"
                     >
-                    <Link to={`/${slugify(product.Linea || 'producto')}/${product.SKU}`} className="block w-full">
+                    <Link 
+                        to={`/${slugify(product.Linea || 'producto')}/${product.SKU}`} 
+                        className="block w-full"
+                        onClick={() => {
+                            trackProductClick({
+                                sku: product.SKU,
+                                title: product.Nombre_Comercial as string,
+                                linea: product.Linea as string,
+                                ambiente: product.Ambiente as string
+                            }, 'Catalog Grid');
+                        }}
+                    >
                         <div className="relative aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-white shadow-sm group-hover:shadow-md transition-all duration-500">
                             <img 
                                 src={mainPhoto} 

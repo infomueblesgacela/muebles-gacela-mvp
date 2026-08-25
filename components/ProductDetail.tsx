@@ -66,6 +66,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import db from '../data/productos.json';
 import VideoViewer from './VideoViewer';
 import { slugify } from '../utils/slugify';
+import { trackProductView, trackManualDownload, trackAssemblyStart, track3DView, trackARStart } from '../utils/analytics';
 
 const getFolderAndLine = (product: any) => {
   let lineFolder = 'linea-clasica';
@@ -189,6 +190,15 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product: propProduct, onB
       setHasAssemblyGuide(false);
       return;
     }
+
+    // Disparar evento de Analytics: Producto Visto (view_item)
+    trackProductView({
+      sku: product.sku,
+      title: product.title,
+      linea: dbProduct?.Linea || product.linea,
+      ambiente: dbProduct?.Ambiente,
+    });
+
     const { lineFolder, folderName } = getFolderAndLine(product);
     // Verificar si el archivo manifest.json existe y es un JSON válido (previene redirección SPA index.html)
     fetch(`/modelos_3d/${lineFolder}/${folderName}/manifest.json`)
@@ -422,6 +432,14 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product: propProduct, onB
                   href={product.manualPdf}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    trackManualDownload({
+                      sku: product.sku,
+                      title: product.title,
+                      linea: dbProduct?.Linea || product.linea,
+                      ambiente: dbProduct?.Ambiente,
+                    }, product.manualPdf);
+                  }}
                   className="flex items-center justify-center px-7 py-3.5 bg-brand-support text-brand-bg rounded-md text-[13px] uppercase tracking-widest hover:bg-brand-support-hover transition-all shadow-lg hover:shadow-xl font-clofie font-bold italic w-full"
                 >
                   <Download size={17} className="mr-2.5 shrink-0" />
@@ -434,7 +452,15 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product: propProduct, onB
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.45 }}
-                  onClick={() => onStartAssembly(product)}
+                  onClick={() => {
+                    trackAssemblyStart({
+                      sku: product.sku,
+                      title: product.title,
+                      linea: dbProduct?.Linea || product.linea,
+                      ambiente: dbProduct?.Ambiente,
+                    });
+                    onStartAssembly(product);
+                  }}
                   className="flex items-center justify-center px-7 py-3.5 bg-brand-primary text-brand-bg rounded-md text-[13px] uppercase tracking-widest hover:bg-brand-primary/95 transition-all shadow-lg hover:shadow-xl font-clofie font-bold italic w-full"
                 >
                   <Wrench size={17} className="mr-2.5 shrink-0" />
@@ -447,7 +473,21 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product: propProduct, onB
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  onClick={() => onStartAR(product)}
+                  onClick={() => {
+                    track3DView({
+                      sku: product.sku,
+                      title: product.title,
+                      linea: dbProduct?.Linea || product.linea,
+                      ambiente: dbProduct?.Ambiente,
+                    });
+                    trackARStart({
+                      sku: product.sku,
+                      title: product.title,
+                      linea: dbProduct?.Linea || product.linea,
+                      ambiente: dbProduct?.Ambiente,
+                    });
+                    onStartAR(product);
+                  }}
                   className="flex items-center justify-center px-7 py-3.5 bg-brand-accent text-brand-bg rounded-md text-[13px] uppercase tracking-widest hover:bg-brand-accent/95 transition-all shadow-lg hover:shadow-xl font-clofie font-bold italic w-full mt-3"
                 >
                   <Camera size={17} className="mr-2.5 shrink-0" />

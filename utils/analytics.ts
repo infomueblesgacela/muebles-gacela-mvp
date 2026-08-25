@@ -18,11 +18,19 @@ export interface AnalyticsProduct {
   color?: string;
 }
 
-// Safe push to dataLayer
+// Safe push to dataLayer & direct gtag trigger for GA4
 const pushToDataLayer = (eventPayload: Record<string, any>) => {
   if (typeof window !== 'undefined') {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push(eventPayload);
+
+    // Direct GA4 gtag dispatch
+    if (typeof window.gtag === 'function') {
+      const { event, ...params } = eventPayload;
+      if (event) {
+        window.gtag('event', event, params);
+      }
+    }
 
     // Optional console log for development debugging
     if (import.meta.env.DEV) {

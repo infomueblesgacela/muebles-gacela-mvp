@@ -22,6 +22,7 @@ import WarrantyPolicy from './components/WarrantyPolicy';
 import FAQ from './components/FAQ';
 import Contacto from './components/Contacto';
 import Aberturas from './components/Aberturas';
+import { GaciBotTester } from './components/GaciBotTester';
 
 // Heavy 3D / secondary components lazy-loaded on demand
 const GaciStepByStep = React.lazy(() => import('./components/GaciStepByStep'));
@@ -221,6 +222,10 @@ const App: React.FC = () => {
             <Route 
               path="/admin" 
               element={<AdminNewsDraft />} 
+            />
+            <Route 
+              path="/test-gacibot" 
+              element={<GaciBotTester />} 
             />
             <Route 
               path="/prueba" 

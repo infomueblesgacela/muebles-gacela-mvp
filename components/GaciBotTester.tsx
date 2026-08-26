@@ -22,6 +22,7 @@ const SUGGESTED_QUESTIONS = [
 ];
 
 export const GaciBotTester: React.FC = () => {
+  const [sessionId, setSessionId] = useState<string>(() => 'session_' + Math.random().toString(36).substring(2, 9));
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -63,7 +64,7 @@ export const GaciBotTester: React.FC = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: messageText }),
+        body: JSON.stringify({ message: messageText, sessionId: sessionId }),
       });
 
       let botReply = '';
@@ -107,6 +108,7 @@ export const GaciBotTester: React.FC = () => {
   };
 
   const clearChat = () => {
+    setSessionId('session_' + Math.random().toString(36).substring(2, 9));
     setMessages([
       {
         id: '1',

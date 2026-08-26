@@ -52,9 +52,10 @@ export const trackPageView = (pageTitle: string, pagePath: string) => {
 };
 
 /**
- * 2. Track Product View (view_item - GA4 Standard)
+ * 2. Track Product View (view_item - GA4 Standard & Page View Enrichment)
  */
 export const trackProductView = (product: AnalyticsProduct) => {
+  // 1. Send GA4 Standard E-Commerce view_item
   pushToDataLayer({
     event: 'view_item',
     ecommerce: {
@@ -68,12 +69,23 @@ export const trackProductView = (product: AnalyticsProduct) => {
         },
       ],
     },
-    // Custom flat dimensions for simplified GTM & Looker Studio reporting
     product_sku: product.sku,
     product_name: product.title,
     product_linea: product.linea || '',
     product_ambiente: product.ambiente || '',
   });
+
+  // 2. Also enrich page_view so Looker Studio metrics like "Vistas" (Page Views) work seamlessly
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', 'page_view', {
+      page_title: product.title,
+      page_location: window.location.href,
+      product_sku: product.sku,
+      product_name: product.title,
+      product_linea: product.linea || '',
+      product_ambiente: product.ambiente || '',
+    });
+  }
 };
 
 /**

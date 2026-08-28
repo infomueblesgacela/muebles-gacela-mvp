@@ -199,9 +199,45 @@ export const GaciBotTester: React.FC = () => {
                       : 'bg-white text-gray-800 border border-gray-100 rounded-tl-none'
                   }`}
                 >
-                  <p>{msg.text}</p>
+                  <div className="space-y-1">
+                    {msg.text.split('\n').map((line, lIdx) => {
+                      if (!line.trim()) return <div key={lIdx} className="h-2" />;
+                      
+                      // Process links in line (detect both https://... and markdown [text](url))
+                      const urlRegex = /(https?:\/\/[^\s\)]+)/g;
+                      const parts = line.split(urlRegex);
+                      
+                      return (
+                        <p key={lIdx} className={line.startsWith('* ') || line.startsWith('• ') ? 'pl-2' : ''}>
+                          {parts.map((part, pIdx) => {
+                            if (part.match(urlRegex)) {
+                              return (
+                                <a
+                                  key={pIdx}
+                                  href={part}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 text-brand-accent hover:text-brand-support font-semibold underline underline-offset-2 break-all my-0.5 bg-brand-bg/40 px-1.5 py-0.5 rounded transition-colors"
+                                >
+                                  {part}
+                                </a>
+                              );
+                            }
+                            // Bold formatting **text**
+                            const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
+                            return boldParts.map((bPart, bIdx) => {
+                              if (bPart.startsWith('**') && bPart.endsWith('**')) {
+                                return <strong key={bIdx} className="font-bold text-brand-primary">{bPart.slice(2, -2)}</strong>;
+                              }
+                              return <span key={bIdx}>{bPart}</span>;
+                            });
+                          })}
+                        </p>
+                      );
+                    })}
+                  </div>
                   <span
-                    className={`block text-[10px] mt-1.5 ${
+                    className={`block text-[10px] mt-2 ${
                       msg.sender === 'user' ? 'text-white/50 text-right' : 'text-gray-400'
                     }`}
                   >

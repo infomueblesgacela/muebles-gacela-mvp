@@ -27,7 +27,7 @@ export const GaciBotTester: React.FC = () => {
     {
       id: '1',
       sender: 'bot',
-      text: '¡Hola! Soy Gaci, el asistente de Muebles Gacela. Estoy conectado en vivo a tu servidor n8n con Google Gemini 3.5 Flash. Haceme cualquier pregunta sobre nuestro catálogo, medidas o materiales para ponerme a prueba.',
+      text: '¡Hola! Qué bueno que nos contactes. Soy Gaci, tu asesor de Muebles Gacela. Contame, ¿qué espacio estás buscando renovar o qué mueble te gustaría conocer?',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);

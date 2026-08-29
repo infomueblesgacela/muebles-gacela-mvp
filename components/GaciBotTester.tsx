@@ -33,10 +33,15 @@ export const GaciBotTester: React.FC = () => {
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
   };
 
   useEffect(() => {
@@ -77,7 +82,7 @@ export const GaciBotTester: React.FC = () => {
           botReply = text;
         }
       } else {
-        botReply = '⚠️ Hubo un error al comunicar con el servidor de n8n. Código: ' + response.status;
+        botReply = '⚠️ Hubo un error al comunicar con el servidor. Código: ' + response.status;
       }
 
       // Si empieza con '=', quitarlo
@@ -98,7 +103,7 @@ export const GaciBotTester: React.FC = () => {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         sender: 'bot',
-        text: '❌ Error de conexión con el webhook de n8n. Verificá que el workflow esté publicado.',
+        text: '❌ Error de conexión con el servidor. Verificá que el workflow esté publicado.',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       setMessages((prev) => [...prev, errorMessage]);
@@ -120,40 +125,37 @@ export const GaciBotTester: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F4EFE6] text-brand-primary flex flex-col items-center justify-center p-4 md:p-8 font-sans">
-      <div className="max-w-4xl w-full bg-white rounded-3xl shadow-2xl border border-brand-card/40 flex flex-col h-[90vh] overflow-hidden">
+    <div className="min-h-screen bg-[#F4EFE6] text-brand-primary flex flex-col items-center justify-center p-2 sm:p-4 md:p-6 font-sans">
+      <div className="max-w-3xl w-full bg-white rounded-3xl shadow-2xl border border-brand-card/40 flex flex-col h-[88vh] overflow-hidden">
         {/* Header */}
         <div className="bg-brand-primary text-brand-bg px-6 py-4 flex items-center justify-between border-b border-brand-support/20">
           <div className="flex items-center space-x-3">
             <Link
-              to="/admin"
+              to="/"
               className="p-2 bg-white/10 hover:bg-white/20 rounded-xl transition-all text-white mr-1"
-              title="Volver al Admin"
+              title="Volver a la tienda"
             >
               <ArrowLeft size={18} />
             </Link>
-            <div className="w-10 h-10 rounded-2xl bg-brand-accent flex items-center justify-center shadow-inner">
-              <Bot size={22} className="text-white" />
+            <div className="relative">
+              <div className="w-10 h-10 rounded-2xl bg-brand-accent flex items-center justify-center shadow-inner">
+                <Bot size={22} className="text-white" />
+              </div>
+              <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-brand-primary rounded-full" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h1 className="font-godber uppercase text-lg tracking-wider">GaciBot Sandbox</h1>
-                <span className="bg-emerald-500/20 text-emerald-300 text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  En Vivo n8n + Gemini 3.5
-                </span>
-              </div>
-              <p className="text-[11px] text-white/60 font-clofie">Ambiente de Pruebas Privado para Muebles Gacela</p>
+              <h1 className="font-godber uppercase text-base tracking-wider leading-tight">GaciBot</h1>
+              <p className="text-[11px] text-white/70 font-clofie">Asesor oficial de Muebles Gacela</p>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
             <button
               onClick={clearChat}
-              className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl transition-all font-clofie font-bold"
+              className="flex items-center gap-1.5 text-xs text-white/70 hover:text-white bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-xl transition-all font-clofie font-semibold"
             >
-              <RefreshCw size={14} />
-              Limpiar Chat
+              <RefreshCw size={13} />
+              <span>Reiniciar</span>
             </button>
           </div>
         </div>
@@ -177,7 +179,7 @@ export const GaciBotTester: React.FC = () => {
         </div>
 
         {/* Chat Area */}
-        <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gradient-to-b from-[#FAF8F5]/50 to-white">
+        <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 bg-gradient-to-b from-[#FAF8F5]/50 to-white">
           <AnimatePresence>
             {messages.map((msg) => (
               <motion.div
@@ -193,7 +195,7 @@ export const GaciBotTester: React.FC = () => {
                   </div>
                 )}
                 <div
-                  className={`max-w-[80%] rounded-2xl p-4 text-sm leading-relaxed whitespace-pre-line shadow-xs ${
+                  className={`max-w-[85%] rounded-2xl p-4 text-sm leading-relaxed whitespace-pre-line shadow-xs ${
                     msg.sender === 'user'
                       ? 'bg-brand-primary text-brand-bg rounded-tr-none'
                       : 'bg-white text-gray-800 border border-gray-100 rounded-tl-none'
@@ -266,12 +268,10 @@ export const GaciBotTester: React.FC = () => {
                 <span className="w-2 h-2 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '0ms' }} />
                 <span className="w-2 h-2 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '150ms' }} />
                 <span className="w-2 h-2 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '300ms' }} />
-                <span className="ml-1 text-gray-500 font-clofie">Gaci está pensando la respuesta...</span>
+                <span className="ml-1 text-gray-500 font-clofie not-italic">Gaci está escribiendo...</span>
               </div>
             </motion.div>
           )}
-
-          <div ref={messagesEndRef} />
         </div>
 
         {/* Input Bar */}

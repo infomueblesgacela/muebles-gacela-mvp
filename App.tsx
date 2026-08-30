@@ -237,8 +237,8 @@ const App: React.FC = () => {
       </main>
       <Footer />
 
-      {/* GaciBot Persistente */}
-      {/* <GaciBot /> */}
+      {/* GaciBot Flotante Persistente en Producción */}
+      <GaciBot />
     </div>
   );
 };

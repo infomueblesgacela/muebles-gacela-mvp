@@ -1,265 +1,462 @@
-
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, X, Send, User, Bot, Loader2 } from 'lucide-react';
+import { Bot, Send, X, MessageCircle, Sparkles, RefreshCw, ChevronDown, User } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 interface Message {
-    id: string;
-    type: 'bot' | 'user';
-    text: string;
-    timestamp: Date;
+  id: string;
+  sender: 'bot' | 'user';
+  text: string;
+  timestamp: string;
 }
 
-const GACELA_CONTEXT = {
-    address: "Sobremonte 3236, San Fernando",
-    workingHours: "Lunes a Viernes de 9:00 a 18:00hs y Sábados de 9:00 a 13:00hs",
-    whatsapp: "+54 11 1234-5678",
-    assemblyGuideLink: "en la sección de Guías de Armado de nuestra web"
-};
+const GACIBOT_WEBHOOK_URL = 'https://n8n-ock0.srv1932813.hstgr.cloud/webhook/gacibot';
 
-const GaciBot: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [messages, setMessages] = useState<Message[]>([]);
-    const [isTyping, setIsTyping] = useState(false);
-    const [inputValue, setInputValue] = useState('');
-    const [userName, setUserName] = useState<string | null>(null);
-    const messagesEndRef = useRef<HTMLDivElement>(null);
+const SUGGESTED_CHIPS = [
+  '¿Qué botineros tienen?',
+  '¿Medidas de la Cómoda ALBA?',
+  '¿Cómo armo mi mueble?',
+  'Horarios y showroom',
+];
 
-    const scrollToBottom = () => {
-        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+export const GaciBot: React.FC = () => {
+  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const [showTeaser, setShowTeaser] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const [sessionId, setSessionId] = useState<string>(() => 'web_' + Math.random().toString(36).substring(2, 9));
+  
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: 'welcome',
+      sender: 'bot',
+      text: '¡Hola! Qué bueno que nos contactes. Soy Gaci, el asistente virtual de Muebles Gacela. Contame, ¿qué espacio estás buscando renovar o qué mueble te gustaría conocer?',
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+    },
+  ]);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Timer para el mensaje teaser a los 5s y ocultarlo a los 30s
+  useEffect(() => {
+    // Si ya interactuó o abrió el chat, no mostrar el teaser
+    if (hasInteracted || isOpen) return;
+
+    const showTimer = setTimeout(() => {
+      setShowTeaser(true);
+    }, 5000); // Aparece a los 5 segundos
+
+    const hideTimer = setTimeout(() => {
+      setShowTeaser(false);
+    }, 35000); // Desaparece 30 segundos después (a los 35s total)
+
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(hideTimer);
+    };
+  }, [hasInteracted, isOpen]);
+
+  const scrollToBottom = () => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      scrollToBottom();
+      setTimeout(() => inputRef.current?.focus(), 250);
+    }
+  }, [messages, loading, isOpen]);
+
+  const handleOpenChat = () => {
+    setIsOpen(true);
+    setShowTeaser(false);
+    setHasInteracted(true);
+  };
+
+  const handleSend = async (textToSend?: string) => {
+    const messageText = (textToSend || input).trim();
+    if (!messageText || loading) return;
+
+    setHasInteracted(true);
+    setShowTeaser(false);
+
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      sender: 'user',
+      text: messageText,
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     };
 
-    useEffect(() => {
-        scrollToBottom();
-    }, [messages, isTyping]);
+    setMessages((prev) => [...prev, userMessage]);
+    if (!textToSend) setInput('');
+    setLoading(true);
 
-    useEffect(() => {
-        if (isOpen && messages.length === 0) {
-            addBotMessage("¡Hola! Soy Gaci, tu asistente de experiencia de Muebles Gacela. Contame, ¿con quién tengo el gusto de hablar?");
+    try {
+      const response = await fetch(GACIBOT_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: messageText, sessionId: sessionId }),
+      });
+
+      let botReply = '';
+      if (response.ok) {
+        const text = await response.text();
+        try {
+          const data = JSON.parse(text);
+          botReply = data.reply || data.output || data.text || text;
+        } catch {
+          botReply = text;
         }
-    }, [isOpen]);
+      } else {
+        botReply = '⚠️ Hubo un error al comunicar con el servidor. Por favor intentá de nuevo.';
+      }
 
-    const addBotMessage = (text: string) => {
-        setIsTyping(true);
-        // Simular tiempo de escritura basado en la longitud del texto
-        const delay = Math.min(Math.max(text.length * 20, 1000), 2500);
-        setTimeout(() => {
-            const newMessage: Message = {
-                id: Math.random().toString(36).substr(2, 9),
-                type: 'bot',
-                text,
-                timestamp: new Date(),
-            };
-            setMessages((prev) => [...prev, newMessage]);
-            setIsTyping(false);
-        }, delay);
-    };
+      if (botReply.startsWith('=')) {
+        botReply = botReply.substring(1).trim();
+      }
 
-    const extractName = (text: string): string | null => {
-        const patterns = [
-            /(?:me llamo|soy|mi nombre es)\s+([a-zA-ZáéíóúÁÉÍÓÚñÑ]+)/i,
-            /^(?:hola,?\s+)?([a-zA-ZáéíóúÁÉÍÓÚñÑ]+)$/i
-        ];
+      const botMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        sender: 'bot',
+        text: botReply || 'Perdón, no pude procesar la respuesta en este momento.',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      };
 
-        for (const pattern of patterns) {
-            const match = text.match(pattern);
-            if (match && match[1]) return match[1];
-        }
-        return null;
-    };
+      setMessages((prev) => [...prev, botMessage]);
+    } catch (err) {
+      console.error(err);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        sender: 'bot',
+        text: '❌ No pudimos conectar con el servidor en este momento. Por favor verificá tu conexión.',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    const handleSendMessage = async (e?: React.FormEvent) => {
-        if (e) e.preventDefault();
-        if (!inputValue.trim()) return;
+  const clearChat = () => {
+    setSessionId('web_' + Math.random().toString(36).substring(2, 9));
+    setMessages([
+      {
+        id: 'reset_' + Date.now(),
+        sender: 'bot',
+        text: 'Chat reiniciado. ¿Qué consulta querés hacer sobre los muebles o armado?',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      },
+    ]);
+  };
 
-        const userText = inputValue.trim();
-        const newUserMessage: Message = {
-            id: Math.random().toString(36).substr(2, 9),
-            type: 'user',
-            text: userText,
-            timestamp: new Date(),
-        };
+  // Ocultar la burbuja si estamos en el tester específico
+  if (location.pathname === '/test-gacibot') {
+    return null;
+  }
 
-        setMessages((prev) => [...prev, newUserMessage]);
-        setInputValue('');
-
-        // Lógica de respuesta
-        if (!userName) {
-            const name = extractName(userText);
-            if (name) {
-                setUserName(name);
-                addBotMessage(`¡Mucho gusto, ${name}! Ya te anoté. ¿En qué puedo ayudarte con tu mueble Gacela hoy?`);
-            } else {
-                // Si no detectamos un patrón claro pero es la primera interacción, asumimos que es el nombre directamente
-                if (userText.split(' ').length <= 2) {
-                    setUserName(userText);
-                    addBotMessage(`¡Mucho gusto, ${userText}! Decime, ¿en qué puedo ayudarte hoy para que tu experiencia con nosotros sea excelente?`);
-                } else {
-                    addBotMessage("Perdoná, no llegué a captar tu nombre. ¿Cómo te llamás? Así puedo atenderte mejor.");
-                }
-            }
-        } else {
-            processResponse(userText);
-        }
-    };
-
-    const processResponse = (text: string) => {
-        const lowerText = text.toLowerCase();
-
-        // Dirección / Ubicación
-        if (lowerText.includes('donde') || lowerText.includes('ubicacion') || lowerText.includes('direccion') || lowerText.includes('local') || lowerText.includes('fabrica')) {
-            addBotMessage(`Nuestra fábrica y showroom principal están en ${GACELA_CONTEXT.address}. ¡Te esperamos para que veas la calidad de nuestros muebles en persona!`);
-            setTimeout(() => addBotMessage("¿Te queda bien esa zona o buscás algún distribuidor más cercano?"), 1000);
-            return;
-        }
-
-        // Horarios
-        if (lowerText.includes('horario') || lowerText.includes('abierto') || lowerText.includes('cuando')) {
-            addBotMessage(`Estamos para atenderte los ${GACELA_CONTEXT.workingHours}.`);
-            setTimeout(() => addBotMessage("¿Tenías pensado venir a visitarnos hoy?"), 1000);
-            return;
-        }
-
-        // Protocolo de Fricción
-        if (lowerText.includes('dañado') || lowerText.includes('roto') || lowerText.includes('error') || lowerText.includes('problema') || lowerText.includes('falla')) {
-            addBotMessage(`Lamento muchísimo que estés teniendo este inconveniente, ${userName}. Entiendo perfectamente tu frustración y quiero que sepas que para nosotros tu caso es prioridad absoluta.`);
-            setTimeout(() => {
-                addBotMessage("Por favor, contame más detalles. Voy a escalar esto de inmediato con nuestro equipo de calidad para darte una solución ahora mismo.");
-            }, 2000);
-            return;
-        }
-
-        // Consultas de Stock / Precios
-        if (lowerText.includes('stock') || lowerText.includes('disponible') || lowerText.includes('precio') || lowerText.includes('cuanto sale')) {
-            addBotMessage("Estoy consultando nuestra base de datos en tiempo real... Generalmente tenemos stock de todas nuestras líneas principales (Escandinava, Industrial, Kids).");
-            setTimeout(() => {
-                addBotMessage("¿De qué mueble específico necesitás saber disponibilidad? ¿En qué más puedo ayudarte para que tu experiencia sea perfecta?");
-            }, 2500);
-            return;
-        }
-
-        // Respuesta genérica persistente
-        addBotMessage(`Entiendo lo que me decís, ${userName}. Dejame ver cómo podemos resolver esto de la mejor manera.`);
-        setTimeout(() => {
-            addBotMessage("¿Hay algo más en lo que pueda ayudarte para que tu experiencia sea perfecta?");
-        }, 2000);
-    };
-
-    return (
-        <div className="fixed bottom-6 right-6 z-[9999] font-sans">
-            {/* Botón Disparador */}
-            <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-16 h-16 bg-brand-support rounded-full shadow-2xl flex items-center justify-center p-0 overflow-hidden border-2 border-white"
+  return (
+    <div className="fixed bottom-5 right-5 z-[9999] font-sans">
+      {/* Teaser Popup Speech Bubble (Aparece a los 5s y se va a los 30s) */}
+      <AnimatePresence>
+        {showTeaser && !isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 15, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.9 }}
+            transition={{ type: 'spring', damping: 20, stiffness: 300 }}
+            className="absolute bottom-20 right-0 w-[290px] sm:w-[320px] bg-white rounded-2xl shadow-2xl p-4 border border-brand-card/30 backdrop-blur-md cursor-pointer hover:border-brand-accent/60 transition-all group"
+            onClick={handleOpenChat}
+          >
+            {/* Close button for teaser */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowTeaser(false);
+                setHasInteracted(true);
+              }}
+              className="absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors"
             >
-                <AnimatePresence mode="wait">
-                    {isOpen ? (
-                        <motion.div
-                            key="close"
-                            initial={{ rotate: -90, opacity: 0 }}
-                            animate={{ rotate: 0, opacity: 1 }}
-                            exit={{ rotate: 90, opacity: 0 }}
-                        >
-                            <X className="text-white w-8 h-8" />
-                        </motion.div>
-                    ) : (
-                        <motion.div
-                            key="logo"
-                            initial={{ scale: 0.5, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.5, opacity: 0 }}
-                            className="flex items-center justify-center"
-                        >
-                            <Bot className="text-white w-9 h-9" />
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-            </motion.button>
+              <X size={12} />
+            </button>
 
-            {/* Ventana de Chat */}
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, y: 20, scale: 0.95, transformOrigin: 'bottom right' }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 20, scale: 0.95 }}
-                        className="absolute bottom-20 right-0 w-[350px] md:w-[400px] h-[550px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] flex flex-col overflow-hidden border border-gray-100"
+            <div className="flex items-start gap-3">
+              <div className="relative shrink-0 mt-0.5">
+                <div className="w-9 h-9 rounded-xl bg-brand-primary flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
+                  <Bot size={20} />
+                </div>
+                <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-white" />
+              </div>
+              <div className="pr-4">
+                <p className="font-bold text-xs text-brand-primary flex items-center gap-1 uppercase tracking-wider">
+                  GaciBot
+                  <span className="text-[10px] lowercase text-emerald-600 font-normal bg-emerald-50 px-1.5 py-0.2 rounded-full border border-emerald-200">online</span>
+                </p>
+                <p className="text-xs text-gray-700 mt-1 leading-snug">
+                  ¡Hola! 👋 Soy <strong>Gaci</strong>, asistente oficial de Muebles Gacela. ¿Buscás medidas, catálogo o ayuda con el armado? ¡Hacé clic acá para chatear!
+                </p>
+              </div>
+            </div>
+
+            {/* Flechita apuntando a la burbuja */}
+            <div className="absolute -bottom-2 right-7 w-4 h-4 bg-white transform rotate-45 border-r border-b border-brand-card/30" />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Burbujita Flotante Disparadora */}
+      <motion.button
+        whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.92 }}
+        onClick={() => {
+          if (isOpen) {
+            setIsOpen(false);
+          } else {
+            handleOpenChat();
+          }
+        }}
+        className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-2xl flex items-center justify-center border-2 border-white transition-all duration-300 ${
+          isOpen ? 'bg-brand-primary text-white' : 'bg-brand-support text-white'
+        }`}
+        aria-label="Abrir asistente virtual GaciBot"
+      >
+        {/* Ping de notificación animado si aún no interactuó */}
+        {!hasInteracted && !isOpen && (
+          <span className="absolute -top-1 -right-1 flex h-4 w-4">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-4 w-4 bg-brand-accent border-2 border-white"></span>
+          </span>
+        )}
+
+        <AnimatePresence mode="wait">
+          {isOpen ? (
+            <motion.div
+              key="close"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+            >
+              <ChevronDown size={28} />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="bot"
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.5, opacity: 0 }}
+              className="flex items-center justify-center"
+            >
+              <Bot size={28} className="text-white" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.button>
+
+      {/* Ventana de Chat Flotante */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 30, scale: 0.95, transformOrigin: 'bottom right' }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 30, scale: 0.95 }}
+            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+            className="absolute bottom-20 right-0 w-[92vw] sm:w-[390px] h-[560px] max-h-[82vh] bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.2)] flex flex-col overflow-hidden border border-brand-card/40"
+          >
+            {/* Header */}
+            <div className="bg-brand-primary text-brand-bg px-5 py-3.5 flex items-center justify-between border-b border-brand-support/20 shrink-0">
+              <div className="flex items-center space-x-3">
+                <div className="relative">
+                  <div className="w-10 h-10 rounded-2xl bg-brand-accent flex items-center justify-center shadow-inner">
+                    <Bot size={22} className="text-white" />
+                  </div>
+                  <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-brand-primary rounded-full" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-sm tracking-wide leading-tight flex items-center gap-1.5">
+                    GaciBot
+                    <span className="text-[10px] text-emerald-400 font-normal">● Online</span>
+                  </h3>
+                  <p className="text-[11px] text-white/70">Asistente oficial Muebles Gacela</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={clearChat}
+                  className="p-2 text-white/70 hover:text-white hover:bg-white/10 rounded-xl transition-all"
+                  title="Reiniciar chat"
+                >
+                  <RefreshCw size={15} />
+                </button>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="p-2 text-white/70 hover:text-white hover:bg-white/10 rounded-xl transition-all"
+                  title="Cerrar chat"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            </div>
+
+            {/* Chips de Preguntas Rápidas */}
+            <div className="bg-[#FAF8F5] px-3.5 py-2 border-b border-gray-100 flex items-center gap-1.5 overflow-x-auto text-xs no-scrollbar shrink-0">
+              <span className="text-brand-support font-bold shrink-0 flex items-center gap-0.5 text-[10px] uppercase tracking-wider">
+                <Sparkles size={11} className="text-brand-accent" />
+              </span>
+              {SUGGESTED_CHIPS.map((chip, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleSend(chip)}
+                  disabled={loading}
+                  className="bg-white border border-gray-200 hover:border-brand-accent text-brand-primary/80 hover:text-brand-primary px-2.5 py-1 rounded-full whitespace-nowrap transition-all text-[11px] shrink-0 disabled:opacity-50"
+                >
+                  {chip}
+                </button>
+              ))}
+            </div>
+
+            {/* Lista de Mensajes */}
+            <div
+              ref={chatContainerRef}
+              className="flex-1 overflow-y-auto p-4 space-y-3.5 bg-gradient-to-b from-[#FAF8F5]/50 to-white"
+            >
+              {messages.map((msg) => (
+                <motion.div
+                  key={msg.id}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`flex gap-2.5 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
+                >
+                  {msg.sender === 'bot' && (
+                    <div className="w-7 h-7 rounded-full bg-brand-support text-white flex items-center justify-center shrink-0 mt-1 shadow-xs text-xs">
+                      <Bot size={15} />
+                    </div>
+                  )}
+
+                  <div
+                    className={`max-w-[85%] rounded-2xl p-3.5 text-xs sm:text-sm leading-relaxed whitespace-pre-line shadow-xs ${
+                      msg.sender === 'user'
+                        ? 'bg-brand-primary text-brand-bg rounded-tr-none'
+                        : 'bg-white text-gray-800 border border-gray-100 rounded-tl-none'
+                    }`}
+                  >
+                    <div className="space-y-1">
+                      {msg.text.split('\n').map((line, lIdx) => {
+                        if (!line.trim()) return <div key={lIdx} className="h-1.5" />;
+
+                        // Detección de URLs
+                        const urlRegex = /(https?:\/\/[^\s\)]+)/g;
+                        const parts = line.split(urlRegex);
+
+                        return (
+                          <p key={lIdx} className={line.startsWith('* ') || line.startsWith('• ') ? 'pl-2' : ''}>
+                            {parts.map((part, pIdx) => {
+                              if (part.match(urlRegex)) {
+                                return (
+                                  <a
+                                    key={pIdx}
+                                    href={part}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 text-brand-accent hover:text-brand-support font-semibold underline underline-offset-2 break-all my-0.5 bg-brand-bg/60 px-1 py-0.5 rounded transition-colors"
+                                  >
+                                    {part}
+                                  </a>
+                                );
+                              }
+
+                              // Bold parsing **text**
+                              const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
+                              return boldParts.map((bPart, bIdx) => {
+                                if (bPart.startsWith('**') && bPart.endsWith('**')) {
+                                  return (
+                                    <strong key={bIdx} className="font-bold text-brand-primary">
+                                      {bPart.slice(2, -2)}
+                                    </strong>
+                                  );
+                                }
+                                return <span key={bIdx}>{bPart}</span>;
+                              });
+                            })}
+                          </p>
+                        );
+                      })}
+                    </div>
+                    <span
+                      className={`block text-[9px] mt-1.5 ${
+                        msg.sender === 'user' ? 'text-white/50 text-right' : 'text-gray-400'
+                      }`}
                     >
-                        {/* Header */}
-                        <div className="bg-brand-support p-6 text-white flex items-center space-x-4">
-                            <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
-                                <Bot className="w-7 h-7" />
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg leading-tight font-serif">GaciBot</h3>
-                                <p className="text-white/70 text-sm">Asistente de Experiencia</p>
-                            </div>
-                        </div>
+                      {msg.timestamp}
+                    </span>
+                  </div>
 
-                        {/* Mensajes */}
-                        <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-brand-bg/30">
-                            {messages.map((msg) => (
-                                <motion.div
-                                    key={msg.id}
-                                    initial={{ opacity: 0, y: 10, scale: 0.9 }}
-                                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    className={`flex ${msg.type === 'user' ? 'justify-end' : 'justify-start'}`}
-                                >
-                                    <div
-                                        className={`max-w-[85%] px-4 py-3 rounded-2xl text-sm shadow-sm ${msg.type === 'user'
-                                            ? 'bg-brand-support text-brand-bg rounded-tr-none'
-                                            : 'bg-white text-brand-primary border border-gray-100 rounded-tl-none'
-                                            }`}
-                                    >
-                                        {msg.text}
-                                    </div>
-                                </motion.div>
-                            ))}
+                  {msg.sender === 'user' && (
+                    <div className="w-7 h-7 rounded-full bg-brand-accent text-white flex items-center justify-center shrink-0 mt-1 shadow-xs">
+                      <User size={14} />
+                    </div>
+                  )}
+                </motion.div>
+              ))}
 
-                            {isTyping && (
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    className="flex justify-start"
-                                >
-                                    <div className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-2xl border border-gray-100 flex items-center space-x-2">
-                                        <Loader2 className="w-4 h-4 text-brand-primary animate-spin" />
-                                        <span className="text-xs text-brand-primary/60 italic">Gaci está escribiendo...</span>
-                                    </div>
-                                </motion.div>
-                            )}
-                            <div ref={messagesEndRef} />
-                        </div>
+              {/* Indicador de escritura animado */}
+              {loading && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="flex items-center gap-2 text-gray-500 text-xs italic"
+                >
+                  <div className="w-7 h-7 rounded-full bg-brand-support text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <Bot size={15} />
+                  </div>
+                  <div className="bg-white border border-gray-100 rounded-2xl px-3.5 py-2.5 shadow-xs flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '0ms' }} />
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '150ms' }} />
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '300ms' }} />
+                    <span className="ml-1 text-gray-500 text-xs not-italic">Gaci está escribiendo...</span>
+                  </div>
+                </motion.div>
+              )}
+            </div>
 
-                        {/* Input */}
-                        <form
-                            onSubmit={handleSendMessage}
-                            className="p-4 bg-white border-t border-gray-100 flex items-center gap-2"
-                        >
-                            <input
-                                type="text"
-                                value={inputValue}
-                                onChange={(e) => setInputValue(e.target.value)}
-                                placeholder="Escribí tu mensaje..."
-                                className="flex-1 bg-brand-bg/50 border-none rounded-2xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-dark-green/20 outline-none transition-all"
-                            />
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                type="submit"
-                                disabled={!inputValue.trim()}
-                                className="bg-brand-support text-brand-bg p-3 rounded-2xl disabled:opacity-50 transition-all shadow-lg"
-                            >
-                                <Send className="w-5 h-5" />
-                            </motion.button>
-                        </form>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </div>
-    );
+            {/* Input Bar */}
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSend();
+              }}
+              className="p-3 bg-white border-t border-gray-100 flex gap-2 shrink-0"
+            >
+              <input
+                ref={inputRef}
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Escribí tu consulta..."
+                disabled={loading}
+                className="flex-1 bg-[#FAF8F5] border border-gray-200 focus:border-brand-accent rounded-2xl px-3.5 py-2.5 text-xs sm:text-sm focus:outline-none transition-all placeholder:text-gray-400"
+              />
+              <button
+                type="submit"
+                disabled={!input.trim() || loading}
+                className="px-4 py-2.5 bg-brand-accent hover:bg-brand-accent/90 disabled:opacity-50 text-white rounded-2xl font-bold uppercase tracking-wider text-xs transition-all shadow-sm flex items-center justify-center gap-1 shrink-0"
+              >
+                <Send size={15} />
+              </button>
+            </form>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 };
 
 export default GaciBot;

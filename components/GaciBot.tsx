@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bot, Send, X, MessageCircle, Sparkles, RefreshCw, ChevronDown, User } from 'lucide-react';
+import { Bot, Send, X, Sparkles, RefreshCw, ChevronDown, User } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 
 interface Message {
@@ -21,23 +21,93 @@ const SUGGESTED_CHIPS = [
 
 export const GaciBot: React.FC = () => {
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
+
+  // Estado persistente: sessionId
+  const [sessionId, setSessionId] = useState<string>(() => {
+    try {
+      const saved = localStorage.getItem('gacibot_session_id');
+      if (saved) return saved;
+      const newId = 'web_' + Math.random().toString(36).substring(2, 9);
+      localStorage.setItem('gacibot_session_id', newId);
+      return newId;
+    } catch {
+      return 'web_' + Math.random().toString(36).substring(2, 9);
+    }
+  });
+
+  // Estado persistente: si el usuario ya interactuó alguna vez
+  const [hasInteracted, setHasInteracted] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem('gacibot_interacted') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  // Estado persistente: si la ventana estaba abierta al cambiar de página
+  const [isOpen, setIsOpen] = useState<boolean>(() => {
+    try {
+      return sessionStorage.getItem('gacibot_is_open') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  // Estado persistente: historial de mensajes del chat
+  const [messages, setMessages] = useState<Message[]>(() => {
+    try {
+      const saved = localStorage.getItem('gacibot_chat_history');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch (e) {
+      console.error("Error reading saved chat history", e);
+    }
+    return [
+      {
+        id: 'welcome',
+        sender: 'bot',
+        text: '¡Hola! Qué bueno que nos contactes. Soy Gaci, el asistente virtual de Muebles Gacela. Contame, ¿qué espacio estás buscando renovar o qué mueble te gustaría conocer?',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      },
+    ];
+  });
+
   const [showTeaser, setShowTeaser] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(false);
-  const [sessionId, setSessionId] = useState<string>(() => 'web_' + Math.random().toString(36).substring(2, 9));
-  
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: 'welcome',
-      sender: 'bot',
-      text: '¡Hola! Qué bueno que nos contactes. Soy Gaci, el asistente virtual de Muebles Gacela. Contame, ¿qué espacio estás buscando renovar o qué mueble te gustaría conocer?',
-      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-    },
-  ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Guardar mensajes automáticamente en localStorage cada vez que cambien
+  useEffect(() => {
+    try {
+      localStorage.setItem('gacibot_chat_history', JSON.stringify(messages));
+    } catch (e) {
+      console.error("Error saving chat history", e);
+    }
+  }, [messages]);
+
+  // Guardar estado de apertura en sessionStorage
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('gacibot_is_open', String(isOpen));
+    } catch (e) {
+      console.error("Error saving open state", e);
+    }
+  }, [isOpen]);
+
+  // Guardar interacción para no molestar con el teaser
+  useEffect(() => {
+    if (hasInteracted) {
+      try {
+        localStorage.setItem('gacibot_interacted', 'true');
+      } catch (e) {
+        console.error("Error saving interaction", e);
+      }
+    }
+  }, [hasInteracted]);
 
   // Timer para el mensaje teaser a los 5s y ocultarlo a los 30s
   useEffect(() => {
@@ -147,15 +217,29 @@ export const GaciBot: React.FC = () => {
   };
 
   const clearChat = () => {
-    setSessionId('web_' + Math.random().toString(36).substring(2, 9));
-    setMessages([
+    const newId = 'web_' + Math.random().toString(36).substring(2, 9);
+    setSessionId(newId);
+    try {
+      localStorage.setItem('gacibot_session_id', newId);
+    } catch (e) {
+      console.error(e);
+    }
+
+    const defaultMessages: Message[] = [
       {
         id: 'reset_' + Date.now(),
         sender: 'bot',
         text: 'Chat reiniciado. ¿Qué consulta querés hacer sobre los muebles o armado?',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       },
-    ]);
+    ];
+
+    setMessages(defaultMessages);
+    try {
+      localStorage.setItem('gacibot_chat_history', JSON.stringify(defaultMessages));
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   // Ocultar la burbuja si estamos en el tester específico
@@ -176,7 +260,7 @@ export const GaciBot: React.FC = () => {
             className="absolute bottom-20 right-0 w-[290px] sm:w-[320px] bg-white rounded-2xl shadow-2xl p-4 border border-brand-card/30 backdrop-blur-md cursor-pointer hover:border-brand-accent/60 transition-all group"
             onClick={handleOpenChat}
           >
-            {/* Close button for teaser */}
+            {/* Botón cerrar teaser */}
             <button
               onClick={(e) => {
                 e.stopPropagation();

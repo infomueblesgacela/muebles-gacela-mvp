@@ -274,8 +274,8 @@ export const GaciBot: React.FC = () => {
 
             <div className="flex items-start gap-3">
               <div className="relative shrink-0 mt-0.5">
-                <div className="w-9 h-9 rounded-xl bg-brand-primary flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
-                  <Bot size={20} />
+                <div className="w-10 h-10 rounded-xl bg-brand-primary overflow-hidden flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform p-0.5 border border-white/20">
+                  <img src="/images/gacibot.gif" alt="GaciBot" className="w-full h-full object-contain rounded-lg" />
                 </div>
                 <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-white" />
               </div>
@@ -336,9 +336,9 @@ export const GaciBot: React.FC = () => {
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.5, opacity: 0 }}
-              className="flex items-center justify-center"
+              className="w-full h-full flex items-center justify-center p-1.5 overflow-hidden rounded-full"
             >
-              <Bot size={28} className="text-white" />
+              <img src="/images/gacibot.gif" alt="GaciBot" className="w-full h-full object-cover rounded-full" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -358,8 +358,8 @@ export const GaciBot: React.FC = () => {
             <div className="bg-brand-primary text-brand-bg px-5 py-3.5 flex items-center justify-between border-b border-brand-support/20 shrink-0">
               <div className="flex items-center space-x-3">
                 <div className="relative">
-                  <div className="w-10 h-10 rounded-2xl bg-brand-accent flex items-center justify-center shadow-inner">
-                    <Bot size={22} className="text-white" />
+                  <div className="w-10 h-10 rounded-2xl bg-brand-accent overflow-hidden flex items-center justify-center shadow-inner p-0.5 border border-white/20">
+                    <img src="/images/gacibot.gif" alt="GaciBot" className="w-full h-full object-cover rounded-xl" />
                   </div>
                   <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-brand-primary rounded-full" />
                 </div>
@@ -420,8 +420,8 @@ export const GaciBot: React.FC = () => {
                   className={`flex gap-2.5 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
                 >
                   {msg.sender === 'bot' && (
-                    <div className="w-7 h-7 rounded-full bg-brand-support text-white flex items-center justify-center shrink-0 mt-1 shadow-xs text-xs">
-                      <Bot size={15} />
+                    <div className="w-7 h-7 rounded-full bg-brand-support overflow-hidden flex items-center justify-center shrink-0 mt-1 shadow-xs border border-brand-primary/20">
+                      <img src="/images/gacibot.gif" alt="GaciBot" className="w-full h-full object-cover rounded-full" />
                     </div>
                   )}
 
@@ -498,8 +498,8 @@ export const GaciBot: React.FC = () => {
                   animate={{ opacity: 1 }}
                   className="flex items-center gap-2 text-gray-500 text-xs italic"
                 >
-                  <div className="w-7 h-7 rounded-full bg-brand-support text-white flex items-center justify-center shrink-0 shadow-xs">
-                    <Bot size={15} />
+                  <div className="w-7 h-7 rounded-full bg-brand-support overflow-hidden flex items-center justify-center shrink-0 shadow-xs border border-brand-primary/20">
+                    <img src="/images/gacibot.gif" alt="GaciBot" className="w-full h-full object-cover rounded-full" />
                   </div>
                   <div className="bg-white border border-gray-100 rounded-2xl px-3.5 py-2.5 shadow-xs flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-bounce" style={{ animationDelay: '0ms' }} />

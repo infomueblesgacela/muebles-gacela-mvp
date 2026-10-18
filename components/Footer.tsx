@@ -4,6 +4,8 @@ import { FacebookIcon, InstagramIcon, YoutubeIcon } from './Icons';
 import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+const LINEAS = ['Clásica', 'Kyoto', 'Curvalba', 'Lumo', 'Nordik', 'Infantil', 'Gamer'];
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-support text-brand-bg font-sans">
@@ -12,13 +14,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-[14px] mb-6 font-outersans font-thin uppercase tracking-[0.4em] text-brand-bg/80">Nuestras Líneas</h4>
             <ul className="space-y-3 text-base text-[#ECE2D2]/80 font-clofie font-light">
-              <li><a href="#" className="hover:text-white transition-colors">Clásica</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Kyoto</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Curvalba</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Lumo</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Nordik</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Infantil</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Gamer</a></li>
+              {LINEAS.map(linea => (
+                <li key={linea}>
+                  <Link to={`/productos?linea=${encodeURIComponent(linea)}`} onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">{linea}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

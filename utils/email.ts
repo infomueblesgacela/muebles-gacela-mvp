@@ -84,32 +84,34 @@ export async function sendRRHHEmail(payload: RRHHEmailPayload): Promise<void> {
   await emailjs.send(RRHH_SERVICE_ID, RRHH_TEMPLATE_ID, payload as any, RRHH_PUBLIC_KEY);
 }
 
-// ─── File Upload Helper (Optional / Fallback) ──────────────────────────────────
+// ─── File Upload Helper ───────────────────────────────────────────────────────
+// Guarda el CV en el Blob privado de Vercel (api/upload-cv.js) y devuelve un link
+// firmado permanente (/api/cv) para incluir en el mail a RRHH.
+export const MAX_CV_BYTES = 4 * 1024 * 1024;
+
 export async function uploadAttachment(file: File): Promise<string> {
-  try {
-    const formData = new FormData();
-    formData.append('file', file);
-    
-    // Subir a tmpfiles.org que tiene CORS abierto y es sumamente confiable
-    const response = await fetch('https://tmpfiles.org/api/v1/upload', {
-      method: 'POST',
-      body: formData
-    });
-
-    if (!response.ok) {
-      throw new Error(`Fallo la subida al servidor temporal (status: ${response.status})`);
-    }
-
-    const data = await response.json();
-    if (data.status === 'success' && data.data?.url) {
-      // Convertir el link de vista en link de descarga directa para el email
-      return data.data.url.replace('https://tmpfiles.org/', 'https://tmpfiles.org/dl/');
-    }
-    throw new Error(data.message || 'Error desconocido al subir a tmpfiles.org');
-  } catch (err: any) {
-    console.error('[FileUpload] Fallo la subida a tmpfiles.org:', err);
-    throw new Error(`No se pudo subir el archivo CV: ${err.message}`);
+  if (file.size > MAX_CV_BYTES) {
+    throw new Error('El CV supera los 4 MB. Por favor subí un archivo más liviano.');
   }
+
+  let response: Response;
+  try {
+    response = await fetch(`/api/upload-cv?filename=${encodeURIComponent(file.name)}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/octet-stream' },
+      body: file,
+    });
+  } catch (err: any) {
+    console.error('[FileUpload] Fallo la subida del CV:', err);
+    throw new Error('No se pudo subir el CV. Revisá tu conexión y reintentá.');
+  }
+
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || !data.url) {
+    console.error('[FileUpload] Fallo la subida del CV:', response.status, data);
+    throw new Error(data.error || 'No se pudo subir el CV. Reintentá en unos minutos.');
+  }
+  return data.url;
 }
 
 

@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { User, Mail, Phone, MapPin, Briefcase, FileText, Upload, Send, MessageCircle, X, CheckCircle, ArrowRight, AlertCircle } from 'lucide-react';
-import { sendRRHHEmail, uploadAttachment } from '../utils/email';
+import { sendRRHHEmail, uploadAttachment, MAX_CV_BYTES } from '../utils/email';
 
 const WorkWithUs: React.FC = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -28,7 +28,7 @@ const WorkWithUs: React.FC = () => {
     try {
       let attachmentUrl = '';
       if (selectedCV) {
-        // Subir el archivo temporalmente para obtener una URL pública para el mail
+        // Guardar el CV y obtener el link permanente para el mail
         attachmentUrl = await uploadAttachment(selectedCV);
       }
 
@@ -52,15 +52,26 @@ const WorkWithUs: React.FC = () => {
     } catch (err: any) {
       console.error('[WorkWithUs] Error al enviar postulación:', err);
       setFormStatus('error');
-      setErrorMessage(err?.text || err?.message || 'Hubo un fallo en el servicio de correos. Por favor revisá que el archivo sea menor a 10MB o reintentá.');
+      setErrorMessage(err?.text || err?.message || 'Hubo un fallo en el servicio de correos. Por favor revisá que el archivo sea menor a 4 MB o reintentá.');
     }
   };
 
 
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setSelectedCV(e.target.files[0]);
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.size > MAX_CV_BYTES) {
+      e.target.value = '';
+      setSelectedCV(null);
+      setFormStatus('error');
+      setErrorMessage('El CV supera los 4 MB. Por favor subí un archivo más liviano.');
+      return;
+    }
+    setSelectedCV(file);
+    if (formStatus === 'error') {
+      setFormStatus('idle');
+      setErrorMessage(null);
     }
   };
 
@@ -274,7 +285,7 @@ const WorkWithUs: React.FC = () => {
                               Arrastrá tu CV aquí o hacé clic
                             </p>
                             <p className="font-outersans font-thin text-[12px] uppercase tracking-[0.4em] text-[#A69785] mt-2 opacity-50">
-                              Formato PDF o Word permitido
+                              PDF o Word · máx. 4 MB
                             </p>
                           </div>
                         ) : (
